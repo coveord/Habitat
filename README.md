@@ -51,6 +51,9 @@ Please check the [Habitat Resources](https://github.com/Sitecore/Habitat/wiki/02
             * Also you need to have running MongoDB instance when installing WFFM module, otherwise it may lead to never ending installation dialogue window.
             * Installing any other version of WFFM will lead to errors at synchronization or run time.
     * Habitat.Coveo requires:
+        * [**Sitecore.Support.137437**](https://github.com/sitecoresupport/Sitecore.Support.137437/releases) hotfix.
+            * Fixes incompatibilities between WFFM and Coveo for Sitecore during application initialization.
+            * Install this hotfix Coveo for Sitecore unless you won't be able to use Sitecore anymore.
         * [**Coveo for Sitecore 4.0.1088 (March 2017 release) for Sitecore 8.2**](http://download.coveo.com/download/Sitecore/4.0.1088/x64/Coveo%20for%20Sitecore%2082%204.0%20(1088).zip) module.
             * Notes:
                 * It should be installed prior to running Sync Unicorn gulp task.
