@@ -12,7 +12,7 @@ using Coveo.Framework.Sites;
 using Coveo.Framework.Utils;
 using Coveo.SearchProvider.Pipelines;
 
-namespace SitecoreHabitatDemo.Processors
+namespace Sitecore.Foundation.CoveoIndexing.Processors
 {
     /// <summary>
     /// Processor that resolves the site which an item belongs to.

@@ -1,7 +1,7 @@
 ﻿using Coveo.SearchProvider.Pipelines;
 using Coveo.SearchProvider.InboundFilters;
 
-namespace SitecoreHabitatDemo
+namespace Sitecore.Foundation.CoveoIndexing
 {
     public class ExcludeItemOutsideHomeTree : AbstractCoveoInboundFilterProcessor
     {
