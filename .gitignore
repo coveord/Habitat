@@ -18,7 +18,7 @@ lib/System/*
 !lib/System/readme.MD
 .sonar
 vars.user.cmd
-/.vs
+src/**/.vs/
 /target
 /node_modules
 temp/
