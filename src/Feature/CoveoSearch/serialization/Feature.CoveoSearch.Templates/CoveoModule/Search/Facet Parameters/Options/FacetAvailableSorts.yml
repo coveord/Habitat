@@ -1,0 +1,42 @@
+﻿---
+ID: "f8060d31-60e8-49a7-b68c-3ca47755d2a5"
+Parent: "a9c7e37a-a6f3-4c78-b7b6-7d75f64f58eb"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/CoveoModule/Search/Facet Parameters/Options/FacetAvailableSorts
+DB: master
+SharedFields:
+- ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
+  Hint: Source
+  Value: "{FCF30F68-7658-4C36-A2CE-B4B87A5E062D}"
+- ID: "39847666-389d-409b-95bd-f2016f11eed5"
+  Hint: Unversioned
+  Type: Checkbox
+  Value: 1
+- ID: "56776edf-261c-4abc-9fe7-70c618795239"
+  Hint: __Help link
+  Value: |
+    <link url="https://coveo.github.io/search-ui/components/facet.html#options.availablesorts" linktype="external" />
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Checklist
+- ID: "b118496a-0f78-4a27-b55f-0a6c4b0b0fe1"
+  Hint: Default value
+  Value: "{F19F41CA-CC8B-4CD9-9884-46C80C8C7737}|{445BCEBE-D11E-4247-B07C-D775601B9F12}|{F0611CB0-4D2F-4B1C-A052-CBF86FAEE1EC}|{65C2940F-0506-4D45-BE9C-2D8751BB70A6}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 2643
+Languages:
+- Language: en
+  Fields:
+  - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+    Hint: Title
+    Value: Sort criterias displayed in the settings menu
+  - ID: "577f1689-7de4-4ad2-a15f-7fdc1759285f"
+    Hint: __Long description
+    Value: Specifies the criteria you want to be displayed in the facet settings menu. The default value is Occurrences, Score, Alphabetically (ascending), Alphabetically (descending).
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20140210T143419

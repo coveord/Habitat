@@ -1,0 +1,31 @@
+﻿---
+ID: "2e74ce2a-0c90-436a-979a-013a4675e9f3"
+Parent: "897390f5-fe93-4251-a428-87e7469374c3"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/CoveoModule/Search/Page View Analytics Parameters/Page View Data/UsageAnalyticsPageViewContentType
+DB: master
+SharedFields:
+- ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
+  Hint: Source
+  Value: "query:/sitecore/system/settings/buckets/TagRepository//*[@@templateid='{68BA23FD-8270-4675-97EA-4FAFC7CF3AB9}']"
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Droplist
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Fields:
+  - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+    Hint: Title
+    Value: Content Type
+  - ID: "577f1689-7de4-4ad2-a15f-7fdc1759285f"
+    Hint: __Long description
+    Value: The content type to tag the current page in.
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "20160610T122705:635999386607654150"

@@ -1,0 +1,22 @@
+﻿---
+ID: "85539ad9-57a8-434f-a8dd-b2e44c719bdf"
+Parent: "506c71d8-981d-49fc-97b0-4e8cfacdcb31"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/Coveo/MVC/Coveo Tabs MVC
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: "coveo-tabs-mvc"
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: "{7BBD950A-1432-49EB-8007-7EA8EBB922FA}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "20160325T152647:635945164071779232"

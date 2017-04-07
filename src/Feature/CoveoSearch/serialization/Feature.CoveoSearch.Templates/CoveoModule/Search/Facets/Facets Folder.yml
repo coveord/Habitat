@@ -1,0 +1,37 @@
+﻿---
+ID: "fd83abde-f5ac-4139-a236-e2ebbf98d96e"
+Parent: "7e59dfc0-2c7a-499f-b760-52bfdb5e42d5"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/CoveoModule/Search/Facets/Facets Folder
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Applications/32x32/folder.png
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {21CAA282-563F-4666-AD5B-BDA0978B9D36}
+    {8861E1C8-EBC0-42AF-AD9B-DCD2CF6F71C6}
+    {D0706C86-B94B-476C-8ED4-5B84A4B2A516}
+    {1A4C7DB9-4466-43D0-B21A-E795EE333FCB}
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: "{0437FEE2-44C9-46A6-ABE9-28858D9FEE8C}"
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{80DEEF27-1E72-4B33-97DD-9F9A34EC7EF5}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160304T164300
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

@@ -1,0 +1,47 @@
+﻿---
+ID: "cef9a81d-fcd7-4ad9-8d1b-ccaa8337b50d"
+Parent: "570046f1-4812-4325-b712-3c441f6c0c3e"
+Template: "570046f1-4812-4325-b712-3c441f6c0c3e"
+Path: /sitecore/templates/CoveoModule/Search/Recommendations Parameters/Related Query Parameters/__Standard Values
+DB: master
+SharedFields:
+- ID: "3094d236-5985-4c4f-ae6a-e30740885532"
+  Hint: Caching
+  Value: 0|0|0|0|0|0|0|0
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1eaabfea-6010-41d2-8f6c-be5c32aee663"
+      Hint: FilterExpressionRules
+      Type: Rules
+      Value: |
+        <ruleset>
+          <rule
+            uid="{1DE42939-16E1-4083-ABD1-6199A430EE30}">
+            <conditions>
+              <and
+                uid="5784FA2C71564DD6A57D9727BF3C0A7E">
+                <condition
+                  id="{1E6C9830-45FA-4801-9D4D-E87B76C13F7D}"
+                  uid="1EAF9FB6D3DE4AEC94978AEA88A85E6C"
+                  itemid="{0DE95AE4-41AB-4D01-9EB0-67441B7C2450}" />
+                <condition
+                  id="{D99FA65C-3A44-4CF4-9FB8-4C32F0FA366A}"
+                  uid="83D75C89C6484189A04037D603D62D34" />
+              </and>
+            </conditions>
+          </rule>
+        </ruleset>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160921T122541
+    - ID: "2f5ef5f2-5b9a-4ce3-9596-3d7654203648"
+      Hint: EnableSitecoreAnalytics
+      Type: Checkbox
+      Value: 0
+    - ID: "b9a15b3c-2cb5-4df3-81f2-c63595c7cda1"
+      Hint: EnableClientSideLogging
+      Type: Checkbox
+      Value: 0

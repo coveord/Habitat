@@ -1,0 +1,35 @@
+﻿---
+ID: "ff973da3-3d03-41d1-b72e-cf02879426b3"
+Parent: "af0e427b-fe86-410c-82a4-1080d49d1d97"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/CoveoModule/Search/Facet Parameters/Advanced Settings/FacetUseAnd
+DB: master
+SharedFields:
+- ID: "56776edf-261c-4abc-9fe7-70c618795239"
+  Hint: __Help link
+  Value: |
+    <link url="https://coveo.github.io/search-ui/components/facet.html#options.useand" linktype="external" />
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Checkbox
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 462
+Languages:
+- Language: en
+  Fields:
+  - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+    Hint: Title
+    Value: Facet uses the AND operator
+  - ID: "577f1689-7de4-4ad2-a15f-7fdc1759285f"
+    Hint: __Long description
+    Value: When using the AND operator, a document will return if it matches all selected facet values at the same time. On the other hand, with the OR operator, a document will return when it matches at least one of the selected facet values.
+  - ID: "9541e67d-ce8c-4225-803d-33f7f29f09ef"
+    Hint: __Short description
+    Value: Default is the OR operator
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20130903T151345

@@ -1,0 +1,22 @@
+﻿---
+ID: "7e6accca-2a51-40ef-969d-8a4b44fcf5d4"
+Parent: "506c71d8-981d-49fc-97b0-4e8cfacdcb31"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/Coveo/MVC/Coveo Omnibox Suggestions Provider MVC
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: "coveo-omnibox-suggestions-providers-mvc"
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: "{AEB719A4-CA37-4BFA-A610-32060EA67F2E}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20140314T143143

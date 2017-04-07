@@ -1,0 +1,32 @@
+﻿---
+ID: "bd4b1d8c-aa3b-4460-bf79-6760ccce6912"
+Parent: "2b35b506-ead8-4796-94ea-1a8ba2a8a5ec"
+Template: "0a98e368-cdb9-4e1e-927c-8e0c24a003fb"
+Path: /sitecore/layout/Sublayouts/Coveo/Coveo Fields Resources
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Coveo/32x32/CoveoFieldsResources.png
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{DE8A6B51-60A2-4BCA-A3E1-8753EF58B7E0}" mediapath="/Coveo/CoveoSearch" src="~/media/7496B0B58F694695842ED682B07C942F.ashx" />
+- ID: "e42081b6-8a95-4a11-89ce-df70ed502f57"
+  Hint: Path
+  Value: /layouts/Coveo/CoveoFieldsResources.ascx
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20131021T151644
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

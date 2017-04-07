@@ -1,0 +1,26 @@
+﻿---
+ID: "648faf95-77c6-4d7e-8cb9-de055d69e5a8"
+Parent: "506c71d8-981d-49fc-97b0-4e8cfacdcb31"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/Coveo/MVC/Coveo Facets MVC
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: "coveo-facets-mvc"
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: |
+    {489BA2AE-1B14-491E-A0FD-80EB2A10F275}
+    {F1C49319-4880-4F9F-A836-2BFF6F1382DF}
+    {426B4BF4-2169-43FD-BEB2-E186A5935F95}
+    {54507DBB-8536-4956-AF13-297EAA6AD85E}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20140314T143143

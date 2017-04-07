@@ -1,0 +1,14 @@
+﻿---
+ID: "e172a061-5e83-4e89-ad21-27d8c1f3eaff"
+Parent: "54d8c7e3-7999-47d1-b3d2-a4ed8bc17e95"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/CoveoModule/Search/Custom Ranges Parameters/Custom Ranges/Basic Settings
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20140620T151913

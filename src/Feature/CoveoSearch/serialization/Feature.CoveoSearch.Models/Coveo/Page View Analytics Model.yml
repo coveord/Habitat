@@ -1,0 +1,25 @@
+﻿---
+ID: "5510c631-aefb-4faa-b459-18be23609145"
+Parent: "11a9ee62-5670-4170-870e-546402540abd"
+Template: "fed6a14f-0d05-4e18-b160-17c0588a2005"
+Path: /sitecore/layout/Models/Coveo/Page View Analytics Model
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 450
+- ID: "ee9e23d2-181d-4172-a929-0e0b8d10313c"
+  Hint: Model Type
+  Value: Coveo.UI.Mvc.Models.PageViewAnalyticsModel, Coveo.UIBase
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160526T164649
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

@@ -1,0 +1,14 @@
+﻿---
+ID: "da523a14-88be-4e19-a0fa-cf009dbd24b7"
+Parent: "6c19769a-f06a-44aa-9bb7-35c7e48c55bd"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/CoveoModule/Search/Custom Ranges Parameters/Base Date Range/Basic Settings
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20140620T151913

@@ -1,0 +1,24 @@
+﻿---
+ID: "6ced2af0-ee83-4458-9ad0-27424f0b4b3f"
+Parent: "f6b38090-76fc-4688-bd99-8da755a5d3f1"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/Coveo/Web Forms/Coveo Recommendations
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: "coveo-recommendations"
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: |
+    {9FD18928-3841-4E87-9EB1-A2CE8E344AE8}
+    {10205DF1-416D-4BBE-AA97-059529A055A6}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160818T110848

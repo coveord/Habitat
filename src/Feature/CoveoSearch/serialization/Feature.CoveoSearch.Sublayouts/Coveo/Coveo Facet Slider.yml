@@ -1,0 +1,51 @@
+﻿---
+ID: "0db27009-d5cd-4a29-ab81-458f5786c175"
+Parent: "2b35b506-ead8-4796-94ea-1a8ba2a8a5ec"
+Template: "0a98e368-cdb9-4e1e-927c-8e0c24a003fb"
+Path: /sitecore/layout/Sublayouts/Coveo/Coveo Facet Slider
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Coveo/32x32/CoveoSlider.png
+- ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
+  Hint: Datasource Template
+  Value: /sitecore/templates/CoveoModule/Search/Facet Slider Parameters
+- ID: "32cee5fb-efce-4ca6-b697-3b97900c40d3"
+  Hint: Placeholder
+  Value: "coveo-facets"
+- ID: "462a3406-2182-4134-8484-fdc3dd0326dd"
+  Hint: Open Properties after Add
+  Value: 1
+- ID: "a2f5d9df-8cba-4a1d-99eb-51acb94cb057"
+  Hint: Page Editor Buttons
+  Type: Treelist
+  Value: "{325E7B28-A409-4162-BA64-73F4ADB9E987}"
+- ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
+  Hint: Datasource Location
+  Value: 
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 750
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{03CCF540-06C6-453B-9A33-8C7E1B5F99E3}" mediapath="/Coveo/CoveoFacet" src="~/media/6569A66D2A68494E81F1A3069B0A5658.ashx" />
+- ID: "e28f0784-53ec-4b5c-803e-638fdb1ec15d"
+  Hint: Parameters Template
+  Value: "{D0706C86-B94B-476C-8ED4-5B84A4B2A516}"
+- ID: "e42081b6-8a95-4a11-89ce-df70ed502f57"
+  Hint: Path
+  Value: /layouts/Coveo/CoveoFacetSlider.ascx
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20131002T204300
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

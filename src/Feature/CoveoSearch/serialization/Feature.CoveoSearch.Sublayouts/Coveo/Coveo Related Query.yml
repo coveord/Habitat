@@ -1,0 +1,45 @@
+﻿---
+ID: "10205df1-416d-4bbe-aa97-059529a055a6"
+Parent: "2b35b506-ead8-4796-94ea-1a8ba2a8a5ec"
+Template: "0a98e368-cdb9-4e1e-927c-8e0c24a003fb"
+Path: /sitecore/layout/Sublayouts/Coveo/Coveo Related Query
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Coveo/32x32/CoveoRelatedQuery.png
+- ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
+  Hint: Datasource Template
+  Value: /sitecore/templates/CoveoModule/Search/Recommendations Parameters/Related Query Parameters
+- ID: "462a3406-2182-4134-8484-fdc3dd0326dd"
+  Hint: Open Properties after Add
+  Value: 1
+- ID: "a2f5d9df-8cba-4a1d-99eb-51acb94cb057"
+  Hint: Page Editor Buttons
+  Type: Treelist
+  Value: "{4FE3A5EA-C07D-42DE-8509-0BAFFD857544}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 625
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{0C5B33DB-831C-44F9-A813-3BC8EFB0773E}" mediapath="/Coveo/CoveoSearch" src="~/media/7496B0B58F694695842ED682B07C942F.ashx" />
+- ID: "e28f0784-53ec-4b5c-803e-638fdb1ec15d"
+  Hint: Parameters Template
+  Value: "{570046F1-4812-4325-B712-3C441F6C0C3E}"
+- ID: "e42081b6-8a95-4a11-89ce-df70ed502f57"
+  Hint: Path
+  Value: /layouts/Coveo/CoveoRelatedQuery.ascx
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20131021T151644
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

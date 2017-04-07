@@ -1,0 +1,38 @@
+﻿---
+ID: "98dc5c84-f1cf-41d4-abe1-a1ef8b213c16"
+Parent: "8ce4d58d-4830-4342-a930-34274da22e1f"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/CoveoModule/Search/Tab Parameters/Exclude Components/ExcludeComponents
+DB: master
+SharedFields:
+- ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
+  Hint: Source
+  Value: datasource=/sitecore&templateitem=/sitecore/templates/CoveoModule/Search/Base Id Template
+- ID: "56776edf-261c-4abc-9fe7-70c618795239"
+  Hint: __Help link
+  Value: |
+    <link linktype="external" url="https://developers.coveo.com/display/SitecoreV4/Tab+Component+Properties" />
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Template Inheritance TreeList
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 25
+Languages:
+- Language: en
+  Fields:
+  - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+    Hint: Title
+    Value: Exclude components
+  - ID: "577f1689-7de4-4ad2-a15f-7fdc1759285f"
+    Hint: __Long description
+    Value: |
+      Excludes the selected components when the tab is selected.
+      
+      To be selectable from the TreeList, the component should use a DataSource Rendering Parameters that inherits from the "Base Id Template" located in "/sitecore/templates/CoveoModule/Search".
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160304T164600

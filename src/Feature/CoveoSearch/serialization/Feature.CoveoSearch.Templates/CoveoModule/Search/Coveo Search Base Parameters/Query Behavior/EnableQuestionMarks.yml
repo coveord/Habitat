@@ -1,0 +1,32 @@
+﻿---
+ID: "0be8f313-3385-49e1-8001-020ac477a97f"
+Parent: "33f2fbd9-772d-45d9-9b58-645d785b8af6"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/CoveoModule/Search/Coveo Search Base Parameters/Query Behavior/EnableQuestionMarks
+DB: master
+SharedFields:
+- ID: "56776edf-261c-4abc-9fe7-70c618795239"
+  Hint: __Help link
+  Value: |
+    <link linktype="external" url="https://developers.coveo.com/display/JsSearchV1/Querybox+Component#QueryboxComponent-enableQuestionMarks" />
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Checkbox
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 500
+Languages:
+- Language: en
+  Fields:
+  - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+    Hint: Title
+    Value: Enable question marks
+  - ID: "577f1689-7de4-4ad2-a15f-7fdc1759285f"
+    Hint: __Long description
+    Value: "Specifies whether Coveo expands keywords containing question mark characters (?) to the possible matching keywords to broaden the query."
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160525T110015

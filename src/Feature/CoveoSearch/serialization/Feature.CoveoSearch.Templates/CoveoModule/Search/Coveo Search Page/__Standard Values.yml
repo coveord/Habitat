@@ -1,0 +1,48 @@
+﻿---
+ID: "56886c91-80a0-4e80-a505-47e26cec75e8"
+Parent: "d0b70d73-c95b-4b8f-b7a6-eba91cbc8301"
+Template: "d0b70d73-c95b-4b8f-b7a6-eba91cbc8301"
+Path: /sitecore/templates/CoveoModule/Search/Coveo Search Page/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {76036F5E-CBCE-46D1-AF0A-4143F9B557AA}
+    {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
+- ID: "ca9b9f52-4fb0-4f87-a79f-24dea62cda65"
+  Hint: __Default workflow
+  Value: "{A5BC37E7-ED96-4C1E-8590-A26E64DB55EA}"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{7EA1F01C-6952-4078-92DC-A3E77AD779B2}">
+        <r
+          id="{849CE463-D979-421B-A6A3-4A4A3C9B60CE}"
+          ph="coveo-search"
+          uid="{D953A7CC-98C5-4276-B996-D8877D8E9BE9}" />
+        <r
+          ds=""
+          id="{624E2D4C-D674-45CF-B894-3F57282F9DA2}"
+          par="PagerLocation=%7BA1FBD885-7B5E-4AD3-87D1-06AB48937629%7D&amp;PagerShowPreviousNext=1&amp;PagerNumberOfPages=10&amp;PagerMaxNumberOfPages=100&amp;QuerySummaryEnableSearchTips=1&amp;QuerySummaryOnlyDisplaySearchTips&amp;DidYouMeanEnableAutoCorrection=1&amp;EnableInfiniteScroll&amp;InfiniteScrollPageSize=10&amp;DisplayFacets=1&amp;DisplayLogo=1&amp;DisplaySearchBox=1&amp;DisplaySorting=1&amp;HideUntilFirstQuery=1&amp;DisplayQueryDuration=1&amp;DisplayQuerySummary=1&amp;DisplayBreadcrumb=1&amp;DisplayDidYouMean=1&amp;DisplayErrorReport=1&amp;DisplayRecommendations=1&amp;DisplayResultList=1&amp;DisplayTabs=1&amp;DefaultSortType&amp;DefaultSortDirection&amp;DefaultSortField&amp;AutoTriggerQuery=1&amp;ExcerptLength=200&amp;EnableHistory=1&amp;ItemId=search&amp;FilterExpressionRules=%3Cruleset%3E%0D%0A%20%20%3Crule%20uid%3D%22%7B6F11961F-8518-4183-A170-4DA74292A5F6%7D%22%20name%3D%22Basic%20filtering%22%3E%0D%0A%20%20%20%20%3Cconditions%3E%0D%0A%20%20%20%20%20%20%3Cand%20uid%3D%2232ACA0FD48C146A591196E045015CBA7%22%3E%0D%0A%20%20%20%20%20%20%20%20%3Ccondition%20id%3D%22%7B1E6C9830-45FA-4801-9D4D-E87B76C13F7D%7D%22%20uid%3D%22F5913770440B442B8EF6D273208B5F90%22%20itemid%3D%22%7B0DE95AE4-41AB-4D01-9EB0-67441B7C2450%7D%22%20%2F%3E%0D%0A%20%20%20%20%20%20%20%20%3Ccondition%20id%3D%22%7BD99FA65C-3A44-4CF4-9FB8-4C32F0FA366A%7D%22%20uid%3D%22408E1F096EFB4CD58C6ED69E5A5EEE9B%22%20%2F%3E%0D%0A%20%20%20%20%20%20%3C%2Fand%3E%0D%0A%20%20%20%20%3C%2Fconditions%3E%0D%0A%20%20%3C%2Frule%3E%0D%0A%3C%2Fruleset%3E&amp;BoostExpressionRules&amp;EnableAutomaticBoosting&amp;FilterCulture=1&amp;SearchBoxBehavior&amp;EnablePartialMatch&amp;PartialMatchKeywords=5&amp;PartialMatchThreshold=50%25&amp;EnableWildcards&amp;EnableQuestionMarks&amp;EnableLowercaseOperators&amp;ResultsPerPage=10&amp;SearchBoxPlaceholderText&amp;AutoFocus=1&amp;ExternalContentSources&amp;ExternalContentCollections&amp;ThrowExceptionOnValidationError&amp;EnableClientSideLogging&amp;IncludeBucketFoldersInResults&amp;IncludeMediaFoldersInResults&amp;QueryPipelineName&amp;RestUri=%2Fcoveo%2Frest&amp;OmniboxEnableFieldAddon&amp;OmniboxEnableSimpleFieldAddon&amp;OmniboxEnableQueryExtensionAddon&amp;EnableCoveoUsageAnalytics=1&amp;CoveoUsageAnalyticsCustomMetadata&amp;EnableSitecoreAnalytics&amp;SitecoreAnalyticsRestUri=%2Fcoveo%2Frest%2Fv6%2Fanalytics"
+          ph="coveo-search"
+          uid="{2B82E7BC-4EDB-45BA-A790-301D0400F15E}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20061024T104300
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

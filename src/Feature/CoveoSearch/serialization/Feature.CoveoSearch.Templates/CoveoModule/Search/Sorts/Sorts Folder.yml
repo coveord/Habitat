@@ -1,0 +1,36 @@
+﻿---
+ID: "fe13e0a5-b777-4489-8968-2ed7a0cebfee"
+Parent: "f1fad6c0-8cb7-4395-bc7c-03724cd34bce"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/CoveoModule/Search/Sorts/Sorts Folder
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Applications/32x32/folder.png
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {E7725E1D-FC56-416C-B04C-13D5DE61FF6E}
+    {2ECCB5A3-910F-4035-B6FF-AC3F6D416BAB}
+    {7E77178E-D6D1-4CB0-B8D8-1CD5B62E19FF}
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: "{0437FEE2-44C9-46A6-ABE9-28858D9FEE8C}"
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{68D17135-A94F-452F-A7DF-1D311F707A0C}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160304T164300
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

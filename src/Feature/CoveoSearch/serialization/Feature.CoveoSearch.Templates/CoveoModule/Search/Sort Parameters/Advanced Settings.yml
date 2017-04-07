@@ -1,0 +1,18 @@
+﻿---
+ID: "e76d9fc3-3064-4f26-b54f-83e2782950d1"
+Parent: "22e07e51-f379-4dfc-957a-5fee605dd118"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/CoveoModule/Search/Sort Parameters/Advanced Settings
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "-1"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20131011T110600
