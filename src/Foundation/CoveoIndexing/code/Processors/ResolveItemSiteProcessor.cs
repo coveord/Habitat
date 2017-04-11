@@ -1,6 +1,4 @@
-﻿// Copyright (c) 2005-2017, Coveo Solutions Inc.
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
