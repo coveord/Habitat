@@ -1,8 +1,8 @@
 ﻿---
-ID: "0ebf1b74-f6e3-4e17-9931-db53245f070c"
+ID: "89e130d5-80f8-490c-b544-965476b08d9d"
 Parent: "4b6ecac3-fbc0-4841-82c8-6ace9ff0ed19"
 Template: "5c125b6d-c481-4c24-b5b9-9a23fe396bf0"
-Path: /sitecore/system/Settings/Buckets/Facets/Project/Common/date
+Path: /sitecore/system/Settings/Buckets/Facets/Project/Common/sysdate
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
@@ -10,7 +10,7 @@ SharedFields:
   Value: Business/32x32/index.png
 - ID: "0e23bb51-c071-41b5-9d83-ac410b89b85a"
   Hint: Parameters
-  Value: date
+  Value: sysdate
 Languages:
 - Language: en
   Versions:
@@ -18,10 +18,10 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20170407T215038Z
+      Value: 20170411T171547Z
     - ID: "31ca077f-ef38-4980-8a24-05408031b2bc"
       Hint: Name
-      Value: date
+      Value: sysdate
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
