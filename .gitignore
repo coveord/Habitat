@@ -13,6 +13,7 @@ artifacts/
 *.sln.ide
 lib/license.xml
 lib/Sitecore/*
+lib/Coveo/*
 !lib/Sitecore/readme.MD
 lib/System/*
 !lib/System/readme.MD

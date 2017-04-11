@@ -49,30 +49,37 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Coveo.Framework">
-      <HintPath>..\..\..\..\..\..\inetpub\wwwroot\Habitat.Coveo.Dev.Local\Website\bin\Coveo.Framework.dll</HintPath>
+    <Reference Include="Coveo.Framework, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Coveo\Coveo.Framework.dll</HintPath>
     </Reference>
-    <Reference Include="Coveo.SearchProvider">
-      <HintPath>..\..\..\..\..\..\inetpub\wwwroot\Habitat.Coveo.Dev.Local\Website\bin\Coveo.SearchProvider.dll</HintPath>
+    <Reference Include="Coveo.SearchProvider, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Coveo\Coveo.SearchProvider.dll</HintPath>
     </Reference>
-    <Reference Include="Coveo.SearchProviderBase">
-      <HintPath>..\..\..\..\..\..\inetpub\wwwroot\Habitat.Coveo.Dev.Local\Website\bin\Coveo.SearchProviderBase.dll</HintPath>
+    <Reference Include="Coveo.SearchProviderBase, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Coveo\Coveo.SearchProviderBase.dll</HintPath>
     </Reference>
-    <Reference Include="Coveo.UIBase">
-      <HintPath>..\..\..\..\..\..\inetpub\wwwroot\Habitat.Coveo.Dev.Local\Website\bin\Coveo.UIBase.dll</HintPath>
+    <Reference Include="Coveo.UIBase, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Coveo\Coveo.UIBase.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Sitecore.ContentSearch">
-      <HintPath>..\..\..\..\..\..\inetpub\wwwroot\Habitat.Coveo.Dev.Local\Website\bin\Sitecore.ContentSearch.dll</HintPath>
+    <Reference Include="Sitecore.ContentSearch, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Coveo\Sitecore.ContentSearch.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Kernel">
-      <HintPath>..\..\..\..\..\..\inetpub\wwwroot\Habitat.Coveo.Dev.Local\Website\bin\Sitecore.Kernel.dll</HintPath>
+    <Reference Include="Sitecore.Kernel, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Coveo\Sitecore.Kernel.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.Mvc">
-      <HintPath>..\..\..\..\..\..\inetpub\wwwroot\Habitat.Coveo.Dev.Local\Website\bin\Sitecore.Mvc.dll</HintPath>
+    <Reference Include="Sitecore.Mvc, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Coveo\Sitecore.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
