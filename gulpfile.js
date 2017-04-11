@@ -47,6 +47,7 @@ gulp.task("00-Copy-Webroot-Lib", function () {
     config.sitecoreLibraries + "/Sitecore.ContentSearch.dll",
     config.sitecoreLibraries + "/Sitecore.Kernel.dll",
     config.sitecoreLibraries + "/Sitecore.Mvc.dll"
+  ];
   var coveoFilesCopies = gulp.src(coveoFiles).pipe(gulp.dest("./lib/Coveo"));
   var sitecoreFilesCopies = gulp.src(sitecoreFiles).pipe(gulp.dest("./lib/Sitecore"));
   return merge(coveoFilesCopies, sitecoreFilesCopies);
