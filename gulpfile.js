@@ -37,20 +37,13 @@ gulp.task("default", function (callback) {
 gulp.task("00-Copy-Webroot-Lib", function () {
   console.log("Copying Assemblies from webroot");
   fs.statSync(config.sitecoreLibraries);
-  var coveoFiles = [
+  var files = [
     config.sitecoreLibraries + "/Coveo.Framework.dll",
     config.sitecoreLibraries + "/Coveo.SearchProvider.dll",
     config.sitecoreLibraries + "/Coveo.SearchProviderBase.dll",
     config.sitecoreLibraries + "/Coveo.UIBase.dll",
   ];
-  var sitecoreFiles = [
-    config.sitecoreLibraries + "/Sitecore.ContentSearch.dll",
-    config.sitecoreLibraries + "/Sitecore.Kernel.dll",
-    config.sitecoreLibraries + "/Sitecore.Mvc.dll"
-  ];
-  var coveoFilesCopies = gulp.src(coveoFiles).pipe(gulp.dest("./lib/Coveo"));
-  var sitecoreFilesCopies = gulp.src(sitecoreFiles).pipe(gulp.dest("./lib/Sitecore"));
-  return merge(coveoFilesCopies, sitecoreFilesCopies);
+  return gulp.src(coveoFiles).pipe(gulp.dest("./lib/Coveo"));
 });
 
 gulp.task("01-Copy-Sitecore-License", function () {
