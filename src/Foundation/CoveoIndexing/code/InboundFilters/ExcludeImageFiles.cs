@@ -1,5 +1,5 @@
-﻿using Coveo.SearchProvider.Pipelines;
-using Coveo.SearchProvider.InboundFilters;
+﻿using Coveo.SearchProvider.InboundFilters;
+using Coveo.SearchProvider.Pipelines;
 
 namespace Sitecore.Foundation.CoveoIndexing
 {
