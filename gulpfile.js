@@ -43,7 +43,7 @@ gulp.task("00-Copy-Webroot-Lib", function () {
     config.sitecoreLibraries + "/Coveo.SearchProviderBase.dll",
     config.sitecoreLibraries + "/Coveo.UIBase.dll",
   ];
-  return gulp.src(coveoFiles).pipe(gulp.dest("./lib/Coveo"));
+  return gulp.src(files).pipe(gulp.dest("./lib/Coveo"));
 });
 
 gulp.task("01-Copy-Sitecore-License", function () {

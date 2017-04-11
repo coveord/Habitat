@@ -1,0 +1,251 @@
+﻿@using Coveo.UI
+@using Coveo.UI.Extensions
+@using Sitecore.Mvc
+@model Coveo.UI.Mvc.Models.SearchModel
+
+@* When customizing this component, ensure to use "Coveo.$" instead of the regular jQuery "$" to
+   avoid any conflicts with Sitecore's Page Editor/Experience Editor.  *@
+
+@Html.Coveo().RenderErrorSummary(Model.ValidateModel())
+@if (Model.IsConfigured) {
+    <script type="text/javascript" src="/Coveo/js/cultures/@(Model.CultureName).js"></script>
+    <script type="text/javascript">
+        function isOnSearchPage(){
+            return true;
+        };    
+        Coveo.$(function() {            
+            CoveoForSitecore.componentsOptions = @(Html.Raw(Model.GetJavaScriptInitializationOptions()));
+                if(CoveoForSitecore.externalComponents) {
+                    CoveoForSitecore.componentsOptions.externalComponents = CoveoForSitecore.externalComponents;
+                }
+        });
+    </script>
+
+    <!-- This hidden input is required to bypass a problem with the Enter key causing a form submission
+        if the form has exactly one text field, or only when there is a submit button present. -->
+    <input type="text" class="fix-submit" />
+
+    <div id="@Model.Id"
+         class="CoveoSearchInterface @(Model.DisplayRecommendations ? "coveo-recommendations" : "")"
+         data-enable-history="@Model.EnableHistory"
+         data-results-per-page="@Model.ResultsPerPage"
+         data-excerpt-length="@Model.ExcerptLength"
+         data-hide-until-first-query="@Model.HideUntilFirstQuery"
+         data-auto-trigger-query="@Model.AutoTriggerQuery"
+         data-design="new"
+        @if (Model.IsMaximumAgeSet) {
+            @:data-maximum-age="@Model.MaximumAge"
+        }
+        @if (Model.UseCustomQueryPipeline) {
+            @:data-pipeline="@Model.QueryPipelineName"
+        }>
+
+        @if (Model.AnalyticsEnabled) {
+            <div class="CoveoAnalytics"
+                 data-anonymous="@Model.IsUserAnonymous"
+                 data-endpoint="@Model.GetAnalyticsEndpoint()"
+                 data-search-hub="@Model.GetAnalyticsCurrentPageName()"
+                 data-send-to-cloud="@Model.CoveoAnalyticsEnabled">
+            </div>
+        }
+
+        <div class="coveo-main-section">
+            @if (Model.DisplayTabs) {
+                <div class="coveo-tab-section coveo-placeholder-fix">
+                    @Html.Sitecore().Placeholder("coveo-tabs-mvc")
+                </div>
+            }
+            @if (Model.DisplayFacets) {
+                <div class="coveo-facet-column">
+                    @if (Model.DisplayLogo) {
+                        <div class="coveo-logo"></div>
+                    }
+                    @Html.Sitecore().Placeholder("coveo-facets-mvc")
+                    &nbsp;
+                </div>
+            }
+
+            <div class="coveo-results-column">
+                @if (Model.DisplaySearchbox) {
+                    <div class="CoveoSearchbox CoveoSearchPageSearchbox"
+                         data-auto-focus="@Model.AutoFocus"
+                         data-enable-lowercase-operators="@Model.EnableLowercaseOperators"
+                         data-enable-partial-match="@Model.EnablePartialMatch"
+                         data-partial-match-keywords="@Model.PartialMatchKeywords"
+                         data-partial-match-threshold="@Model.PartialMatchThreshold"
+                         data-enable-question-marks="@Model.EnableQuestionMarks"
+                         data-enable-wildcards="@Model.EnableWildcards"
+                         @if (Model.EnableOmnibox) {
+                             @:data-enable-omnibox="true"
+                             @:data-omnibox-timeout="@Model.OmniboxTimeout"
+                             @:data-enable-field-addon="@Model.OmniboxEnableFieldAddon"
+                             @:data-enable-simple-field-addon="@Model.OmniboxEnableSimpleFieldAddon"
+                             @:data-enable-top-query-addon="@Model.OmniboxEnableTopQueryAddon"
+                             @:data-enable-reveal-query-suggest-addon="@Model.OmniboxEnableRevealQuerySuggestAddon"
+                             @:data-enable-query-extension-addon="@Model.OmniboxEnableQueryExtensionAddon"
+                         }
+                         @if (Model.IsSearchAsYouTypeEnabled) {
+                             @:data-enable-search-as-you-type="true"
+                             @:data-search-as-you-type-delay="@Model.SearchboxSuggestionsDelay"
+                         }>
+                    </div>
+                }
+                @if (Model.DisplayBreadcrumb) {
+                    <div class="CoveoBreadcrumb"></div>
+                }
+
+                <div class="coveo-results-header">
+                    <div class="coveo-summary-section">
+                        @if (Model.DisplayQuerySummary) {
+                            <span class="CoveoQuerySummary"
+                                  data-enable-search-tips="@Model.QuerySummaryEnableSearchTips"
+                                  data-only-display-search-tips="@Model.QuerySummaryOnlyDisplaySearchTips"></span>
+                        }
+                        @if (Model.DisplayQueryDuration) {
+                            <span class="CoveoQueryDuration"></span>
+                        }
+                    </div>
+
+                    @if (Model.DisplaySorting) {
+                        <div class="coveo-sort-section">
+                            <div>
+                                @Html.Sitecore().Placeholder("coveo-sorts-mvc")
+                            </div>
+                        </div>
+                    }
+                </div>
+
+                <div class="CoveoHiddenQuery"></div>
+
+                @if (Model.DisplayDidYouMean) {
+                    <div class="CoveoDidYouMean"
+                         data-enable-auto-correction="@Model.EnableDidYouMeanAutoCorrection"></div>
+                }
+
+                @if (Model.DisplayErrorReport) {
+                    <div class="CoveoErrorReport"></div>
+                }
+
+                @if (Model.DisplayResultList) {
+                    if (Model.DisplayTopPager) {
+                        <div class="CoveoPager"
+                             data-number-of-pages="@Model.PagerNumberOfPages"
+                             data-max-number-of-pages="@Model.PagerMaxNumberOfPages"
+                             data-enable-navigation-button="@Model.EnablePagerNavigationButton"></div>
+                    }
+                    <div class="CoveoResultList"
+                         data-wait-animation="fade"
+                         data-enable-infinite-scroll="@Model.EnableInfiniteScroll"
+                         data-infinite-scroll-page-size="@Model.InfiniteScrollPageSize">
+
+                        <script class="result-template" type="text/underscore">
+                            <div class="coveo-result-frame">
+                                <div class="coveo-result-row">
+                                    <div class="coveo-result-cell" style="width:150px;text-align:center;padding-top:7px;">
+
+                                        {{ if (raw.syssource === "Hydro Quebec") { }}
+                                            <span class="CoveoYouTubeThumbnail" data-width='100%' data-height='auto'></span> 
+                                        {{ } else { }}                                            
+                                            {{ if ( raw.@Model.ToCoveoFieldName("pageicon", false)){ }}
+                                                <img class="page-icon" src="{{= raw.@Model.ToCoveoFieldName("pageicon", false) }}" >
+                                            {{ } else { }}
+                                                <span class="CoveoIcon"></span>
+                                            {{ } }}
+                                        {{ } }}
+                                        
+                                        {{ if (hasHtmlVersion && raw.syssource != "Hydro Quebec") { }}
+                                            <div class='CoveoQuickview'
+                                                 data-fixed='true'
+                                                 data-width='70%'
+                                                 data-heigth='70%'
+                                                 data-template-id='CoveoQuickviewTemplate_@Model.Id'></div>
+                                        {{ } }}
+                                    </div>
+
+                                    <div class="coveo-result-cell" style="padding-left:15px;">
+                                        <div class="coveo-result-row">
+                                            <div class="coveo-result-cell" style="font-size:18px;">
+                                                <div class='coveo-title'>
+                                                    {{ if (raw.@(Model.ToCoveoFieldName("HasLayout", false)) === "1" || raw.syssource !== "@Model.IndexSourceName") { }}
+                                                        <a class='CoveoResultLink'>{{=title?highlight(title, titleHighlights):clickUri}}</a>
+                                                    {{ } else { }}
+                                                        <span class='CoveoResultTitle'>{{=title?highlight(title, titleHighlights):''}}</span>
+                                                    {{ } }}
+                                                </div>
+                                            </div>
+
+                                            <div class="coveo-result-cell" style="width:120px; text-align:right; font-size:12px">
+                                                {{/* Change the tooltip on the date. */}}
+                                                {{ if(raw.@(Model.ToCoveoFieldName("created", false)) === raw.@(Model.ToCoveoFieldName("updated", false))) { }}
+                                                    <div title='@(Model.Labels[LocalizedStringKeys.CREATION_TIME])'>{{-dateTime(raw.sysdate)}}</div>
+                                                {{ } else { }}
+                                                    <div title='@(Model.Labels[LocalizedStringKeys.LAST_TIME_MODIFIED])'>{{-dateTime(raw.sysdate)}}</div>
+                                                {{ } }}
+                                            </div>
+                                        </div>
+
+                                        <div class="coveo-result-row">
+                                            <div class="coveo-result-cell">
+                                                <span class="CoveoExcerpt"></span>
+                                            </div>
+                                        </div>
+                                        
+                                        {{ if (raw.syssource === "Hydro Quebec") { }}
+                                            <span class="yticons"><img src="../images/CoveoSearch/ytviewcount.png">{{-raw.ytviewcount}}<img src="../images/CoveoSearch/ytlikecount.png">{{-raw.ytlikecount}}</span> 
+                                        {{ } }}
+                                    </div>
+                                </div>
+
+                            </div>
+                        </script>
+                    </div>
+
+                    if (Model.DisplayBottomPager) {
+                        <div class="CoveoPager"
+                             data-number-of-pages="@Model.PagerNumberOfPages"
+                             data-max-number-of-pages="@Model.PagerMaxNumberOfPages"
+                             data-enable-navigation-button="@Model.EnablePagerNavigationButton"></div>
+                    }
+                    if (Model.DisplayResultsPerPage) {
+                        <div class="CoveoResultsPerPage"></div>
+                    }
+                }
+            </div>
+            @if (Model.DisplayRecommendations) {
+                <div class="coveo-recommendation-column">
+                    @Html.Sitecore().Placeholder("coveo-recommendations-mvc")
+                </div>
+            }
+        </div>
+    </div>
+    <script class='result-template' id='CoveoQuickviewTemplate_@Model.Id' type='text/underscore'>
+        <div class='coveo-quick-view-header'>
+            <table class='CoveoFieldTable'>
+                <tr data-field='@@sysdate' data-caption='Date' data-helper='dateTime' />
+                <tr data-field='@@sysauthor' data-caption='Author' />
+                <tr data-field='@@clickuri' data-html-value='true' data-caption='URL' data-helper='anchor' data-helper-options='{text: "{{= clickUri }}", target: "_blank"}'>
+            </table>
+        </div>
+        <div class='CoveoQuickviewDocument'></div>
+    </script>
+    <script type="text/javascript">
+        Coveo.$(function() {
+            Coveo.$('#@Model.Id').coveoForSitecore('init', CoveoForSitecore.componentsOptions);
+        });
+    </script>
+}
+
+@if (Model.HasErrors) {
+    <div class="CoveoServerError">
+        <h3>@Model.Labels[LocalizedStringKeys.FRIENDLY_SEARCH_UNAVAILABLE_TITLE]</h3>
+        <h4>@Model.Labels[LocalizedStringKeys.FRIENDLY_SEARCH_UNAVAILABLE_DETAIL]</h4>
+    </div>
+
+    if (Html.Coveo().IsEditingInPageEditor()) {
+        <script type="text/javascript">
+            Coveo.$(function() {
+                Coveo.PageEditorDeferRefresh.triggerUpdate();
+            });
+        </script>
+    }
+}

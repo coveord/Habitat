@@ -1,0 +1,12 @@
+﻿.CoveoSearchbox {
+    float: right;
+    width: 300px;
+}
+
+.navbar-coveo {
+    float: right
+}
+
+body * {
+    transition: none;
+}

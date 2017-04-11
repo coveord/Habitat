@@ -254,6 +254,7 @@
     <Content Include="styles\dayfrost\components\atoms\_button.scss" />
     <Content Include="styles\dayfrost\components\atoms\_well.scss" />
     <Content Include="styles\dayfrost\components\_atoms.scss" />
+    <Content Include="Views\Common\Sublayouts\NavbarCoveo.cshtml" />
     <None Include="Views\Web.config" />
     <None Include="web.config" />
     <None Include="web.config.transform" />

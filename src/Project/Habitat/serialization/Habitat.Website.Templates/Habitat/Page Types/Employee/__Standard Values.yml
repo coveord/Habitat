@@ -36,7 +36,7 @@ SharedFields:
           ph="right-header-top"
           uid="{630F4515-1F19-49A8-B986-D46ADD5CE024}" />
         <r
-          id="{E26A158B-FA1E-4E9B-8622-E4458243FF46}"
+          id="{FFDD8476-B594-4892-9F10-8EBFE1C9BBC0}"
           ph="navbar"
           uid="{07C9FE71-A5E2-4E5F-B276-5F2B73481D44}" />
         <r
@@ -63,12 +63,6 @@ SharedFields:
           id="{28BD7068-7FF6-4CE6-98E6-85CFE9967E14}"
           ph="navbar-activity"
           uid="{79242576-4E0A-4CBF-BC2B-8B0C47FE9B64}" />
-        <r
-          ds=""
-          id="{8C3A2CFC-18FB-4BF5-8584-50EA88978ED6}"
-          par=""
-          ph="navbar-activity"
-          uid="{9C8A45F2-7008-42C1-8B8A-80A88825C1D8}" />
         <r
           id="{26B33DEB-F1DB-4338-B043-AAF2F90E04A3}"
           par="Type=bg-primary"
@@ -137,6 +131,14 @@ SharedFields:
           id="{CED18F24-62C2-445E-B0D9-045E3325297B}"
           ph="page-sidebar"
           uid="{20AB9BAA-C112-4567-A701-564423E650D2}" />
+        <r
+          id="{BD6E5198-0FFF-4F0D-B38C-D3921B8FCB7A}"
+          ph="navbar-coveo"
+          uid="{7FE248A5-AEE7-432E-9553-100D096218A2}" />
+        <r
+          id="{E9ECDF34-1EB8-4466-9615-CBAD9E0E7CD9}"
+          ph="navbar-coveo"
+          uid="{D39E8A8D-C426-476A-B0EE-6846C3930CD8}" />
       </d>
     </r>
 Languages:

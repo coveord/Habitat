@@ -1,0 +1,25 @@
+﻿.CoveoSearchbox .magic-box,
+.CoveoSearchbox .CoveoSearchButton{
+  border-radius: 0px;
+  border: none;
+}
+
+.CoveoSearchbox .magic-box .magic-box-input > input{
+  text-transform: uppercase;
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 10pt;
+  font-weight: 700;
+  color: #2e384e;
+}
+
+.page-icon {
+  width: 100%;
+}
+
+.CoveoSearchInterface  > .coveo-main-section{
+  max-width: 1200px;
+}
+
+.coveo-facet-column{
+  max-width: 300px;
+}
