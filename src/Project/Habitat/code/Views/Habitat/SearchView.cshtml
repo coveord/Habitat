@@ -143,17 +143,15 @@
                                 <div class="coveo-result-row">
                                     <div class="coveo-result-cell" style="width:150px;text-align:center;padding-top:7px;">
 
-                                        {{ if (raw.syssource === "Hydro Quebec") { }}
-                                            <span class="CoveoYouTubeThumbnail" data-width='100%' data-height='auto'></span> 
-                                        {{ } else { }}                                            
-                                            {{ if ( raw.@Model.ToCoveoFieldName("pageicon", false)){ }}
-                                                <img class="page-icon" src="{{= raw.@Model.ToCoveoFieldName("pageicon", false) }}" >
-                                            {{ } else { }}
-                                                <span class="CoveoIcon"></span>
-                                            {{ } }}
+                                          
+                                        {{ if ( raw.@Model.ToCoveoFieldName("pageicon", false)){ }}
+                                            <img class="page-icon" src="{{= raw.@Model.ToCoveoFieldName("pageicon", false) }}" >
+                                        {{ } else { }}
+                                        <img class="page-icon" src="/-/media/Feature/CoveoSearch/NoImage.png">
                                         {{ } }}
+
                                         
-                                        {{ if (hasHtmlVersion && raw.syssource != "Hydro Quebec") { }}
+                                        {{ if (hasHtmlVersion) { }}
                                             <div class='CoveoQuickview'
                                                  data-fixed='true'
                                                  data-width='70%'
@@ -190,9 +188,6 @@
                                             </div>
                                         </div>
                                         
-                                        {{ if (raw.syssource === "Hydro Quebec") { }}
-                                            <span class="yticons"><img src="../images/CoveoSearch/ytviewcount.png">{{-raw.ytviewcount}}<img src="../images/CoveoSearch/ytlikecount.png">{{-raw.ytlikecount}}</span> 
-                                        {{ } }}
                                     </div>
                                 </div>
 

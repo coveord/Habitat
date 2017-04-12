@@ -102,3 +102,49 @@
 main>.section:first-child, main>section:first-child{
     padding-top: 0px;
 }
+
+.coveo-pager-list > li,
+.coveo-results-per-page-list > li{
+    border-radius: 0px;
+    border: none;
+    font-weight: 600;
+    font-size: 10pt;
+    padding: 10px;
+}
+
+.coveo-pager-list-item.coveo-active,
+.coveo-results-per-page-list-item.coveo-active,
+.coveo-pager-list-item:hover,
+.coveo-results-per-page-list-item:hover{
+    background-color: #2e384e;
+    color: white;
+
+}
+
+.coveo-pager-list-item:hover,
+.coveo-results-per-page-list-item:hover{
+    text-decoration: underline;
+}
+
+.CoveoSearchButton > .coveo-icon,
+.CoveoSearchButton:hover > .coveo-icon{
+    background: none;
+}
+
+.CoveoSearchButton::after,
+.CoveoSearchButton:hover::after{
+    font-family: 'Glyphicons Halflings';
+    content: "\e003";
+    position: absolute;
+    top:12px;
+    left: 15px;
+    font-size: 13pt;
+}
+
+.CoveoSearchButton::after{
+    color: #fff;
+}
+
+.CoveoSearchButton:hover::after{
+    color: #c8244f;
+}
