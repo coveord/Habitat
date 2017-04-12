@@ -148,3 +148,41 @@ main>.section:first-child, main>section:first-child{
 .CoveoSearchButton:hover::after{
     color: #c8244f;
 }
+
+.coveo-facet-header-eraser,
+.coveo-facet-header-eraser:hover{
+    background: none;
+}
+
+.coveo-facet-header-eraser::after,
+.coveo-facet-header-eraser:hover::after{
+    font-family: 'Glyphicons Halflings';
+    content: "\e014";
+    position: absolute;
+    left: -13px;
+    font-size: 10pt;
+    font-width: 100;
+}
+
+.coveo-facet-header-eraser:hover::after{
+    color: #c8244f;
+}
+.coveo-facet-header-eraser::after{
+    color: white;
+}
+
+
+ li.coveo-facet-value.coveo-facet-selectable.coveo-selected > label > div > div > span,
+ li.coveo-facet-value.coveo-facet-selectable.coveo-no-state > label > div > div > span{
+    background: none;
+}
+
+ li.coveo-facet-value.coveo-facet-selectable.coveo-selected > label > div > div::after,
+ li.coveo-facet-value.coveo-facet-selectable.coveo-no-state > label > div > div::after{
+    font-family: 'Glyphicons Halflings';
+    content: "\e013";
+    position: absolute;
+    top: -3px;
+    left: 2px;  
+    color: #2e384e;
+}
