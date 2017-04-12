@@ -1,0 +1,68 @@
+﻿---
+ID: "2bbaa76a-3e21-447e-a1bd-0982dd3640ce"
+Parent: "1a3560fc-9e54-4e65-bead-e349f3b80dd7"
+Template: "94a8c8e9-690b-4e65-98e7-f95800222767"
+Path: /sitecore/content/Habitat/Home/Modules/Foundation/Coveo Indexing
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1b483e91-d8c4-4d19-ba03-462074b55936"
+      Hint: NavigationTitle
+      Value: Coveo Indexing
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151026T042043Z
+    - ID: "ac3fd4db-8266-476d-9635-67814d91e901"
+      Hint: Summary
+      Value: "Make all the relevant content site visitors need &ndash; from across your online properties and enterprise systems &ndash; easily accessible from your Sitecore site, with our 40+ ready-to-deploy, secure connectors for popular systems and applications such as WordPress, YouTube, Twitter, Jive and Microsoft Dynamics."
+    - ID: "c30a013f-3cc8-4961-9837-1c483277084a"
+      Hint: Title
+      Value: Coveo Indexing
+    - ID: "ca0479ce-0bfe-4522-83de-ba688b380a78"
+      Hint: BrowserTitle
+      Value: Coveo Indexing
+    - ID: "d74f396d-5c5e-4916-bd0a-bfd58b6b1967"
+      Hint: Body
+      Value: |
+        <p>This new foundation will only affect the indexing part of Coveo for Sitecore. It will provide a predefined configuration, some inbound filters and some processors:</p>
+        <ul>
+            <li>Html Content In Body With Request processor: This processor will define some Comment Text that can be inserted inside the website layout. At indexing time, the processor will strip HTML out of the indexed page, keeping only what's relevent</li>
+            <li>Exclude Video Files inbound filter: This filter will exclude video files from the index.</li>
+            <li>Exclude Image Files inbound filter: This filter will exclude image files from the index.</li>
+            <li>Has Layout inbound filter: This filter will only index items with layouts. It will however be scoped to a certain level of Sitecore content tree.</li>
+            <li>Resolve Item Site Processor: This processor will adjust the default URI resolver to match a Helix based website structure.</li>
+        </ul>
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: インデックス
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1b483e91-d8c4-4d19-ba03-462074b55936"
+      Hint: NavigationTitle
+      Value: インデックス
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170323T054555Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "9492e0bb-9df9-46e7-8188-ec795c4ade44"
+      Hint: Image
+      Value: |
+        <image mediaid="{88032F9C-B464-44CB-B76D-513D60B9C127}" />
+    - ID: "ac3fd4db-8266-476d-9635-67814d91e901"
+      Hint: Summary
+      Value: 低レベルの索引付け機能を有することにより、ドメイン層のモジュールは検索機能に加入し、その内容をグローバルなウェブサイト検索に提供することができる。
+    - ID: "c30a013f-3cc8-4961-9837-1c483277084a"
+      Hint: Title
+      Value: インデックス
+    - ID: "ca0479ce-0bfe-4522-83de-ba688b380a78"
+      Hint: BrowserTitle
+      Value: インデックス
