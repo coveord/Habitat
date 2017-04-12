@@ -50,7 +50,8 @@
 
 
 
-.CoveoSearchInterface{
+.CoveoSearchInterface,
+.magic-box.magic-box-hasFocus .magic-box-suggestions.magic-box-hasSuggestion{
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .coveo-facet-header-wait-animation{
@@ -76,4 +77,28 @@
 .coveo-results-header{
     border: none;
     box-shadow: none;
+}
+
+.magic-box .magic-box-suggestions .magic-box-suggestion:first-child{
+    font-size: 10pt;
+    line-height: 12pt;
+    background-color: rgba(255,255,255, 0.2);
+}
+
+.coveo-top-field-suggestion-header{
+    display:none;
+}
+
+.CoveoOmnibox.magic-box .magic-box-suggestions{
+    border:none;
+    margin-left: 1px;
+    box-shadow: 0px 0px 2px white;
+}
+
+.magic-box .magic-box-suggestions .magic-box-suggestion:hover{
+    background-color: rgb(240,240,240);
+}
+
+main>.section:first-child, main>section:first-child{
+    padding-top: 0px;
 }

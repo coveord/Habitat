@@ -4,6 +4,10 @@ Parent: "24e745e1-181e-457b-aad0-1caf5ddce16c"
 Template: "294075e4-cb2c-4e5f-a646-416fc078581f"
 Path: /sitecore/content/Habitat/Settings/Datasources/Coveo/Coveo Search Box Parameters
 DB: master
+SharedFields:
+- ID: "3094d236-5985-4c4f-ae6a-e30740885532"
+  Hint: Caching
+  Value: 0|0|0|0|0|0|0|0
 Languages:
 - Language: en
   Fields:
@@ -13,9 +17,24 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "0fd707ec-b3f1-49a6-8f6e-e837f05c57e0"
+      Hint: SearchBoxBehavior
+      Value: |
+        <?xml version="1.0" encoding="utf-16"?>
+        <SearchBoxBehaviorState xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <OmniboxTimeout>2000</OmniboxTimeout>
+          <OmniboxEnableTopQueryAddon>false</OmniboxEnableTopQueryAddon>
+          <OmniboxEnableRevealQuerySuggestAddon>false</OmniboxEnableRevealQuerySuggestAddon>
+          <SearchBoxSuggestionsDelay>500</SearchBoxSuggestionsDelay>
+          <CurrentBehavior>NoSuggestions</CurrentBehavior>
+        </SearchBoxBehaviorState>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20170411T175946Z
+    - ID: "2f5ef5f2-5b9a-4ce3-9596-3d7654203648"
+      Hint: EnableSitecoreAnalytics
+      Type: Checkbox
+      Value: 0
     - ID: "52b1caf9-478e-4076-81d1-840cf14c3c70"
       Hint: SearchBoxPlaceholderText
       Value: SEARCH
@@ -29,3 +48,7 @@ Languages:
     - ID: "9e25719d-8bce-493a-839f-a1fcf8a440c4"
       Hint: SearchBoxUniqueId
       Value: HeaderSearchbox
+    - ID: "b9a15b3c-2cb5-4df3-81f2-c63595c7cda1"
+      Hint: EnableClientSideLogging
+      Type: Checkbox
+      Value: 0

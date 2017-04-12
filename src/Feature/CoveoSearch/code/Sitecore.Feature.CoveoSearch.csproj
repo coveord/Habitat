@@ -106,7 +106,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="styles\CoveoSearch\CoveoSearch.css" />
     <Content Include="Views\CoveoSearch\SearchViewResources.cshtml" />
     <None Include="Views\Web.config" />
   </ItemGroup>

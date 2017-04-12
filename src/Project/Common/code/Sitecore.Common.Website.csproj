@@ -205,6 +205,7 @@
     <Content Include="fonts\open-sans-v13-latin-regular.woff" />
     <Content Include="fonts\open-sans-v13-latin-regular.woff2" />
     <None Include="Properties\PublishProfiles\Habitat.pubxml" />
+    <Content Include="styles\Common\CoveoSearch.css" />
     <Content Include="styles\dayfrost.css">
       <DependentUpon>dayfrost.scss</DependentUpon>
     </Content>
