@@ -76,9 +76,12 @@
     text-transform: uppercase;
 }
 
-.coveo-result-frame,
+.coveo-result-frame{
+    border-bottom: 2px rgb(240,240,240) solid;
+    padding-bottom: 20px;
+}
+
 .coveo-results-header {
-    border: none;
     box-shadow: none;
 }
 
@@ -207,12 +210,6 @@ main > .section:first-child, main > section:first-child {
     color: #fff;
     font-size: 10pt;
     text-transform: uppercase;
-}
-
-.coveo-result-frame,
-.coveo-results-header {
-    border: none;
-    box-shadow: none;
 }
 
 .magic-box .magic-box-suggestions .magic-box-suggestion:first-child {
