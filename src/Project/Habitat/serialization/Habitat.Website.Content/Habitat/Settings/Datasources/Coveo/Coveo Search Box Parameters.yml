@@ -35,6 +35,9 @@ Languages:
       Hint: EnableSitecoreAnalytics
       Type: Checkbox
       Value: 0
+    - ID: "326c845b-049c-4983-93dd-eb9f0526b314"
+      Hint: ExternalContentSources
+      Value: Sitecore Habitat Videos
     - ID: "52b1caf9-478e-4076-81d1-840cf14c3c70"
       Hint: SearchBoxPlaceholderText
       Value: SEARCH
