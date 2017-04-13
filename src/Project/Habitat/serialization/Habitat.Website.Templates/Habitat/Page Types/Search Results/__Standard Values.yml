@@ -132,22 +132,22 @@ SharedFields:
           uid="{8520D186-E6D3-4FE0-A74D-15388F95ABDE}" />
         <r
           id="{7BBD950A-1432-49EB-8007-7EA8EBB922FA}"
-          par="?ItemId=CoveoTabAllContent&amp;TabCaption=All content"
+          par="TabCaption=All+content"
           ph="/page-layout/section/coveo-tabs-mvc"
           uid="{868AD14F-E3B2-4946-ADA8-E31A935C9160}" />
         <r
           id="{F1C49319-4880-4F9F-A836-2BFF6F1382DF}"
-          par="?ItemId=CoveoFacetDate&amp;FacetField=%7b89E130D5-80F8-490C-B544-965476B08D9D%7d&amp;FacetTitle=Date&amp;FacetNumberOfValues=5"
+          par="FacetEnableCollapse=1&amp;FacetPreservePosition=1&amp;FacetShowIcon=1&amp;FacetTitle=Date&amp;FacetIncludeInBreadcrumb=1&amp;FacetInjectionDepth=%7bDCB6EB45-58B0-4F31-9377-83A2D6CBF597%7d"
           ph="/page-layout/section/coveo-facets-mvc"
           uid="{14079D16-8CF1-4D74-B4F3-139A3B97397C}" />
         <r
-          id="{99EFF6F1-8946-48BA-8E94-2A26122DD796}"
-          par="?ItemId=CoveoFacetLanguage&amp;FacetField=%7bC357AFE9-AE51-42C6-A5F8-E73A53EA8245%7d&amp;FacetTitle=Language&amp;FacetNumberOfValues=5"
+          id="{489BA2AE-1B14-491E-A0FD-80EB2A10F275}"
+          par="FacetEnableMoreLess=1&amp;FacetEnableCollapse=1&amp;Caching=0%7c0%7c0%7c0%7c0%7c0%7c0%7c0&amp;FacetIncludeInOmniBox=0&amp;FacetEnableFacetSearch=1&amp;FacetEnableSettings=1&amp;FacetTitle=Language&amp;FacetIncludeInBreadcrumb=1&amp;FacetAvailableSorts=%7bF19F41CA-CC8B-4CD9-9884-46C80C8C7737%7d%7c%7b445BCEBE-D11E-4247-B07C-D775601B9F12%7d%7c%7bF0611CB0-4D2F-4B1C-A052-CBF86FAEE1EC%7d%7c%7b65C2940F-0506-4D45-BE9C-2D8751BB70A6%7d&amp;FacetSort=%7bF0611CB0-4D2F-4B1C-A052-CBF86FAEE1EC%7d&amp;FacetPreservePosition=1&amp;FacetInjectionDepth=%7bDCB6EB45-58B0-4F31-9377-83A2D6CBF597%7d&amp;FacetShowIcon=1"
           ph="/page-layout/section/coveo-facets-mvc"
           uid="{1E680A17-4AC5-4DE0-BEE2-1E6D61B52E54}" />
         <r
-          id="{99EFF6F1-8946-48BA-8E94-2A26122DD796}"
-          par="?ItemId=CoveoFacetFileType&amp;FacetField=%7b02B6834C-2900-4E7E-B076-50D3F9E7D0C7%7d&amp;FacetTitle=File+Type&amp;FacetNumberOfValues=5"
+          id="{489BA2AE-1B14-491E-A0FD-80EB2A10F275}"
+          par="FacetEnableMoreLess=1&amp;FacetEnableCollapse=1&amp;Caching=0%7c0%7c0%7c0%7c0%7c0%7c0%7c0&amp;FacetIncludeInOmniBox=0&amp;FacetEnableFacetSearch=1&amp;FacetEnableSettings=1&amp;FacetTitle=File+Type&amp;FacetIncludeInBreadcrumb=1&amp;FacetAvailableSorts=%7bF19F41CA-CC8B-4CD9-9884-46C80C8C7737%7d%7c%7b445BCEBE-D11E-4247-B07C-D775601B9F12%7d%7c%7bF0611CB0-4D2F-4B1C-A052-CBF86FAEE1EC%7d%7c%7b65C2940F-0506-4D45-BE9C-2D8751BB70A6%7d&amp;FacetSort=%7bF0611CB0-4D2F-4B1C-A052-CBF86FAEE1EC%7d&amp;FacetPreservePosition=1&amp;FacetInjectionDepth=%7bDCB6EB45-58B0-4F31-9377-83A2D6CBF597%7d&amp;FacetShowIcon=1"
           ph="/page-layout/section/coveo-facets-mvc"
           uid="{C965B9A4-6C82-4A87-BF00-DB70BE71B7BE}" />
       </d>

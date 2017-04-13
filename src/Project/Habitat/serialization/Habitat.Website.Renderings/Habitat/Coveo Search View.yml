@@ -14,9 +14,12 @@ SharedFields:
 - ID: "2e51df70-d3e4-458c-b03a-95c734dd39e7"
   Hint: Data source
   Value: /sitecore/content/Habitat/Settings/Datasources/Coveo/Coveo Search Parameters
+- ID: "4867d192-326a-4aa4-81ef-ea430e224aff"
+  Hint: Css assets
+  Value: /styles/Habitat/CoveoHabitat.css
 - ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
   Hint: Path
-  Value: /Views/Habitat/SearchView.cshtml
+  Value: /Views/Website/Sublayouts/SearchView.cshtml
 - ID: "7d24e54f-5c16-4314-90c9-6051aa1a7da1"
   Hint: Parameters Template
   Value: "{5E0C9885-2582-44D0-8296-A90845181835}"

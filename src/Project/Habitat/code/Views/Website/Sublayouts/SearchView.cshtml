@@ -147,7 +147,7 @@
                                         <span class="CoveoYouTubeThumbnail" data-width='100%' data-height='auto'></span>
                                         {{ } else { }}                                        
                                             {{ if ( raw.@Model.ToCoveoFieldName("pageicon", false)){ }}
-                                                <img class="page-icon" src="{{= raw.@Model.ToCoveoFieldName("pageicon", false) }}" >
+                                                <img class="page-icon" src="{{= raw.@Model.ToCoveoFieldName("imageUrl", false) }}" >
                                             {{ } else { }}
                                             <img class="page-icon" src="/-/media/Feature/CoveoSearch/NoImage.png">
                                             {{ } }}

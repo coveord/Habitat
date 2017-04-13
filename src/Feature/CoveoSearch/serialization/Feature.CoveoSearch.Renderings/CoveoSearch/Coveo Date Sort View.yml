@@ -13,7 +13,7 @@ SharedFields:
   Value: /sitecore/templates/CoveoModule/Search/Date Sort Parameters
 - ID: "2e51df70-d3e4-458c-b03a-95c734dd39e7"
   Hint: Data source
-  Value: /sitecore/system/Settings/Feature/CoveoSearch/Date Sort Parameters
+  Value: /sitecore/system/Settings/Feature/CoveoSearch/Sorts/Date Sort Parameters
 - ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
   Hint: Path
   Value: /Views/Coveo/DateSortView.cshtml

@@ -1,17 +1,4 @@
-﻿.CoveoSearchbox .magic-box,
-.CoveoSearchbox .CoveoSearchButton,
-.CoveoSearchbox .magic-box .magic-box-input {
-    border-radius: 0px;
-    border: none;
-}
-
-    .CoveoSearchbox .magic-box .magic-box-input > input {
-        text-transform: uppercase;
-        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: 10pt;
-        font-weight: 700;
-        color: #2e384e;
-    }
+﻿/*Page in general*/
 
 .page-icon {
     width: 100%;
@@ -21,186 +8,27 @@
     max-width: 1200px;
 }
 
-.coveo-facet-column {
-    max-width: 300px;
-}
-
-.coveo-tab-section {
-    border: none;
-    background-color: #fff;
-}
-
-.CoveoFacetRange,
-.CoveoFacet,
-.coveo-facet-header,
-.coveo-facet-footer {
-    border-radius: 0px;
-    border: none;
-}
-
-.coveo-facet-header {
-    background-color: #2e384e;
-}
-
-.coveo-facet-header-title {
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 10pt;
-}
-
-.coveo-facet-footer {
-    background-color: #fff;
-}
-
-.CoveoSearchInterface,
-.magic-box.magic-box-hasFocus .magic-box-suggestions.magic-box-hasSuggestion {
+.CoveoSearchInterface{
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.coveo-facet-header-wait-animation {
-    background-color: #fff;
-    background-image: none;
-    width: 3px;
-    margin-left: 20px;
-}
-
-.coveo-facet-value .coveo-facet-value-checkbox {
-    border-radius: 0px;
-    border-color: #2e384e;
-}
-
-.CoveoTab:active, .CoveoTab:active:focus, .CoveoTab.coveo-selected {
-    background-color: #2e384e;
-    color: #fff;
-    font-size: 10pt;
-    text-transform: uppercase;
-}
-
-.coveo-result-frame{
-    border-bottom: 2px rgb(240,240,240) solid;
-    padding-bottom: 20px;
-}
-
-.coveo-results-header {
-    box-shadow: none;
-}
-
-.magic-box .magic-box-suggestions .magic-box-suggestion:first-child {
-    font-size: 10pt;
-    line-height: 12pt;
-    background-color: rgba(255,255,255, 0.2);
-}
-
-.coveo-top-field-suggestion-header {
-    display: none;
-}
-
-.CoveoOmnibox.magic-box .magic-box-suggestions {
-    border: none;
-    margin-left: 1px;
-    box-shadow: 0px 0px 2px #fff;
-}
-
-.magic-box .magic-box-suggestions .magic-box-suggestion:hover {
-    background-color: rgb(240,240,240);
 }
 
 main > .section:first-child, main > section:first-child {
     padding-top: 0px;
 }
 
-.coveo-pager-list > li,
-.coveo-results-per-page-list > li {
-    border-radius: 0px;
-    border: none;
-    font-weight: 600;
-    font-size: 10pt;
-    padding: 10px;
+.coveo-dropdown-background {
+    z-index: 16;
 }
 
-.coveo-pager-list-item.coveo-active,
-.coveo-results-per-page-list-item.coveo-active,
-.coveo-pager-list-item:hover,
-.coveo-results-per-page-list-item:hover {
-    background-color: #2e384e;
-    color: #fff;
-}
-
-.coveo-pager-list-item:hover,
-.coveo-results-per-page-list-item:hover {
-    text-decoration: underline;
-}
-
-.CoveoSearchbox .magic-box,
-.CoveoSearchbox .CoveoSearchButton,
-.CoveoSearchbox .magic-box .magic-box-input {
-    border-radius: 0;
-    border: none;
-}
-
-    .CoveoSearchbox .magic-box .magic-box-input > input {
-        text-transform: uppercase;
-        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: 10pt;
-        font-weight: 700;
-        color: #2e384e;
-    }
-
-.page-icon {
-    width: 100%;
-}
-
-.CoveoSearchInterface > .coveo-main-section {
-    max-width: 1200px;
-}
-
-.coveo-facet-column {
-    max-width: 300px;
-}
+/* Tabs */
 
 .coveo-tab-section {
     border: none;
     background-color: #fff;
 }
 
-.CoveoFacetRange,
-.CoveoFacet,
-.coveo-facet-header,
-.coveo-facet-footer {
-    border-radius: 0;
-    border: none;
-}
-
-.coveo-facet-header {
-    background-color: #2e384e;
-}
-
-.coveo-facet-header-title {
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 10pt;
-    font-weight: 700;
-}
-
-.coveo-facet-footer {
+.CoveoSearchInterface.coveo-small-interface .coveo-tab-section {
     background-color: #fff;
-}
-
-.CoveoSearchInterface,
-.magic-box.magic-box-hasFocus .magic-box-suggestions.magic-box-hasSuggestion {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.coveo-facet-header-wait-animation {
-    background-color: #fff;
-    background-image: none;
-    width: 3px;
-    margin-left: 20px;
-}
-
-.coveo-facet-value .coveo-facet-value-checkbox {
-    border-radius: 0;
-    border-color: #2e384e;
 }
 
 .CoveoTab:active,
@@ -212,74 +40,64 @@ main > .section:first-child, main > section:first-child {
     text-transform: uppercase;
 }
 
-.magic-box .magic-box-suggestions .magic-box-suggestion:first-child {
-    font-size: 10pt;
-    line-height: 12pt;
-    background-color: rgba(255, 255, 255, 0.2);
+/*Results*/
+
+.coveo-result-frame{
+    border-bottom: 2px rgb(240,240,240) solid;
+    padding-bottom: 20px;
+}
+
+.coveo-results-header {
+    box-shadow: none;
 }
 
 .coveo-top-field-suggestion-header {
     display: none;
 }
 
-.CoveoOmnibox.magic-box .magic-box-suggestions {
-    border: none;
-    margin-left: 1px;
-    box-shadow: 0 0 2px #fff;
+.coveo-summary-section > span {
+    color: #2e384e;
 }
 
-.magic-box .magic-box-suggestions .magic-box-suggestion:hover {
-    background-color: rgb(240, 240, 240);
+    .coveo-summary-section > span > span > .coveo-highlight {
+        font-weight: 700;
+        font-size: 11pt;
+    }
+
+.coveo-title > a.CoveoResultLink {
+color: #c8244f;
+font-weight: 600;
 }
 
-main > .section:first-child,
-main > section:first-child {
-    padding-top: 0px;
-}
-
-.coveo-pager-list > li,
-.coveo-results-per-page-list > li {
-    border-radius: 0px;
-    border: none;
+.coveo-title > a.CoveoResultLink:visited {
+    color: #2e384e;
     font-weight: 600;
+}
+
+.result-summary,
+.result-summary > p {
+    font-size: 11pt;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.CoveoExcerpt {
     font-size: 10pt;
-    padding: 10px;
+    color: rgb(150,150,150);
 }
 
-.coveo-pager-list-item.coveo-active,
-.coveo-results-per-page-list-item.coveo-active,
-.coveo-pager-list-item:hover,
-.coveo-results-per-page-list-item:hover {
-    background-color: #2e384e;
-    color: #fff;
+.CoveoResultLink:hover, a.CoveoResultLink:hover, .CoveoResult a.CoveoResultLink:hover{
+    color: #c8244f;
 }
 
-.coveo-pager-list-item:hover,
-.coveo-results-per-page-list-item:hover {
-    text-decoration: underline;
+.CoveoResult.coveo-result-frame .coveo-highlight {
+    vertical-align: baseline;
 }
 
-.CoveoSearchButton > .coveo-icon,
-.CoveoSearchButton:hover > .coveo-icon,
+ /*Glyphicons*/
 .coveo-facet-header-eraser,
 .coveo-facet-header-eraser:hover,
 .coveo-pager-list-item > a > span {
     background: none;
-}
-
-.CoveoSearchButton::after,
-.CoveoSearchButton:hover::after {
-    font-family: 'Glyphicons Halflings';
-    content: "\e003";
-    position: absolute;
-    top: 12px;
-    left: 15px;
-    font-size: 13pt;
-}
-
-.CoveoSearchButton::after,
-.coveo-facet-header-eraser::after {
-    color: #fff;
 }
 
 .coveo-facet-header-eraser::after,
@@ -291,13 +109,8 @@ main > section:first-child {
     font-size: 10pt;
 }
 
-.coveo-facet-header-eraser:hover::after,
-.CoveoSearchButton:hover::after {
+.coveo-facet-header-eraser:hover::after{
     color: #c8244f;
-}
-
-.coveo-dropdown-background {
-    z-index: 16;
 }
 
 .coveo-pager-list-item.coveo-pager-next > a::after,
@@ -324,23 +137,7 @@ main > section:first-child {
     text-decoration: none;
 }
 
-.coveo-summary-section > span {
-    color: #2e384e;
-}
-
-    .coveo-summary-section > span > span > .coveo-highlight {
-        font-weight: 700;
-        font-size: 11pt;
-    }
-
-.coveo-facet-value:hover, .coveo-facet-value.coveo-focused {
-    background-color: #fff;
-    color: #c8244f;
-}
-
-.coveo-facet-value.coveo-facet-selectable.coveo-selected > label > div {
-    font-weight: 700;
-}
+/*Quickview Modal*/
 
 .coveo-modalBox.coveo-quick-view > .coveo-wrapper {
     width: 80% !important;
@@ -382,41 +179,75 @@ main > section:first-child {
     color: #c8244f;
 }
 
+/*Facets*/
 
-.CoveoOmnibox.magic-box.magic-box-hasFocus > div > input,
-.CoveoOmnibox.magic-box.magic-box-hasFocus > .magic-box-clear {
-    box-shadow: 0 0 5px #fff;
+.coveo-facet-column {
+    max-width: 300px;
 }
 
-.coveo-title > a.CoveoResultLink {
-    color: #c8244f;
-    font-weight: 600;
+.CoveoFacetRange,
+.CoveoFacet,
+.coveo-facet-header,
+.coveo-facet-footer {
+    border-radius: 0px;
+    border: none;
 }
 
-    .coveo-title > a.CoveoResultLink:visited {
-        color: #2e384e;
-        font-weight: 600;
-    }
+.coveo-facet-header {
+    background-color: #2e384e;
+}
 
-.CoveoSearchInterface.coveo-small-interface .coveo-tab-section {
+.coveo-facet-header-title {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 10pt;
+}
+
+.coveo-facet-footer {
     background-color: #fff;
 }
 
-.result-summary,
-.result-summary > p {
-    font-size: 11pt;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+.coveo-facet-header-wait-animation {
+    background-color: #fff;
+    background-image: none;
+    width: 3px;
+    margin-left: 20px;
 }
 
-.CoveoExcerpt {
-    font-size: 10pt;
-    color: rgb(150,150,150);
+.coveo-facet-value .coveo-facet-value-checkbox {
+    border-radius: 0px;
+    border-color: #2e384e;
 }
 
-.CoveoResultLink:hover, a.CoveoResultLink:hover, .CoveoResult a.CoveoResultLink:hover{
+.coveo-facet-value:hover, .coveo-facet-value.coveo-focused {
+    background-color: #fff;
     color: #c8244f;
 }
 
-.CoveoResult.coveo-result-frame .coveo-highlight {
-    vertical-align: baseline;
+.coveo-facet-value.coveo-facet-selectable.coveo-selected > label > div {
+    font-weight: 700;
+}
+
+/*Pager*/
+
+.coveo-pager-list > li,
+.coveo-results-per-page-list > li {
+    border-radius: 0px;
+    border: none;
+    font-weight: 600;
+    font-size: 10pt;
+    padding: 10px;
+}
+
+.coveo-pager-list-item.coveo-active,
+.coveo-results-per-page-list-item.coveo-active,
+.coveo-pager-list-item:hover,
+.coveo-results-per-page-list-item:hover {
+    background-color: #2e384e;
+    color: #fff;
+}
+
+.coveo-pager-list-item:hover,
+.coveo-results-per-page-list-item:hover {
+    text-decoration: underline;
 }
