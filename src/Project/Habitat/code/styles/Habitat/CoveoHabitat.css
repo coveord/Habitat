@@ -4,6 +4,7 @@
     border-radius: 0px;
     border: none;
 }
+
 .CoveoSearchbox .magic-box .magic-box-input > input {
     text-transform: uppercase;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -11,12 +12,15 @@
     font-weight: 700;
     color: #2e384e;
 }
+
 .page-icon {
     width: 100%;
 }
+
 .CoveoSearchInterface > .coveo-main-section {
     max-width: 1200px;
 }
+
 .coveo-facet-column {
     max-width: 300px;
 }
@@ -48,12 +52,11 @@
     background-color: #fff;
 }
 
-
-
 .CoveoSearchInterface,
 .magic-box.magic-box-hasFocus .magic-box-suggestions.magic-box-hasSuggestion{
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 .coveo-facet-header-wait-animation{
     background-color: #fff;
     background-image: none;    
@@ -92,7 +95,7 @@
 .CoveoOmnibox.magic-box .magic-box-suggestions{
     border:none;
     margin-left: 1px;
-    box-shadow: 0px 0px 2px white;
+    box-shadow: 0px 0px 2px #fff;
 }
 
 .magic-box .magic-box-suggestions .magic-box-suggestion:hover{
@@ -117,7 +120,7 @@ main>.section:first-child, main>section:first-child{
 .coveo-pager-list-item:hover,
 .coveo-results-per-page-list-item:hover{
     background-color: #2e384e;
-    color: white;
+    color: #fff;
 
 }
 
@@ -125,12 +128,14 @@ main>.section:first-child, main>section:first-child{
 .coveo-results-per-page-list-item:hover{
     text-decoration: underline;
 }
+
 .CoveoSearchbox .magic-box,
 .CoveoSearchbox .CoveoSearchButton,
 .CoveoSearchbox .magic-box .magic-box-input {
     border-radius: 0;
     border: none;
 }
+
 .CoveoSearchbox .magic-box .magic-box-input > input {
     text-transform: uppercase;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -138,19 +143,24 @@ main>.section:first-child, main>section:first-child{
     font-weight: 700;
     color: #2e384e;
 }
+
 .page-icon {
     width: 100%;
 }
+
 .CoveoSearchInterface > .coveo-main-section {
     max-width: 1200px;
 }
+
 .coveo-facet-column {
     max-width: 300px;
 }
+
 .coveo-tab-section {
     border: none;
     background-color: #fff;
 }
+
 .CoveoFacetRange,
 .CoveoFacet,
 .coveo-facet-header,
@@ -158,32 +168,39 @@ main>.section:first-child, main>section:first-child{
     border-radius: 0;
     border: none;
 }
+
 .coveo-facet-header {
     background-color: #2e384e;
 }
+
 .coveo-facet-header-title {
     color: #fff;
     text-transform: uppercase;
     font-size: 10pt;
     font-weight: 700;
 }
+
 .coveo-facet-footer {
     background-color: #fff;
 }
+
 .CoveoSearchInterface,
 .magic-box.magic-box-hasFocus .magic-box-suggestions.magic-box-hasSuggestion {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 .coveo-facet-header-wait-animation {
     background-color: #fff;
     background-image: none;
     width: 3px;
     margin-left: 20px;
 }
+
 .coveo-facet-value .coveo-facet-value-checkbox {
     border-radius: 0;
     border-color: #2e384e;
 }
+
 .CoveoTab:active,
 .CoveoTab:active:focus,
 .CoveoTab.coveo-selected {
@@ -192,31 +209,38 @@ main>.section:first-child, main>section:first-child{
     font-size: 10pt;
     text-transform: uppercase;
 }
+
 .coveo-result-frame,
 .coveo-results-header {
     border: none;
     box-shadow: none;
 }
+
 .magic-box .magic-box-suggestions .magic-box-suggestion:first-child {
     font-size: 10pt;
     line-height: 12pt;
     background-color: rgba(255, 255, 255, 0.2);
 }
+
 .coveo-top-field-suggestion-header {
     display: none;
 }
+
 .CoveoOmnibox.magic-box .magic-box-suggestions {
     border: none;
     margin-left: 1px;
-    box-shadow: 0 0 2px white;
+    box-shadow: 0 0 2px #fff;
 }
+
 .magic-box .magic-box-suggestions .magic-box-suggestion:hover {
     background-color: rgb(240, 240, 240);
 }
+
 main>.section:first-child,
 main>section:first-child {
     padding-top: 0px;
 }
+
 .coveo-pager-list > li,
 .coveo-results-per-page-list > li {
     border-radius: 0px;
@@ -225,17 +249,20 @@ main>section:first-child {
     font-size: 10pt;
     padding: 10px;
 }
+
 .coveo-pager-list-item.coveo-active,
 .coveo-results-per-page-list-item.coveo-active,
 .coveo-pager-list-item:hover,
 .coveo-results-per-page-list-item:hover {
     background-color: #2e384e;
-    color: white;
+    color: #fff;
 }
+
 .coveo-pager-list-item:hover,
 .coveo-results-per-page-list-item:hover {
     text-decoration: underline;
 }
+
 .CoveoSearchButton > .coveo-icon,
 .CoveoSearchButton:hover > .coveo-icon,
 .coveo-facet-header-eraser,
@@ -243,6 +270,7 @@ main>section:first-child {
 .coveo-pager-list-item > a > span  {
     background: none;
 }
+
 .CoveoSearchButton::after,
 .CoveoSearchButton:hover::after {
     font-family: 'Glyphicons Halflings';
@@ -252,6 +280,7 @@ main>section:first-child {
     left: 15px;
     font-size: 13pt;
 }
+
 .CoveoSearchButton::after,
 .coveo-facet-header-eraser::after  {
     color: #fff;
@@ -264,8 +293,8 @@ main>section:first-child {
     position: absolute;
     left: -13px;
     font-size: 10pt;
-    font-width: 100;
 }
+
 .coveo-facet-header-eraser:hover::after,
 .CoveoSearchButton:hover::after  {
     color: #c8244f;
@@ -274,7 +303,6 @@ main>section:first-child {
 .coveo-dropdown-background {
     z-index: 16;
 }
-
 
 .coveo-pager-list-item.coveo-pager-next > a::after,
 .coveo-pager-list-item.coveo-pager-previous > a::after{
@@ -286,6 +314,7 @@ main>section:first-child {
     content: "\e080";
 
 }
+
 .coveo-pager-list-item.coveo-pager-previous > a::after{
     content: "\e079";
 }
@@ -303,16 +332,56 @@ main>section:first-child {
 .coveo-summary-section > span{
     color: #2e384e;
 }
+
 .coveo-summary-section > span > span > .coveo-highlight{
  font-weight: 700;
  font-size: 11pt;   
 }
 
   .coveo-facet-value:hover, .coveo-facet-value.coveo-focused {
-    background-color: white;
+    background-color: #fff;
     color: #c8244f;
 }
 
 .coveo-facet-value.coveo-facet-selectable.coveo-selected > label > div {
     font-weight: 700
+}
+
+.coveo-modalBox.coveo-quick-view > .coveo-wrapper {
+    width: 80% !important;
+}
+
+.coveo-quickview-icon.coveo-small.coveo-icon.filetype{
+    display: none;
+}
+
+.coveo-modalBox.coveo-quick-view > div.coveo-wrapper > div.coveo-title > div > .coveo-quickview-right-header > .coveo-quickview-time{
+    color: #fff;
+    font-weight: 600;
+}
+
+.coveo-quick-view > .coveo-wrapper > .coveo-title,
+.coveo-quick-view > .coveo-wrapper > .coveo-title > .coveo-quickview-right-header{
+    background-color: #2e384e;
+    color: #fff;
+    line-height: 20pt;
+    font-size: 20px;
+}
+
+.coveo-modalBox.coveo-quick-view > .coveo-wrapper > .coveo-title .coveo-quickview-pop-up-reminder{    
+    color: #fff;
+}
+
+.coveo-modalBox.coveo-quick-view > .coveo-wrapper > .coveo-title .coveo-quickview-close-button > span.coveo-icon.coveo-sprites-common-clear{
+    background: none;
+}
+.coveo-modalBox.coveo-quick-view > .coveo-wrapper > .coveo-title .coveo-quickview-close-button::after{
+    font-family: 'Glyphicons Halflings';
+    color: #fff;
+    content: "\e014";
+    font-size:10pt;
+}
+
+.coveo-modalBox.coveo-quick-view > .coveo-wrapper > .coveo-title .coveo-quickview-close-button:hover::after{
+    color: #c8244f;
 }
