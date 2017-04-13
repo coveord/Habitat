@@ -141,17 +141,19 @@
                         <script class="result-template" type="text/underscore">
                             <div class="coveo-result-frame">
                                 <div class="coveo-result-row">
-                                    <div class="coveo-result-cell" style="width:150px;text-align:center;padding-top:7px;">
+                                    <div class="coveo-result-cell" style="width:150px;text-align:center;padding-top:7px;">                                          
 
-                                          
-                                        {{ if ( raw.@Model.ToCoveoFieldName("pageicon", false)){ }}
-                                            <img class="page-icon" src="{{= raw.@Model.ToCoveoFieldName("pageicon", false) }}" >
-                                        {{ } else { }}
-                                        <img class="page-icon" src="/-/media/Feature/CoveoSearch/NoImage.png">
+                                        {{ if (raw.syssource === "Sitecore Habitat Videos") { }}
+                                        <span class="CoveoYouTubeThumbnail" data-width='100%' data-height='auto'></span>
+                                        {{ } else { }}                                        
+                                            {{ if ( raw.@Model.ToCoveoFieldName("pageicon", false)){ }}
+                                                <img class="page-icon" src="{{= raw.@Model.ToCoveoFieldName("pageicon", false) }}" >
+                                            {{ } else { }}
+                                            <img class="page-icon" src="/-/media/Feature/CoveoSearch/NoImage.png">
+                                            {{ } }}
                                         {{ } }}
-
                                         
-                                        {{ if (hasHtmlVersion) { }}
+                                        {{ if (hasHtmlVersion && raw.syssource != "Sitecore Habitat Videos" ) { }}
                                             <div class='CoveoQuickview'
                                                  data-fixed='true'
                                                  data-width='70%'
@@ -181,9 +183,22 @@
                                                 {{ } }}
                                             </div>
                                         </div>
-
+                                        {{
+                                            var summary = raw.@(Model.ToCoveoFieldName("Summary", false));
+                                            if (summary) {
+                                                summary = summary.replace(/<(?:.|\n)*?>/gm, '');
+                                        }}
                                         <div class="coveo-result-row">
-                                            <div class="coveo-result-cell">
+                                            <div class="coveo-result-cell result-summary">
+
+                                                {{= highlightStreamText(summary) }}
+                                            </div>
+                                        </div>
+                                        {{
+                                            }
+                                        }}
+                                        <div class="coveo-result-row">
+                                            <div class="coveo-result-cell">                                               
                                                 <span class="CoveoExcerpt"></span>
                                             </div>
                                         </div>
