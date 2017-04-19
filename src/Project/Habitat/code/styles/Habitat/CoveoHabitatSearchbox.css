@@ -1,0 +1,66 @@
+.CoveoSearchbox .magic-box,
+.CoveoSearchbox .CoveoSearchButton,
+.CoveoSearchbox .magic-box .magic-box-input {
+    border-radius: 0;
+    border: none;
+}
+
+.CoveoSearchbox .magic-box .magic-box-input>input {
+    text-transform: uppercase;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    font-weight: 700;
+    color: #2e384e;
+}
+
+.magic-box.magic-box-hasFocus .magic-box-suggestions.magic-box-hasSuggestion {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.magic-box .magic-box-suggestions .magic-box-suggestion:first-child {
+    font-size: 10pt;
+    line-height: 12pt;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.coveo-top-field-suggestion-header {
+    display: none;
+}
+
+.CoveoOmnibox.magic-box .magic-box-suggestions {
+    border: none;
+    margin-left: 1px;
+    box-shadow: 0 0 2px #fff;
+}
+
+.magic-box .magic-box-suggestions .magic-box-suggestion:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.CoveoSearchButton>.coveo-icon,
+.CoveoSearchButton:hover>.coveo-icon {
+    background: none;
+}
+
+.CoveoSearchButton::after,
+.CoveoSearchButton:hover::after {
+    font-family: 'Glyphicons Halflings';
+    content: "\e003";
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    font-size: 13pt;
+}
+
+.CoveoSearchButton::after {
+    color: #fff;
+}
+
+.CoveoSearchButton:hover::after {
+    color: #c8244f;
+}
+
+.CoveoOmnibox.magic-box.magic-box-hasFocus>div>input,
+.CoveoOmnibox.magic-box.magic-box-hasFocus>.magic-box-clear {
+    box-shadow: 0 0 5px #fff;
+}
