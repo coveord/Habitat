@@ -58,16 +58,17 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{14079D16-8CF1-4D74-B4F3-139A3B97397C}"
-              s:par="FacetEnableCollapse=1&amp;FacetPreservePosition=1&amp;FacetShowIcon=1&amp;FacetTitle=Date&amp;FacetIncludeInBreadcrumb=1&amp;FacetInjectionDepth=%7bDCB6EB45-58B0-4F31-9377-83A2D6CBF597%7d" />
+              uid="{14079D16-8CF1-4D74-B4F3-139A3B97397C}">
+              <p:d />
+            </r>
             <r
               uid="{1E680A17-4AC5-4DE0-BEE2-1E6D61B52E54}"
-              s:id="{489BA2AE-1B14-491E-A0FD-80EB2A10F275}"
-              s:par="FacetEnableMoreLess=1&amp;FacetEnableCollapse=1&amp;Caching=0%7c0%7c0%7c0%7c0%7c0%7c0%7c0&amp;FacetIncludeInOmniBox=0&amp;FacetEnableFacetSearch=1&amp;FacetEnableSettings=1&amp;FacetTitle=Language&amp;FacetIncludeInBreadcrumb=1&amp;FacetAvailableSorts=%7bF19F41CA-CC8B-4CD9-9884-46C80C8C7737%7d%7c%7b445BCEBE-D11E-4247-B07C-D775601B9F12%7d%7c%7bF0611CB0-4D2F-4B1C-A052-CBF86FAEE1EC%7d%7c%7b65C2940F-0506-4D45-BE9C-2D8751BB70A6%7d&amp;FacetSort=%7bF0611CB0-4D2F-4B1C-A052-CBF86FAEE1EC%7d&amp;FacetPreservePosition=1&amp;FacetInjectionDepth=%7bDCB6EB45-58B0-4F31-9377-83A2D6CBF597%7d&amp;FacetShowIcon=1" />
+              s:ds=""
+              s:par="FacetTitle=Language&amp;FacetField={C357AFE9-AE51-42C6-A5F8-E73A53EA8245}&amp;FacetNumberOfValues=5&amp;FacetSort={F0611CB0-4D2F-4B1C-A052-CBF86FAEE1EC}&amp;FacetSearchIgnoreAccents&amp;FacetAllowedValues&amp;FacetValueCaption&amp;FacetEnableCollapse=1&amp;FacetEnableSettings=1&amp;FacetAvailableSorts={F19F41CA-CC8B-4CD9-9884-46C80C8C7737}|{445BCEBE-D11E-4247-B07C-D775601B9F12}|{F0611CB0-4D2F-4B1C-A052-CBF86FAEE1EC}|{65C2940F-0506-4D45-BE9C-2D8751BB70A6}&amp;FacetIcon&amp;FacetEnableFacetSearch=1&amp;FacetNumberOfValuesInFacetSearch=15&amp;FacetEnableMoreLess=1&amp;FacetMorePageSize=10&amp;FacetIncludeInOmniBox&amp;FacetIncludeInBreadcrumb=1&amp;FacetNumberOfValuesInBreadcrumb=5&amp;FacetComputedField&amp;FacetComputedFieldOperation&amp;FacetComputedFieldFormat&amp;FacetComputedFieldCaption&amp;FacetLookupField&amp;FacetIsMultiValueField&amp;FacetUseAnd&amp;FacetTogglingOperator&amp;FacetShowIcon=1&amp;FacetInjectionDepth={DCB6EB45-58B0-4F31-9377-83A2D6CBF597}&amp;FacetEnableSettingsFacetState&amp;FacetPreservePosition=1&amp;ItemId=_24ABEABD-9132-459C-8A99-96C20D89B7B5" />
             <r
               uid="{C965B9A4-6C82-4A87-BF00-DB70BE71B7BE}"
-              s:id="{489BA2AE-1B14-491E-A0FD-80EB2A10F275}"
-              s:par="FacetEnableMoreLess=1&amp;FacetEnableCollapse=1&amp;Caching=0%7c0%7c0%7c0%7c0%7c0%7c0%7c0&amp;FacetIncludeInOmniBox=0&amp;FacetEnableFacetSearch=1&amp;FacetEnableSettings=1&amp;FacetTitle=File+Type&amp;FacetIncludeInBreadcrumb=1&amp;FacetAvailableSorts=%7bF19F41CA-CC8B-4CD9-9884-46C80C8C7737%7d%7c%7b445BCEBE-D11E-4247-B07C-D775601B9F12%7d%7c%7bF0611CB0-4D2F-4B1C-A052-CBF86FAEE1EC%7d%7c%7b65C2940F-0506-4D45-BE9C-2D8751BB70A6%7d&amp;FacetSort=%7bF0611CB0-4D2F-4B1C-A052-CBF86FAEE1EC%7d&amp;FacetPreservePosition=1&amp;FacetInjectionDepth=%7bDCB6EB45-58B0-4F31-9377-83A2D6CBF597%7d&amp;FacetShowIcon=1" />
+              s:ds=""
+              s:par="FacetTitle=File Type&amp;FacetField={02B6834C-2900-4E7E-B076-50D3F9E7D0C7}&amp;FacetNumberOfValues=5&amp;FacetSort={F0611CB0-4D2F-4B1C-A052-CBF86FAEE1EC}&amp;FacetSearchIgnoreAccents&amp;FacetAllowedValues&amp;FacetValueCaption&amp;FacetEnableCollapse=1&amp;FacetEnableSettings=1&amp;FacetAvailableSorts={F19F41CA-CC8B-4CD9-9884-46C80C8C7737}|{445BCEBE-D11E-4247-B07C-D775601B9F12}|{F0611CB0-4D2F-4B1C-A052-CBF86FAEE1EC}|{65C2940F-0506-4D45-BE9C-2D8751BB70A6}&amp;FacetIcon&amp;FacetEnableFacetSearch=1&amp;FacetNumberOfValuesInFacetSearch=15&amp;FacetEnableMoreLess=1&amp;FacetMorePageSize=10&amp;FacetIncludeInOmniBox&amp;FacetIncludeInBreadcrumb=1&amp;FacetNumberOfValuesInBreadcrumb=5&amp;FacetComputedField&amp;FacetComputedFieldOperation&amp;FacetComputedFieldFormat&amp;FacetComputedFieldCaption&amp;FacetLookupField&amp;FacetIsMultiValueField&amp;FacetUseAnd&amp;FacetTogglingOperator&amp;FacetShowIcon=1&amp;FacetInjectionDepth={DCB6EB45-58B0-4F31-9377-83A2D6CBF597}&amp;FacetEnableSettingsFacetState&amp;FacetPreservePosition=1&amp;ItemId=_91187DFF-4ABA-46B4-802D-4FC5A67AF144" />
           </d>
         </r>
     - ID: "0ee2f208-1fee-42fc-8051-6696d49a92bf"
