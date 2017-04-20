@@ -1,8 +1,8 @@
 ﻿---
-ID: "9aa07d42-e9b5-4b52-a0e2-4fdf08c203ee"
+ID: "d0ef5661-6755-4b75-9f6b-0e2f2c1facec"
 Parent: "dac24edd-44fb-42ef-9ecd-1e8daf706386"
-Template: "92168572-385b-45f0-b40f-3d987ad20e5c"
-Path: /sitecore/content/Habitat/Home/Search
+Template: "63d6215f-c7ca-49ee-b4f4-d64f3f38eeb9"
+Path: /sitecore/content/Habitat/Home/CoveoSearch
 DB: master
 SharedFields:
 - ID: "5585a30d-b115-4753-93ce-422c3455deb2"
@@ -21,9 +21,6 @@ SharedFields:
       <d
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
         <r
-          uid="{CA705768-C9DF-484D-BD9E-3BFDD112E926}"
-          s:par="Caching=0%7c0%7c0%7c0%7c0%7c0%7c0%7c0&amp;PagesToShow=5&amp;ResultsOnPage=4" />
-        <r
           uid="{0E0C6DCA-1A29-4975-84D7-E99498A64A72}"
           s:ds="{B4D87E66-D2C5-4C06-8F9A-08AEAF38055A}"
           s:ph="/footer/section/col-narrow-2" />
@@ -41,6 +38,10 @@ SharedFields:
           uid="{20AB9BAA-C112-4567-A701-564423E650D2}">
           <p:d />
         </r>
+        <r
+          uid="{868AD14F-E3B2-4946-ADA8-E31A935C9160}">
+          <p:d />
+        </r>
       </d>
     </r>
 Languages:
@@ -48,6 +49,10 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: 
     - ID: "0ee2f208-1fee-42fc-8051-6696d49a92bf"
       Hint: OpenGraphTitle
       Value: Search Results

@@ -27,39 +27,40 @@
             }
         });
     </script>
-
-    <div id="@Model.SearchboxId">
-        @if (Model.AnalyticsEnabled) {
-            <div class="CoveoAnalytics"
-                 data-anonymous="@Model.IsUserAnonymous"
-                 data-endpoint="@Model.GetAnalyticsEndpoint()"
-                 data-search-hub="@Model.GetAnalyticsCurrentPageName()"
-                 data-send-to-cloud="@Model.CoveoAnalyticsEnabled">
+    <div class="navbar-coveo">
+        <div id="@Model.SearchboxId">
+            @if (Model.AnalyticsEnabled) {
+                <div class="CoveoAnalytics"
+                    data-anonymous="@Model.IsUserAnonymous"
+                    data-endpoint="@Model.GetAnalyticsEndpoint()"
+                    data-search-hub="@Model.GetAnalyticsCurrentPageName()"
+                    data-send-to-cloud="@Model.CoveoAnalyticsEnabled">
+                </div>
+            }
+            <div class="CoveoSearchbox"
+                data-auto-focus="@Model.AutoFocus"
+                data-enable-lowercase-operators="@Model.EnableLowercaseOperators"
+                data-enable-partial-match="@Model.EnablePartialMatch"
+                data-partial-match-keywords="@Model.PartialMatchKeywords"
+                data-partial-match-threshold="@Model.PartialMatchThreshold"
+                data-enable-question-marks="@Model.EnableQuestionMarks"
+                data-enable-wildcards="@Model.EnableWildcards"
+                data-enable-omnibox="true"
+                data-omnibox-timeout="@Model.OmniboxTimeout"
+                data-enable-field-addon="@Model.OmniboxEnableFieldAddon"
+                data-enable-simple-field-addon="@Model.OmniboxEnableSimpleFieldAddon"
+                data-enable-top-query-addon="@Model.OmniboxEnableTopQueryAddon"
+                data-enable-reveal-query-suggest-addon="@Model.OmniboxEnableRevealQuerySuggestAddon"
+                data-enable-query-extension-addon="@Model.OmniboxEnableQueryExtensionAddon"
+                @if (Model.IsSearchAsYouTypeEnabled) {
+                    @:data-enable-search-as-you-type="true"
+                    @:data-search-as-you-type-delay="@Model.SearchboxSuggestionsDelay"
+                }>
+                <span class="CoveoFieldSuggestions" data-header-title="title" data-field='@Model.ToCoveoFieldName("title")'></span>
             </div>
-        }
-        <div class="CoveoSearchbox"
-             data-auto-focus="@Model.AutoFocus"
-             data-enable-lowercase-operators="@Model.EnableLowercaseOperators"
-             data-enable-partial-match="@Model.EnablePartialMatch"
-             data-partial-match-keywords="@Model.PartialMatchKeywords"
-             data-partial-match-threshold="@Model.PartialMatchThreshold"
-             data-enable-question-marks="@Model.EnableQuestionMarks"
-             data-enable-wildcards="@Model.EnableWildcards"
-             data-enable-omnibox="true"
-             data-omnibox-timeout="@Model.OmniboxTimeout"
-             data-enable-field-addon="@Model.OmniboxEnableFieldAddon"
-             data-enable-simple-field-addon="@Model.OmniboxEnableSimpleFieldAddon"
-             data-enable-top-query-addon="@Model.OmniboxEnableTopQueryAddon"
-             data-enable-reveal-query-suggest-addon="@Model.OmniboxEnableRevealQuerySuggestAddon"
-             data-enable-query-extension-addon="@Model.OmniboxEnableQueryExtensionAddon"
-             @if (Model.IsSearchAsYouTypeEnabled) {
-                @:data-enable-search-as-you-type="true"
-                @:data-search-as-you-type-delay="@Model.SearchboxSuggestionsDelay"
-             }>
-            <span class="CoveoFieldSuggestions" data-header-title="title" data-field='@Model.ToCoveoFieldName("title")'></span>
-        </div>
 
-        @Html.Sitecore().Placeholder("coveo-omnibox-suggestions-providers-mvc")
-        
+            @Html.Sitecore().Placeholder("coveo-omnibox-suggestions-providers-mvc")
+            
+        </div>
     </div>
 }

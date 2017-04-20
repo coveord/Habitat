@@ -16,10 +16,10 @@ SharedFields:
   Value: /sitecore/content/Habitat/Settings/Datasources/Coveo/Coveo Search Box Parameters
 - ID: "4867d192-326a-4aa4-81ef-ea430e224aff"
   Hint: Css assets
-  Value: /styles/Common/CoveoSearch.css,/styles/Habitat/CoveoHabitatSearchbox.css
+  Value: /styles/Habitat/CoveoHabitatSearchbox.css, /styles/Common/CoveoSearch.css
 - ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
   Hint: Path
-  Value: /Views/Website/Sublayouts/SearchboxView.cshtml
+  Value: /Views/Habitat/SearchboxView.cshtml
 - ID: "7d24e54f-5c16-4314-90c9-6051aa1a7da1"
   Hint: Parameters Template
   Value: "{294075E4-CB2C-4E5F-A646-416FC078581F}"

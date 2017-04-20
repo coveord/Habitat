@@ -45,7 +45,7 @@ SharedFields:
           ph="right-header-top"
           uid="{630F4515-1F19-49A8-B986-D46ADD5CE024}" />
         <r
-          id="{FFDD8476-B594-4892-9F10-8EBFE1C9BBC0}"
+          id="{E26A158B-FA1E-4E9B-8622-E4458243FF46}"
           ph="navbar"
           uid="{07C9FE71-A5E2-4E5F-B276-5F2B73481D44}" />
         <r
@@ -72,6 +72,22 @@ SharedFields:
           id="{28BD7068-7FF6-4CE6-98E6-85CFE9967E14}"
           ph="navbar-activity"
           uid="{79242576-4E0A-4CBF-BC2B-8B0C47FE9B64}" />
+        <r
+          ds=""
+          id="{8C3A2CFC-18FB-4BF5-8584-50EA88978ED6}"
+          par=""
+          ph="navbar-activity"
+          uid="{9C8A45F2-7008-42C1-8B8A-80A88825C1D8}" />
+        <r
+          id="{BD6E5198-0FFF-4F0D-B38C-D3921B8FCB7A}"
+          ph="navbar-activity"
+          uid="{8AC0C8B0-1616-4633-A697-1EEE7DA3C3B9}" />
+        <r
+          ds="{D93961E6-59A5-4532-98B2-1D98AB0D34E4}"
+          id="{E9ECDF34-1EB8-4466-9615-CBAD9E0E7CD9}"
+          par="SearchBoxUniqueId&amp;SearchPageItemId&amp;KeepOmniboxSuggestionsProvidersDefaultOrdering&amp;FilterExpressionRules&amp;BoostExpressionRules&amp;EnableAutomaticBoosting&amp;FilterCulture=1&amp;SearchBoxBehavior&amp;EnablePartialMatch&amp;PartialMatchKeywords=5&amp;PartialMatchThreshold=50%25&amp;EnableWildcards&amp;EnableQuestionMarks&amp;EnableLowercaseOperators&amp;ResultsPerPage=10&amp;DefaultSortType&amp;DefaultSortDirection&amp;DefaultSortField&amp;SearchBoxPlaceholderText&amp;AutoFocus=1&amp;ExternalContentSources&amp;ExternalContentCollections&amp;EnableCoveoUsageAnalytics=1&amp;CoveoUsageAnalyticsCustomMetadata&amp;EnableSitecoreAnalytics&amp;SitecoreAnalyticsRestUri=%2Fcoveo%2Frest%2Fv6%2Fanalytics&amp;ThrowExceptionOnValidationError&amp;EnableClientSideLogging&amp;IncludeBucketFoldersInResults&amp;IncludeMediaFoldersInResults&amp;QueryPipelineName&amp;RestUri=%2Fcoveo%2Frest&amp;OmniboxEnableFieldAddon&amp;OmniboxEnableSimpleFieldAddon&amp;OmniboxEnableQueryExtensionAddon&amp;ItemId=_295304F0-C550-4340-8B08-A3354FD878E3"
+          ph="navbar-activity"
+          uid="{E343B3FC-7846-42C2-9CEB-5BAC6D6787CA}" />
         <r
           id="{A2216CA7-B205-4042-A345-72117D0086C3}"
           par="UseStaticPlaceholderNames=0"
@@ -119,20 +135,6 @@ SharedFields:
           id="{CED18F24-62C2-445E-B0D9-045E3325297B}"
           ph="page-sidebar"
           uid="{20AB9BAA-C112-4567-A701-564423E650D2}" />
-        <r
-          id="{BD6E5198-0FFF-4F0D-B38C-D3921B8FCB7A}"
-          ph="navbar-coveo"
-          uid="{5CD56DE1-5F8D-427B-9CC0-F710F36865DF}" />
-        <r
-          ds="{D93961E6-59A5-4532-98B2-1D98AB0D34E4}"
-          id="{E9ECDF34-1EB8-4466-9615-CBAD9E0E7CD9}"
-          par="SearchBoxUniqueId&amp;SearchPageItemId&amp;KeepOmniboxSuggestionsProvidersDefaultOrdering&amp;FilterExpressionRules&amp;BoostExpressionRules&amp;EnableAutomaticBoosting&amp;FilterCulture=1&amp;SearchBoxBehavior&amp;EnablePartialMatch&amp;PartialMatchKeywords=5&amp;PartialMatchThreshold=50%25&amp;EnableWildcards&amp;EnableQuestionMarks&amp;EnableLowercaseOperators&amp;ResultsPerPage=10&amp;DefaultSortType&amp;DefaultSortDirection&amp;DefaultSortField&amp;SearchBoxPlaceholderText&amp;AutoFocus=1&amp;ExternalContentSources&amp;ExternalContentCollections&amp;EnableCoveoUsageAnalytics=1&amp;CoveoUsageAnalyticsCustomMetadata&amp;EnableSitecoreAnalytics&amp;SitecoreAnalyticsRestUri=%2Fcoveo%2Frest%2Fv6%2Fanalytics&amp;ThrowExceptionOnValidationError&amp;EnableClientSideLogging&amp;IncludeBucketFoldersInResults&amp;IncludeMediaFoldersInResults&amp;QueryPipelineName&amp;RestUri=%2Fcoveo%2Frest&amp;OmniboxEnableFieldAddon&amp;OmniboxEnableSimpleFieldAddon&amp;OmniboxEnableQueryExtensionAddon&amp;ItemId=_37C8C0E2-A649-4CFB-B5B3-E562C01ABAAD"
-          ph="navbar-coveo"
-          uid="{0412CBD1-678D-482A-8438-27267425EE99}" />
-        <r
-          id="{8C3A2CFC-18FB-4BF5-8584-50EA88978ED6}"
-          ph="navbar-activity"
-          uid="{9A1399B7-A48A-4D9D-926E-CA8ADD5BB86F}" />
       </d>
     </r>
 Languages:

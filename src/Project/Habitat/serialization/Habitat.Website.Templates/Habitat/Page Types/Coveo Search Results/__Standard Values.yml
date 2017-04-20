@@ -1,8 +1,8 @@
 ﻿---
-ID: "04d6cafc-7b8a-41e8-a297-e80ac155690a"
-Parent: "867f774a-195e-49d3-8e40-01f18410bb02"
-Template: "867f774a-195e-49d3-8e40-01f18410bb02"
-Path: /sitecore/templates/Project/Habitat/Page Types/Edit Profile Page/__Standard Values
+ID: "99d5efe5-cb89-4dca-863c-987e21c1f276"
+Parent: "63d6215f-c7ca-49ee-b4f4-d64f3f38eeb9"
+Template: "63d6215f-c7ca-49ee-b4f4-d64f3f38eeb9"
+Path: /sitecore/templates/Project/Habitat/Page Types/Coveo Search Results/__Standard Values
 DB: master
 SharedFields:
 - ID: "5585a30d-b115-4753-93ce-422c3455deb2"
@@ -68,14 +68,6 @@ SharedFields:
           ph="navbar-activity"
           uid="{79242576-4E0A-4CBF-BC2B-8B0C47FE9B64}" />
         <r
-          id="{26B33DEB-F1DB-4338-B043-AAF2F90E04A3}"
-          ph="page-layout"
-          uid="{1DF746C3-2D29-43E6-9DE2-05622DED6F97}" />
-        <r
-          id="{45B8E1D9-D522-49E0-B9B7-04C965CC7089}"
-          ph="page-header"
-          uid="{3CDF4DD8-28A4-4185-8C09-A73CAA4633F7}" />
-        <r
           id="{D201A487-5099-48A1-8189-55944F70C6CB}"
           par="UseStaticPlaceholderNames=1"
           ph="page-layout"
@@ -85,10 +77,6 @@ SharedFields:
           par="UseStaticPlaceholderNames=1"
           ph="/page-layout/section"
           uid="{66422117-69C1-4B62-9323-482F16C4F244}" />
-        <r
-          id="{9B05C591-03CE-4684-9D8A-CCCE99C399ED}"
-          ph="/page-layout/section/col-huge"
-          uid="{CD38F41A-B3D7-4755-9936-80D9C2D41C69}" />
         <r
           id="{299FD8EA-2CFD-4A69-9CA4-7EA24CD34A46}"
           ph="footer"
@@ -127,13 +115,38 @@ SharedFields:
           ph="page-sidebar"
           uid="{20AB9BAA-C112-4567-A701-564423E650D2}" />
         <r
+          id="{CED18F24-62C2-445E-B0D9-045E3325297B}"
+          ph="page-sidebar"
+          uid="{20AB9BAA-C112-4567-A701-564423E650D2}" />
+        <r
           id="{BD6E5198-0FFF-4F0D-B38C-D3921B8FCB7A}"
           ph="navbar-coveo"
-          uid="{0048D6FC-A8E1-4D0F-9CC1-4D7434516777}" />
+          uid="{60496593-BD7D-42E2-8F05-3EECC0FBAE85}" />
         <r
           id="{E9ECDF34-1EB8-4466-9615-CBAD9E0E7CD9}"
           ph="navbar-coveo"
-          uid="{4FE7A995-1F9F-4880-A712-C6AE2C42BE30}" />
+          uid="{7E61CBCC-0018-4DE2-BC77-E6857E73637B}" />
+        <r
+          id="{2BCAC115-1C0F-49C7-8A73-1E82F5EF8BB4}"
+          ph="/page-layout/section"
+          uid="{8520D186-E6D3-4FE0-A74D-15388F95ABDE}" />
+        <r
+          id="{7BBD950A-1432-49EB-8007-7EA8EBB922FA}"
+          par="TabCaption=All+content"
+          ph="/page-layout/section/coveo-tabs-mvc"
+          uid="{868AD14F-E3B2-4946-ADA8-E31A935C9160}" />
+        <r
+          ds=""
+          id="{489BA2AE-1B14-491E-A0FD-80EB2A10F275}"
+          par="FacetEnableMoreLess=1&amp;FacetEnableCollapse=1&amp;Caching=0%7c0%7c0%7c0%7c0%7c0%7c0%7c0&amp;FacetIncludeInOmniBox=0&amp;FacetEnableFacetSearch=1&amp;FacetEnableSettings=1&amp;FacetTitle=Language&amp;FacetIncludeInBreadcrumb=1&amp;FacetAvailableSorts=%7bF19F41CA-CC8B-4CD9-9884-46C80C8C7737%7d%7c%7b445BCEBE-D11E-4247-B07C-D775601B9F12%7d%7c%7bF0611CB0-4D2F-4B1C-A052-CBF86FAEE1EC%7d%7c%7b65C2940F-0506-4D45-BE9C-2D8751BB70A6%7d&amp;FacetSort=%7bF0611CB0-4D2F-4B1C-A052-CBF86FAEE1EC%7d&amp;FacetPreservePosition=1&amp;FacetInjectionDepth=%7bDCB6EB45-58B0-4F31-9377-83A2D6CBF597%7d&amp;FacetShowIcon=1"
+          ph="/page-layout/section/coveo-facets-mvc"
+          uid="{1E680A17-4AC5-4DE0-BEE2-1E6D61B52E54}" />
+        <r
+          ds=""
+          id="{489BA2AE-1B14-491E-A0FD-80EB2A10F275}"
+          par="FacetEnableMoreLess=1&amp;FacetEnableCollapse=1&amp;Caching=0%7c0%7c0%7c0%7c0%7c0%7c0%7c0&amp;FacetIncludeInOmniBox=0&amp;FacetEnableFacetSearch=1&amp;FacetEnableSettings=1&amp;FacetTitle=File+Type&amp;FacetIncludeInBreadcrumb=1&amp;FacetAvailableSorts=%7bF19F41CA-CC8B-4CD9-9884-46C80C8C7737%7d%7c%7b445BCEBE-D11E-4247-B07C-D775601B9F12%7d%7c%7bF0611CB0-4D2F-4B1C-A052-CBF86FAEE1EC%7d%7c%7b65C2940F-0506-4D45-BE9C-2D8751BB70A6%7d&amp;FacetSort=%7bF0611CB0-4D2F-4B1C-A052-CBF86FAEE1EC%7d&amp;FacetPreservePosition=1&amp;FacetInjectionDepth=%7bDCB6EB45-58B0-4F31-9377-83A2D6CBF597%7d&amp;FacetShowIcon=1"
+          ph="/page-layout/section/coveo-facets-mvc"
+          uid="{C965B9A4-6C82-4A87-BF00-DB70BE71B7BE}" />
       </d>
     </r>
 Languages:
@@ -149,11 +162,18 @@ Languages:
       Value: $name
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20160215T054211Z
+      Value: 20150911T025049Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\admin
+    - ID: "80e30dd8-8021-45f5-9fe1-23d2702cc206"
+      Hint: SearchBoxTitle
+      Value: Enter a text to search for...
+    - ID: "9492e0bb-9df9-46e7-8188-ec795c4ade44"
+      Hint: Image
+      Value: |
+        <image mediaid="{88032F9C-B464-44CB-B76D-513D60B9C127}" />
     - ID: "c30a013f-3cc8-4961-9837-1c483277084a"
       Hint: Title
       Value: $name
