@@ -145,21 +145,32 @@
 
                                         {{ if (raw.syssource === "Sitecore Habitat Videos") { }}
                                         <span class="CoveoYouTubeThumbnail" data-width='100%' data-height='auto'></span>
-                                        {{ } else { }}                                        
+                                        {{ } else { }}   
+                                        <div class="page-icon-container">
                                             {{ if ( raw.@Model.ToCoveoFieldName("imageUrl", false)){ }}
-                                                <img class="page-icon" src="{{= raw.@Model.ToCoveoFieldName("imageUrl", false) }}" >
+
+                                            <img class="page-icon" src="{{= raw.@Model.ToCoveoFieldName("imageUrl", false) }}">
+
                                             {{ } else { }}
                                             <img class="page-icon" src="/-/media/Feature/CoveoSearch/NoImage.png">
                                             {{ } }}
-                                        {{ } }}
-                                        
-                                        {{ if (hasHtmlVersion && raw.syssource != "Sitecore Habitat Videos" ) { }}
-                                            <div class='CoveoQuickview'
+                                            {{ if (hasHtmlVersion) { }}
+
+                                            <div class="page-icon-overlay CoveoQuickview"
                                                  data-fixed='true'
                                                  data-width='70%'
                                                  data-heigth='70%'
-                                                 data-template-id='CoveoQuickviewTemplate_@Model.Id'></div>
+                                                 data-template-id='CoveoQuickviewTemplate_@Model.Id'>
+                                                <div class="page-icon-overlay-symbol">
+                                                    Quickview
+                                                </div>                                                
+                                            </div>
+                                            {{ } }}
+
+
+                                        </div>
                                         {{ } }}
+                                        
                                     </div>
 
                                     <div class="coveo-result-cell" style="padding-left:15px;">

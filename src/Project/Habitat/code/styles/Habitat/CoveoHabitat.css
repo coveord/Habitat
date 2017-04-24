@@ -255,3 +255,68 @@ font-weight: 600;
 .coveo-results-per-page-list-item:hover {
     text-decoration: underline;
 }
+
+/*Breadcrumbs*/
+
+.CoveoBreadcrumb{
+    border: none;
+}
+
+.coveo-breadcrumb-clear-all{
+    border: none;
+    color: #2e384e;
+    font-weight: 700;
+}
+
+.coveo-breadcrumb-clear-all:hover,
+.coveo-breadcrumb-clear-all > div:hover,
+.coveo-facet-breadcrumb-value.coveo-selected *, .coveo-facet-slider-breadcrumb-value.coveo-selected *{
+    color: #c8244f;
+}
+
+.coveo-facet-breadcrumb-value:hover, .coveo-facet-slider-breadcrumb-value:hover {
+    color: #c8244f;
+    text-decoration:underline;
+}
+
+
+/*Quickview icon*/
+
+.page-icon-container {
+    position: relative;
+}
+
+.page-icon {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .2s ease;
+  backface-visibility: hidden;
+}
+
+.page-icon-overlay {
+  transition: .2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.page-icon-container:hover .page-icon {
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.page-icon-container:hover .page-icon-overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.page-icon-overlay-symbol,
+.page-icon-overlay-symbol:hover{
+  color: #c8244f;
+  font-weight: 600;
+}

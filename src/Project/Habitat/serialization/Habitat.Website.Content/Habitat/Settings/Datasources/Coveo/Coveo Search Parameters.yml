@@ -67,6 +67,21 @@ Languages:
                 weight="100" />
             </actions>
           </rule>
+          <rule
+            uid="{EC576ECB-7013-4C53-9E96-7E88FF71867C}">
+            <conditions>
+              <condition
+                id="{1E6C9830-45FA-4801-9D4D-E87B76C13F7D}"
+                uid="53F9008B45384C26A25B017E94BB5E8D"
+                itemid="{F7434DF7-E32E-4F8C-A50E-27C476F4DC32}" />
+            </conditions>
+            <actions>
+              <action
+                id="{FB2A22A4-9E43-47EC-874F-7E15F7CF6526}"
+                uid="3FA00BBE5AEA432A9D61B0A8EAB749D5"
+                weight="100" />
+            </actions>
+          </rule>
         </ruleset>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created

@@ -69,3 +69,16 @@
 .CoveoOmnibox.magic-box > .magic-box-input > input{
     background-color: #2e384e;
 }
+
+.magic-box .magic-box-clear,
+.CoveoSearchbox .magic-box .magic-box-clear .magic-box-icon:before {
+    background: none;
+}
+.CoveoSearchbox .magic-box .magic-box-clear .magic-box-icon:after {
+    font-family: 'Glyphicons Halflings';
+    content: "\e014";
+    position: absolute;
+    right: 2px;
+    font-size: 13pt;
+    color: #c8244f;
+}
