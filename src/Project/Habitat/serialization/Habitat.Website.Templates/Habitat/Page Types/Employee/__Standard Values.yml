@@ -64,6 +64,12 @@ SharedFields:
           ph="navbar-activity"
           uid="{79242576-4E0A-4CBF-BC2B-8B0C47FE9B64}" />
         <r
+          ds=""
+          id="{8C3A2CFC-18FB-4BF5-8584-50EA88978ED6}"
+          par=""
+          ph="navbar-activity"
+          uid="{9C8A45F2-7008-42C1-8B8A-80A88825C1D8}" />
+        <r
           id="{26B33DEB-F1DB-4338-B043-AAF2F90E04A3}"
           par="Type=bg-primary"
           ph="page-layout"
@@ -133,12 +139,14 @@ SharedFields:
           uid="{20AB9BAA-C112-4567-A701-564423E650D2}" />
         <r
           id="{BD6E5198-0FFF-4F0D-B38C-D3921B8FCB7A}"
-          ph="navbar-coveo"
-          uid="{7FE248A5-AEE7-432E-9553-100D096218A2}" />
+          ph="navbar-activity"
+          uid="{AF2C860A-6D8F-4FFB-B1A1-AA2E7DFBC9A6}" />
         <r
+          ds=""
           id="{E9ECDF34-1EB8-4466-9615-CBAD9E0E7CD9}"
-          ph="navbar-coveo"
-          uid="{D39E8A8D-C426-476A-B0EE-6846C3930CD8}" />
+          par="SearchBoxUniqueId&amp;SearchPageItemId&amp;KeepOmniboxSuggestionsProvidersDefaultOrdering&amp;FilterExpressionRules&amp;BoostExpressionRules&amp;EnableAutomaticBoosting&amp;FilterCulture=1&amp;SearchBoxBehavior&amp;EnablePartialMatch&amp;PartialMatchKeywords=5&amp;PartialMatchThreshold=50%25&amp;EnableWildcards&amp;EnableQuestionMarks&amp;EnableLowercaseOperators&amp;ResultsPerPage=10&amp;DefaultSortType&amp;DefaultSortDirection&amp;DefaultSortField&amp;SearchBoxPlaceholderText&amp;AutoFocus=1&amp;ExternalContentSources&amp;ExternalContentCollections&amp;EnableCoveoUsageAnalytics=1&amp;CoveoUsageAnalyticsCustomMetadata&amp;EnableSitecoreAnalytics&amp;SitecoreAnalyticsRestUri=%2Fcoveo%2Frest%2Fv6%2Fanalytics&amp;ThrowExceptionOnValidationError&amp;EnableClientSideLogging&amp;IncludeBucketFoldersInResults&amp;IncludeMediaFoldersInResults&amp;QueryPipelineName&amp;RestUri=%2Fcoveo%2Frest&amp;OmniboxEnableFieldAddon&amp;OmniboxEnableSimpleFieldAddon&amp;OmniboxEnableQueryExtensionAddon&amp;ItemId=_9854F3C2-C9F1-4994-B90E-49458EAA348E"
+          ph="navbar-activity"
+          uid="{6669E189-6F08-464F-BC2B-C8ACE621E6BB}" />
       </d>
     </r>
 Languages:

@@ -17,6 +17,57 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "140dd23c-6337-4723-a87e-be5a1cfc8f53"
+      Hint: BoostExpressionRules
+      Type: Rules
+      Value: |
+        <ruleset>
+          <rule
+            uid="{CD7F8A08-2DBC-4F3C-BDD2-277E64923DA6}">
+            <conditions>
+              <condition
+                id="{EDF34D6E-37E7-41F7-A72F-25EC3D8F3931}"
+                uid="289F2DC3CD974FE1BCA8CCC5B1142A83"
+                itemid="{D0EF5661-6755-4B75-9F6B-0E2F2C1FACEC}" />
+            </conditions>
+            <actions>
+              <action
+                id="{3C1F547E-DC65-4223-BAAE-B4F0E1ED028A}"
+                uid="71B3981689684DB4AB226C080209E670"
+                weight="150" />
+            </actions>
+          </rule>
+          <rule
+            uid="{288A4AF2-8843-4407-883D-42BFDD6373A4}">
+            <conditions>
+              <condition
+                id="{EDF34D6E-37E7-41F7-A72F-25EC3D8F3931}"
+                uid="83CCD344D4F4400CB0371DD6F45EF8FB"
+                itemid="{9AA07D42-E9B5-4B52-A0E2-4FDF08C203EE}" />
+            </conditions>
+            <actions>
+              <action
+                id="{3C1F547E-DC65-4223-BAAE-B4F0E1ED028A}"
+                uid="4013591759A34E44851B04C5A54DF017"
+                weight="150" />
+            </actions>
+          </rule>
+          <rule
+            uid="{BAF980B6-7E90-4129-83AE-53C57B345B5B}">
+            <conditions>
+              <condition
+                id="{EDF34D6E-37E7-41F7-A72F-25EC3D8F3931}"
+                uid="5B9694D5691349CDBE59BB942ABF9159"
+                itemid="{DAC24EDD-44FB-42EF-9ECD-1E8DAF706386}" />
+            </conditions>
+            <actions>
+              <action
+                id="{3C1F547E-DC65-4223-BAAE-B4F0E1ED028A}"
+                uid="EE79CDA4EE2941BBBFA6E84FC1ADC445"
+                weight="100" />
+            </actions>
+          </rule>
+        </ruleset>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20170411T175822Z

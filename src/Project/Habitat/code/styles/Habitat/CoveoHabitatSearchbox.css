@@ -5,12 +5,16 @@
     border: none;
 }
 
+.CoveoSearchbox{
+    border-bottom: 2px solid white;
+}
+
 .CoveoSearchbox .magic-box .magic-box-input>input {
     text-transform: uppercase;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 10pt;
     font-weight: 700;
-    color: #2e384e;
+    color: #fff;
 }
 
 .magic-box.magic-box-hasFocus .magic-box-suggestions.magic-box-hasSuggestion {
@@ -50,17 +54,18 @@
     top: 12px;
     left: 15px;
     font-size: 13pt;
+    color: #c8244f;
 }
 
 .CoveoSearchButton::after {
     color: #fff;
 }
 
-.CoveoSearchButton:hover::after {
-    color: #c8244f;
+.CoveoSearchButton{
+    border-bottom: 5px white solid;
+    background: none;
 }
 
-.CoveoOmnibox.magic-box.magic-box-hasFocus>div>input,
-.CoveoOmnibox.magic-box.magic-box-hasFocus>.magic-box-clear {
-    box-shadow: 0 0 5px #fff;
+.CoveoOmnibox.magic-box > .magic-box-input > input{
+    background-color: #2e384e;
 }

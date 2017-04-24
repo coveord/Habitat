@@ -68,6 +68,12 @@ SharedFields:
           ph="navbar-activity"
           uid="{79242576-4E0A-4CBF-BC2B-8B0C47FE9B64}" />
         <r
+          ds=""
+          id="{8C3A2CFC-18FB-4BF5-8584-50EA88978ED6}"
+          par=""
+          ph="navbar-activity"
+          uid="{9C8A45F2-7008-42C1-8B8A-80A88825C1D8}" />
+        <r
           id="{26B33DEB-F1DB-4338-B043-AAF2F90E04A3}"
           ph="page-layout"
           uid="{1DF746C3-2D29-43E6-9DE2-05622DED6F97}" />
@@ -128,12 +134,14 @@ SharedFields:
           uid="{20AB9BAA-C112-4567-A701-564423E650D2}" />
         <r
           id="{BD6E5198-0FFF-4F0D-B38C-D3921B8FCB7A}"
-          ph="navbar-coveo"
-          uid="{F3D05C3D-0108-4F8B-A4EE-6E5A16B224A0}" />
+          ph="navbar-activity"
+          uid="{2734622C-FF15-41B1-9FA7-3E0DA68B6E7A}" />
         <r
+          ds=""
           id="{E9ECDF34-1EB8-4466-9615-CBAD9E0E7CD9}"
-          ph="navbar-coveo"
-          uid="{FFA00331-011B-4CA9-9E53-BE3FBC053F59}" />
+          par="SearchBoxUniqueId&amp;SearchPageItemId&amp;KeepOmniboxSuggestionsProvidersDefaultOrdering&amp;FilterExpressionRules&amp;BoostExpressionRules&amp;EnableAutomaticBoosting&amp;FilterCulture=1&amp;SearchBoxBehavior&amp;EnablePartialMatch&amp;PartialMatchKeywords=5&amp;PartialMatchThreshold=50%25&amp;EnableWildcards&amp;EnableQuestionMarks&amp;EnableLowercaseOperators&amp;ResultsPerPage=10&amp;DefaultSortType&amp;DefaultSortDirection&amp;DefaultSortField&amp;SearchBoxPlaceholderText&amp;AutoFocus=1&amp;ExternalContentSources&amp;ExternalContentCollections&amp;EnableCoveoUsageAnalytics=1&amp;CoveoUsageAnalyticsCustomMetadata&amp;EnableSitecoreAnalytics&amp;SitecoreAnalyticsRestUri=%2Fcoveo%2Frest%2Fv6%2Fanalytics&amp;ThrowExceptionOnValidationError&amp;EnableClientSideLogging&amp;IncludeBucketFoldersInResults&amp;IncludeMediaFoldersInResults&amp;QueryPipelineName&amp;RestUri=%2Fcoveo%2Frest&amp;OmniboxEnableFieldAddon&amp;OmniboxEnableSimpleFieldAddon&amp;OmniboxEnableQueryExtensionAddon&amp;ItemId=_C29EEEEC-A038-4022-8BB9-EDE71E064626"
+          ph="navbar-activity"
+          uid="{2041BE80-B1BA-42FD-A3C9-7D5A0328A944}" />
       </d>
     </r>
 Languages:

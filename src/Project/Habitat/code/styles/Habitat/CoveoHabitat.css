@@ -40,6 +40,10 @@ main > .section:first-child, main > section:first-child {
     text-transform: uppercase;
 }
 
+.CoveoTab{
+    display: none;
+}
+
 /*Results*/
 
 .coveo-result-frame{

@@ -1,8 +1,8 @@
 ﻿---
-ID: "63d6215f-c7ca-49ee-b4f4-d64f3f38eeb9"
+ID: "62606f58-82ec-4096-87e8-8442dea43925"
 Parent: "85086bb5-0365-48d7-98b1-cb9b1b6392ca"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Project/Habitat/Page Types/Coveo Search Results
+Path: /sitecore/templates/Project/Habitat/Page Types/Coveo Search
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
@@ -21,7 +21,7 @@ SharedFields:
     {A1CBA309-D22B-46D5-80F8-2972C185363F}
 - ID: "f7d48a55-2158-4f02-9356-756654404f73"
   Hint: __Standard values
-  Value: "{99D5EFE5-CB89-4DCA-863C-987E21C1F276}"
+  Value: "{256A7932-42F5-4526-AF4E-FBB4C2E1A9A2}"
 Languages:
 - Language: en
   Versions:

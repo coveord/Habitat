@@ -74,6 +74,12 @@ SharedFields:
           ph="navbar-activity"
           uid="{79242576-4E0A-4CBF-BC2B-8B0C47FE9B64}" />
         <r
+          ds=""
+          id="{8C3A2CFC-18FB-4BF5-8584-50EA88978ED6}"
+          par=""
+          ph="navbar-activity"
+          uid="{9C8A45F2-7008-42C1-8B8A-80A88825C1D8}" />
+        <r
           id="{26B33DEB-F1DB-4338-B043-AAF2F90E04A3}"
           par="Type=bg-dark"
           ph="page-layout"
@@ -139,12 +145,14 @@ SharedFields:
           uid="{20AB9BAA-C112-4567-A701-564423E650D2}" />
         <r
           id="{BD6E5198-0FFF-4F0D-B38C-D3921B8FCB7A}"
-          ph="navbar-coveo"
-          uid="{3436BB7A-800C-4465-AD2D-CFFA84483B9A}" />
+          ph="navbar-activity"
+          uid="{F0B59CCD-EC41-4E3E-9F8C-BAC228657FED}" />
         <r
+          ds=""
           id="{E9ECDF34-1EB8-4466-9615-CBAD9E0E7CD9}"
-          ph="navbar-coveo"
-          uid="{D6E8A956-91EE-4366-B92E-370DE6E61BBB}" />
+          par="SearchBoxUniqueId&amp;SearchPageItemId&amp;KeepOmniboxSuggestionsProvidersDefaultOrdering&amp;FilterExpressionRules&amp;BoostExpressionRules&amp;EnableAutomaticBoosting&amp;FilterCulture=1&amp;SearchBoxBehavior&amp;EnablePartialMatch&amp;PartialMatchKeywords=5&amp;PartialMatchThreshold=50%25&amp;EnableWildcards&amp;EnableQuestionMarks&amp;EnableLowercaseOperators&amp;ResultsPerPage=10&amp;DefaultSortType&amp;DefaultSortDirection&amp;DefaultSortField&amp;SearchBoxPlaceholderText&amp;AutoFocus=1&amp;ExternalContentSources&amp;ExternalContentCollections&amp;EnableCoveoUsageAnalytics=1&amp;CoveoUsageAnalyticsCustomMetadata&amp;EnableSitecoreAnalytics&amp;SitecoreAnalyticsRestUri=%2Fcoveo%2Frest%2Fv6%2Fanalytics&amp;ThrowExceptionOnValidationError&amp;EnableClientSideLogging&amp;IncludeBucketFoldersInResults&amp;IncludeMediaFoldersInResults&amp;QueryPipelineName&amp;RestUri=%2Fcoveo%2Frest&amp;OmniboxEnableFieldAddon&amp;OmniboxEnableSimpleFieldAddon&amp;OmniboxEnableQueryExtensionAddon&amp;ItemId=_D04CCB76-3E4C-47CC-AEB7-8D7B499D779E"
+          ph="navbar-activity"
+          uid="{D2E1A3AA-723A-43C3-8B08-0414A81BAB1F}" />
       </d>
     </r>
 Languages:
