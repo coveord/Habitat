@@ -183,6 +183,10 @@ font-weight: 600;
     color: #c8244f;
 }
 
+.coveo-quick-view-header{
+  padding: 10px;
+}
+
 /*Facets*/
 
 .coveo-facet-column {
