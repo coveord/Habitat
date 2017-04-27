@@ -1,6 +1,7 @@
 ﻿@using Sitecore.Feature.Navigation
 @using Sitecore.Foundation.SitecoreExtensions.Extensions
 @model Sitecore.Feature.Navigation.Models.NavigationItems
+<!--BEGIN NOINDEX-->
 <div class="container">
   <ol class="breadcrumb">
     @foreach (var item in Model.Items)
@@ -11,3 +12,4 @@
     }
   </ol>
 </div>
+<!--END NOINDEX-->

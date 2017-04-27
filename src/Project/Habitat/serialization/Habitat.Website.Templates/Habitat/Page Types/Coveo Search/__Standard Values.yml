@@ -152,6 +152,24 @@ SharedFields:
           par="FacetTitle=Language&amp;FacetField=%7BC357AFE9-AE51-42C6-A5F8-E73A53EA8245%7D&amp;FacetNumberOfValues=5&amp;FacetSort=%7BF0611CB0-4D2F-4B1C-A052-CBF86FAEE1EC%7D&amp;FacetSearchIgnoreAccents&amp;FacetAllowedValues&amp;FacetValueCaption&amp;FacetEnableCollapse=1&amp;FacetEnableSettings=1&amp;FacetAvailableSorts=%7BF19F41CA-CC8B-4CD9-9884-46C80C8C7737%7D%7C%7B445BCEBE-D11E-4247-B07C-D775601B9F12%7D%7C%7BF0611CB0-4D2F-4B1C-A052-CBF86FAEE1EC%7D%7C%7B65C2940F-0506-4D45-BE9C-2D8751BB70A6%7D&amp;FacetIcon&amp;FacetEnableFacetSearch=1&amp;FacetNumberOfValuesInFacetSearch=15&amp;FacetEnableMoreLess=1&amp;FacetMorePageSize=10&amp;FacetIncludeInOmniBox&amp;FacetIncludeInBreadcrumb=1&amp;FacetNumberOfValuesInBreadcrumb=5&amp;FacetComputedField&amp;FacetComputedFieldOperation&amp;FacetComputedFieldFormat&amp;FacetComputedFieldCaption&amp;FacetLookupField&amp;FacetIsMultiValueField&amp;FacetUseAnd&amp;FacetTogglingOperator&amp;FacetShowIcon=1&amp;FacetInjectionDepth=%7BDCB6EB45-58B0-4F31-9377-83A2D6CBF597%7D&amp;FacetEnableSettingsFacetState&amp;FacetPreservePosition=1&amp;ItemId=_5C7DF0A2-CAB5-4700-9CC6-E651200B7C6E"
           ph="coveo-facets-mvc"
           uid="{F9C881A7-B70E-4A3C-8279-AF9E1B190C60}" />
+        <r
+          ds=""
+          id="{7BBD950A-1432-49EB-8007-7EA8EBB922FA}"
+          par="TabCaption=All%20Content&amp;TabIcon&amp;DefaultSortType&amp;DefaultSortDirection&amp;DefaultSortField&amp;FilterExpressionRules&amp;BoostExpressionRules&amp;ExcludeComponents&amp;ItemId=AllContentTab&amp;ExternalContentSources&amp;ExternalContentCollections"
+          ph="coveo-tabs-mvc"
+          uid="{EE280A3A-B114-49E3-917D-B6E9FAC0E198}" />
+        <r
+          ds=""
+          id="{87167A64-4094-452C-BFED-DF99DFD833BC}"
+          par="Title=Date&amp;SortDirection=%7BB2648814-D384-40D0-A7CE-D225429EF844%7D&amp;ToggleDirection=1&amp;ItemId=SortByDate"
+          ph="coveo-sorts-mvc"
+          uid="{7D83F75D-1946-4855-AF12-D95BA650C8A6}" />
+        <r
+          ds=""
+          id="{C4201996-1341-4252-9C37-71C68CF6EE98}"
+          par="Title=Relevance&amp;ItemId=SortByRelevance"
+          ph="coveo-sorts-mvc"
+          uid="{8BCB0B7C-3E32-4738-93CC-9CE02A3214D3}" />
       </d>
     </r>
 Languages:

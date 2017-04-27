@@ -48,46 +48,7 @@ Languages:
     - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
       Hint: __Final Renderings
       Type: Layout
-      Value: |
-        <r xmlns:p="p" xmlns:s="s"
-          p:p="1">
-          <d
-            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
-            <r
-              uid="{0893D7B6-B9C8-4840-AB73-B906C34FCEB1}"
-              p:before="*"
-              s:ds=""
-              s:id="{C4201996-1341-4252-9C37-71C68CF6EE98}"
-              s:par="Title=Relevance&amp;ItemId=RelevanceSort"
-              s:ph="/page-layout/section/col-huge/coveo-sorts-mvc" />
-            <r
-              uid="{2105B799-B114-4DE2-8B1E-1491BD2FF8C7}"
-              p:after="r[@uid='{0893D7B6-B9C8-4840-AB73-B906C34FCEB1}']"
-              s:ds=""
-              s:id="{87167A64-4094-452C-BFED-DF99DFD833BC}"
-              s:par="Title=Date&amp;SortDirection={B2648814-D384-40D0-A7CE-D225429EF844}&amp;ToggleDirection=1&amp;ItemId=DateSort"
-              s:ph="/page-layout/section/col-huge/coveo-sorts-mvc" />
-            <r
-              uid="{4E9D0839-F57F-41E3-A4D0-861CA9AF338F}"
-              p:after="r[@uid='{2105B799-B114-4DE2-8B1E-1491BD2FF8C7}']"
-              s:ds=""
-              s:id="{7BBD950A-1432-49EB-8007-7EA8EBB922FA}"
-              s:par="TabCaption=All Content&amp;TabIcon&amp;DefaultSortType&amp;DefaultSortDirection&amp;DefaultSortField&amp;FilterExpressionRules&amp;BoostExpressionRules&amp;ExcludeComponents&amp;ItemId=AllContentTab&amp;ExternalContentSources&amp;ExternalContentCollections"
-              s:ph="/page-layout/section/col-huge/coveo-tabs-mvc" />
-            <r
-              uid="{25E0530A-20A0-479F-ADD3-C765B0CC8F70}"
-              s:par="SearchBoxUniqueId&amp;SearchPageItemId&amp;KeepOmniboxSuggestionsProvidersDefaultOrdering&amp;FilterExpressionRules&amp;BoostExpressionRules&amp;EnableAutomaticBoosting&amp;FilterCulture=1&amp;SearchBoxBehavior&amp;EnablePartialMatch&amp;PartialMatchKeywords=5&amp;PartialMatchThreshold=50%&amp;EnableWildcards&amp;EnableQuestionMarks&amp;EnableLowercaseOperators&amp;ResultsPerPage=10&amp;DefaultSortType&amp;DefaultSortDirection&amp;DefaultSortField&amp;SearchBoxPlaceholderText&amp;AutoFocus=1&amp;ExternalContentSources&amp;ExternalContentCollections&amp;EnableCoveoUsageAnalytics=1&amp;CoveoUsageAnalyticsCustomMetadata&amp;EnableSitecoreAnalytics&amp;SitecoreAnalyticsRestUri=/coveo/rest/v6/analytics&amp;ThrowExceptionOnValidationError&amp;EnableClientSideLogging&amp;IncludeBucketFoldersInResults&amp;IncludeMediaFoldersInResults&amp;QueryPipelineName&amp;RestUri=/coveo/rest&amp;OmniboxEnableFieldAddon&amp;OmniboxEnableSimpleFieldAddon&amp;OmniboxEnableQueryExtensionAddon&amp;ItemId=_BDB4E032-CB47-418C-81A8-21897DCAAEFE" />
-            <r
-              uid="{FB2DD7E9-73A2-42CB-B711-E6D6E76ECEA7}"
-              s:par="FilterExpressionRules&amp;BoostExpressionRules&amp;EnableAutomaticBoosting&amp;FilterCulture=1&amp;SearchBoxBehavior&amp;EnablePartialMatch&amp;PartialMatchKeywords=5&amp;PartialMatchThreshold=50%&amp;EnableWildcards&amp;EnableQuestionMarks&amp;EnableLowercaseOperators&amp;PagerLocation={A1FBD885-7B5E-4AD3-87D1-06AB48937629}&amp;ResultsPerPage=10&amp;PagerShowPreviousNext=1&amp;PagerNumberOfPages=10&amp;PagerMaxNumberOfPages=100&amp;QuerySummaryEnableSearchTips=1&amp;QuerySummaryOnlyDisplaySearchTips&amp;DidYouMeanEnableAutoCorrection=1&amp;EnableInfiniteScroll&amp;InfiniteScrollPageSize=10&amp;DisplayResultsPerPage=1&amp;DisplayFacets=1&amp;DisplayLogo=1&amp;DisplaySearchBox=1&amp;DisplaySorting=1&amp;HideUntilFirstQuery=1&amp;DisplayQueryDuration=1&amp;DisplayQuerySummary=1&amp;DisplayBreadcrumb=1&amp;DisplayDidYouMean=1&amp;DisplayErrorReport=1&amp;DisplayRecommendations=1&amp;DisplayResultList=1&amp;DisplayTabs=1&amp;DefaultSortType&amp;DefaultSortDirection&amp;DefaultSortField&amp;SearchBoxPlaceholderText&amp;AutoFocus=1&amp;ExternalContentSources&amp;ExternalContentCollections&amp;EnableCoveoUsageAnalytics=1&amp;CoveoUsageAnalyticsCustomMetadata&amp;EnableSitecoreAnalytics&amp;SitecoreAnalyticsRestUri=/coveo/rest/v6/analytics&amp;ThrowExceptionOnValidationError&amp;AutoTriggerQuery=1&amp;ExcerptLength=200&amp;EnableHistory=1&amp;EnableClientSideLogging&amp;IncludeBucketFoldersInResults&amp;IncludeMediaFoldersInResults&amp;QueryPipelineName&amp;RestUri=/coveo/rest&amp;OmniboxEnableFieldAddon&amp;OmniboxEnableSimpleFieldAddon&amp;OmniboxEnableQueryExtensionAddon&amp;ItemId=_7CDDAF40-26B8-4B96-8E3B-54BA20527EBB" />
-            <r
-              uid="{DB971FB5-F1F6-452C-A75F-66CB6029CF10}"
-              s:par="FacetTitle=File type&amp;FacetField={02B6834C-2900-4E7E-B076-50D3F9E7D0C7}&amp;FacetNumberOfValues=5&amp;FacetSort={F0611CB0-4D2F-4B1C-A052-CBF86FAEE1EC}&amp;FacetSearchIgnoreAccents&amp;FacetAllowedValues&amp;FacetValueCaption&amp;FacetEnableCollapse=1&amp;FacetEnableSettings=1&amp;FacetAvailableSorts={F19F41CA-CC8B-4CD9-9884-46C80C8C7737}|{445BCEBE-D11E-4247-B07C-D775601B9F12}|{F0611CB0-4D2F-4B1C-A052-CBF86FAEE1EC}|{65C2940F-0506-4D45-BE9C-2D8751BB70A6}&amp;FacetIcon&amp;FacetEnableFacetSearch=1&amp;FacetNumberOfValuesInFacetSearch=15&amp;FacetEnableMoreLess=1&amp;FacetMorePageSize=10&amp;FacetIncludeInOmniBox&amp;FacetIncludeInBreadcrumb=1&amp;FacetNumberOfValuesInBreadcrumb=5&amp;FacetComputedField&amp;FacetComputedFieldOperation&amp;FacetComputedFieldFormat&amp;FacetComputedFieldCaption&amp;FacetLookupField&amp;FacetIsMultiValueField&amp;FacetUseAnd&amp;FacetTogglingOperator&amp;FacetShowIcon=1&amp;FacetInjectionDepth={DCB6EB45-58B0-4F31-9377-83A2D6CBF597}&amp;FacetEnableSettingsFacetState&amp;FacetPreservePosition=1&amp;ItemId=_3000579D-6893-4EA8-AA0A-C486BBDB1290" />
-            <r
-              uid="{F9C881A7-B70E-4A3C-8279-AF9E1B190C60}"
-              s:par="FacetTitle=Language&amp;FacetField={C357AFE9-AE51-42C6-A5F8-E73A53EA8245}&amp;FacetNumberOfValues=5&amp;FacetSort={F0611CB0-4D2F-4B1C-A052-CBF86FAEE1EC}&amp;FacetSearchIgnoreAccents&amp;FacetAllowedValues&amp;FacetValueCaption&amp;FacetEnableCollapse=1&amp;FacetEnableSettings=1&amp;FacetAvailableSorts={F19F41CA-CC8B-4CD9-9884-46C80C8C7737}|{445BCEBE-D11E-4247-B07C-D775601B9F12}|{F0611CB0-4D2F-4B1C-A052-CBF86FAEE1EC}|{65C2940F-0506-4D45-BE9C-2D8751BB70A6}&amp;FacetIcon&amp;FacetEnableFacetSearch=1&amp;FacetNumberOfValuesInFacetSearch=15&amp;FacetEnableMoreLess=1&amp;FacetMorePageSize=10&amp;FacetIncludeInOmniBox&amp;FacetIncludeInBreadcrumb=1&amp;FacetNumberOfValuesInBreadcrumb=5&amp;FacetComputedField&amp;FacetComputedFieldOperation&amp;FacetComputedFieldFormat&amp;FacetComputedFieldCaption&amp;FacetLookupField&amp;FacetIsMultiValueField&amp;FacetUseAnd&amp;FacetTogglingOperator&amp;FacetShowIcon=1&amp;FacetInjectionDepth={DCB6EB45-58B0-4F31-9377-83A2D6CBF597}&amp;FacetEnableSettingsFacetState&amp;FacetPreservePosition=1&amp;ItemId=_5C7DF0A2-CAB5-4700-9CC6-E651200B7C6E" />
-          </d>
-        </r>
+      Value: 
     - ID: "0ee2f208-1fee-42fc-8051-6696d49a92bf"
       Hint: OpenGraphTitle
       Value: Search Results

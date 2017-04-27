@@ -236,6 +236,10 @@ font-weight: 600;
     font-weight: 700;
 }
 
+.CoveoSearchInterface.coveo-small-facets .coveo-facet-column.coveo-facet-dropdown-content{
+  background-color: #fff;
+}
+
 /*Pager*/
 
 .coveo-pager-list > li,

@@ -8,11 +8,26 @@
 @Html.Coveo().RenderErrorSummary(Model.ValidateModel())
 @if (Model.IsConfigured) {
     <script type="text/javascript" src="/Coveo/js/cultures/@(Model.CultureName).js"></script>
-    <script type="text/javascript">          
+    <script type="text/javascript">
         function isOnSearchPage(){
             return false;
-        };   
-        Coveo.$(function () {         
+        };
+
+        function activateCoveo(){
+            var coveoSearchBox = document.getElementById('@Model.SearchboxId');
+            var habitatSearchBox = document.getElementsByClassName("navbar-activity-search")[0];
+            coveoSearchBox.style.display = "block";
+            habitatSearchBox.style.display = "none";
+        };
+
+        function deactivateCoveo(){
+            var coveoSearchBox = document.getElementById('@Model.SearchboxId');
+            var habitatSearchBox = document.getElementsByClassName("navbar-activity-search")[0];
+            coveoSearchBox.style.display = "none";
+            habitatSearchBox.style.display = "";
+        };
+
+        Coveo.$(function () {
             if (!isOnSearchPage()) {
                 if (typeof(CoveoForSitecore) !== 'undefined') {
                     var searchOptionsForSearchBox =  @(Html.Raw(Model.GetJavaScriptInitializationOptions()));
