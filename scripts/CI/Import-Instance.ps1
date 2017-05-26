@@ -19,14 +19,15 @@ $TempPath = [System.IO.Path]::GetFullPath($TempPath)
 $InstanceRootPath = [System.IO.Path]::GetFullPath($InstanceRootPath)
 $PathToLicenseFile = [System.IO.Path]::GetFullPath($PathToLicenseFile)
 
-Write-Host "> Start. Importing Sitecore Instance"
+Write-Host "> Import-Instance.ps1: Start Importing Sitecore Instance"
 
-Write-Host "> `"$SimCliFolder\sim.exe`" import -p `"$ExportedInstancePath`" -s `"$SiteName`" -c `"$ConnectionString`" -t `"$TempPath`" -r `"$InstanceRootPath`" -u True -l `"$PathToLicenseFile`" -b `"$Bindings`" -d `"$DatabaseNamePrefix`""
-
-Start-Process -FilePath "$SimCliFolder\sim.exe" -ArgumentList "import -p `"$ExportedInstancePath`" -s `"$SiteName`" -c `"$ConnectionString`" -t `"$TempPath`" -r `"$InstanceRootPath`" -u True -l `"$PathToLicenseFile`" -b `"$Bindings`" -d `"$DatabaseNamePrefix`"" -Wait -RedirectStandardOutput stdout.txt -RedirectStandardError stderr.txt
+$Command = "$SimCliFolder\sim.exe"
+$Arguments = "import -p `"$ExportedInstancePath`" -s `"$SiteName`" -c `"$ConnectionString`" -t `"$TempPath`" -r `"$InstanceRootPath`" -u True -l `"$PathToLicenseFile`" -b `"$Bindings`" -d `"$DatabaseNamePrefix`""
+Write-Host "> Import-Instance.ps1: `"$Command`" $Arguments"
+Start-Process -FilePath "$Command" -ArgumentList "$Arguments" -Wait -RedirectStandardOutput stdout.txt -RedirectStandardError stderr.txt
 
 Get-Content stdout.txt | Write-Host
 Get-Content stderr.txt | Write-Host
 
-Write-Host "> Done. Importing Sitecore Instance"
+Write-Host "> Import-Instance.ps1: Done Importing Sitecore Instance"
 Write-Host ""

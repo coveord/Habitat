@@ -26,3 +26,5 @@ temp/
 *.ncrunchsolution
 .vscode
 nCrunchTemp*.*
+stderr.txt
+stdout.txt

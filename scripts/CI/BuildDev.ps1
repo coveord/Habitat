@@ -8,5 +8,14 @@ $PathToLicenseFile = "" # E.g.: "C:\license.xml"
 $Bindings = "habitat.coveo.dev.local:80"
 $DatabaseNamePrefix = "Habitat.Coveo.dev.local"
 
-Write-Host "> Build.ps1 -SimCliFolder `"$SimCliFolder`" -ExportedInstancePath `"$ExportedInstancePath`" -SiteName `"$SiteName`" -ConnectionString `"$ConnectionString`" -TempPath `"$TempPath`" -InstanceRootPath `"$InstanceRootPath`" -PathToLicenseFile `"$PathToLicenseFile`" -Bindings `"$Bindings`" -DatabaseNamePrefix `"$DatabaseNamePrefix`""
-Invoke-Expression ".\Build.ps1 -SimCliFolder `"$SimCliFolder`" -ExportedInstancePath `"$ExportedInstancePath`" -SiteName `"$SiteName`" -ConnectionString `"$ConnectionString`" -TempPath `"$TempPath`" -InstanceRootPath `"$InstanceRootPath`" -PathToLicenseFile `"$PathToLicenseFile`" -Bindings `"$Bindings`" -DatabaseNamePrefix `"$DatabaseNamePrefix`""
+# Navigate to the script root
+$InitialShellLocation = (Get-Location).Path
+cd $PSScriptRoot
+
+# Call Build.ps1 with dev settings
+$Command = "Build.ps1 -SimCliFolder `"$SimCliFolder`" -ExportedInstancePath `"$ExportedInstancePath`" -SiteName `"$SiteName`" -ConnectionString `"$ConnectionString`" -TempPath `"$TempPath`" -InstanceRootPath `"$InstanceRootPath`" -PathToLicenseFile `"$PathToLicenseFile`" -Bindings `"$Bindings`" -DatabaseNamePrefix `"$DatabaseNamePrefix`""
+Write-Host "> $Command"
+Invoke-Expression ".\$Command"
+
+# Restore shell initial location
+cd $InitialShellLocation
