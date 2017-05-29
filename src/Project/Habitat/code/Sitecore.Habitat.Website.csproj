@@ -162,6 +162,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="favicon.ico" />
+    <Content Include="App_Config\Include\Project\Habitat.Website.Recommendations.config" />
     <None Include="App_Config\Security\domains.config.transform" />
     <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
@@ -173,8 +174,8 @@
     <Content Include="styles\Habitat\CoveoHabitat.css" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Website\Layouts\Default.cshtml" />
-    <Content Include="Views\Website\Sublayouts\SearchBoxView.cshtml" />
-    <Content Include="Views\Website\Sublayouts\SearchView.cshtml" />
+    <Content Include="Views\Habitat\SearchboxView.cshtml" />
+    <Content Include="Views\Habitat\SearchView.cshtml" />
     <None Include="web.config" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>

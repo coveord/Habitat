@@ -15,7 +15,7 @@
         };    
         Coveo.$(function() {            
             CoveoForSitecore.componentsOptions = @(Html.Raw(Model.GetJavaScriptInitializationOptions()));
-                if(CoveoForSitecore.externalComponents) {
+                if (CoveoForSitecore.externalComponents) {
                     CoveoForSitecore.componentsOptions.externalComponents = CoveoForSitecore.externalComponents;
                 }
         });
@@ -33,6 +33,7 @@
          data-hide-until-first-query="@Model.HideUntilFirstQuery"
          data-auto-trigger-query="@Model.AutoTriggerQuery"
          data-design="new"
+         data-enable-collaborative-rating="true"
         @if (Model.IsMaximumAgeSet) {
             @:data-maximum-age="@Model.MaximumAge"
         }
@@ -144,31 +145,31 @@
                                     <div class="coveo-result-cell" style="width:120px;text-align:center;padding-top:7px;">                                          
 
                                         {{ if (raw.syssource === "Sitecore Habitat Videos") { }}
-                                        <span class="CoveoYouTubeThumbnail" data-width='100%' data-height='auto'></span>
+                                            <span class="CoveoYouTubeThumbnail" data-width='100%' data-height='auto'></span>
                                         {{ } else { }}   
-                                        <div class="page-icon-container  CoveoQuickview"
-                                                 data-fixed='true'
-                                                 data-width='70%'
-                                                 data-heigth='70%'
-                                                 data-template-id='CoveoQuickviewTemplate_@Model.Id'>
-                                            {{ if ( raw.@Model.ToCoveoFieldName("imageUrl", false)){ }}
+                                            <div class="page-icon-container  CoveoQuickview"
+                                                     data-fixed='true'
+                                                     data-width='70%'
+                                                     data-heigth='70%'
+                                                     data-template-id='CoveoQuickviewTemplate_@Model.Id'>
+                                                {{ if ( raw.@Model.ToCoveoFieldName("imageUrl", false)){ }}
 
-                                            <img class="page-icon" src="{{= raw.@Model.ToCoveoFieldName("imageUrl", false) }}">
+                                                <img class="page-icon" src="{{= raw.@Model.ToCoveoFieldName("imageUrl", false) }}">
 
-                                            {{ } else { }}
-                                            <img class="page-icon" src="/-/media/Feature/CoveoSearch/NoImage.png">
-                                            {{ } }}
-                                            {{ if (hasHtmlVersion) { }}
+                                                {{ } else { }}
+                                                <img class="page-icon" src="/-/media/Feature/CoveoSearch/NoImage.png">
+                                                {{ } }}
+                                                {{ if (hasHtmlVersion) { }}
 
-                                            <div class="page-icon-overlay">
-                                                <div class="page-icon-overlay-symbol">
-                                                    Quickview
-                                                </div>                                                
+                                                <div class="page-icon-overlay">
+                                                    <div class="page-icon-overlay-symbol">
+                                                        Quickview
+                                                    </div>                                                
+                                                </div>
+                                                {{ } }}
+
+
                                             </div>
-                                            {{ } }}
-
-
-                                        </div>
                                         {{ } }}
                                         
                                     </div>
@@ -181,6 +182,10 @@
                                                         <a class='CoveoResultLink'>{{=title?highlight(title, titleHighlights):clickUri}}</a>
                                                     {{ } else { }}
                                                         <span class='CoveoResultTitle'>{{=title?highlight(title, titleHighlights):''}}</span>
+                                                    {{ } }}
+
+                                                    {{ if (isTopResult) { }}
+                                                        <span class="recommended-result" title="Recommended result"></span>
                                                     {{ } }}
                                                 </div>
                                             </div>
@@ -196,30 +201,28 @@
                                         </div>
                                         {{
                                             var summary = raw.@(Model.ToCoveoFieldName("Summary", false));
-                                            var ytdescription = raw.ytdesription;
-                                            if (ytdescription){
+                                            var ytdescription = raw.ytdescription;
+
+                                            if (ytdescription) {
                                                 summary = ytdescription;
                                             };
+
                                             if (summary) {
                                                 summary = summary.replace(/<(?:.|\n)*?>/gm, '');
+                                            }
                                         }}
                                         <div class="coveo-result-row  result-summary">
                                             <div class="coveo-result-cell">
                                                 {{= highlightStreamText(summary) }}
                                             </div>
                                         </div>
-                                        {{
-                                            }
-                                        }}
                                         <div class="coveo-result-row">
                                             <div class="coveo-result-cell">                                               
                                                 <span class="CoveoExcerpt"></span>
                                             </div>
                                         </div>
-                                        
                                     </div>
                                 </div>
-
                             </div>
                         </script>
                     </div>

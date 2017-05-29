@@ -1,0 +1,134 @@
+﻿@using Coveo.UI.Extensions
+@using Sitecore.Mvc
+@model Coveo.UI.Mvc.Models.SearchboxModel
+
+@* When customizing this component, ensure to use "Coveo.$" instead of the regular jQuery "$" to
+    avoid any conflicts with Sitecore's Page Editor/Experience Editor.  *@
+
+@Html.Coveo().RenderErrorSummary(Model.ValidateModel())
+@if (Model.IsConfigured) {
+    <script type="text/javascript" src="/Coveo/js/cultures/@(Model.CultureName).js"></script>
+    <script type="text/javascript">
+        function isOnSearchPage(){
+            return false;
+        };      
+
+        Coveo.$(function () {
+            if (!isOnSearchPage()) {
+                if (typeof(CoveoForSitecore) !== 'undefined') {
+                    var searchOptionsForSearchbox =  @(Html.Raw(Model.GetJavaScriptInitializationOptions()));
+                    CoveoForSitecore.componentsOptions = Coveo.$.extend({}, CoveoForSitecore.componentsOptions, searchOptionsForSearchbox);
+                    Coveo.$('#@Model.SearchboxId').coveoForSitecore('initSearchbox', CoveoForSitecore.componentsOptions);
+                } else {
+                    Coveo.$('#@Model.SearchboxId').coveo('initSearchbox', '@Model.GetSearchPageUrl()');
+                }
+            } else {
+                var searchboxElement = document.getElementById('@Model.SearchboxId');
+                CoveoForSitecore.externalComponents = [searchboxElement];
+            }
+        });
+    </script>
+    <div class="activate-coveo" title="Activate Coveo Searchbox" onclick="toggleCoveoSearchbox()" style="display:none"></div>
+    <div class="navbar-coveo">
+        <div id="@Model.SearchboxId"  style="display:none">
+            @if (Model.AnalyticsEnabled) {
+                <div class="CoveoAnalytics"
+                    data-anonymous="@Model.IsUserAnonymous"
+                    data-endpoint="@Model.GetAnalyticsEndpoint()"
+                    data-search-hub="@Model.GetAnalyticsCurrentPageName()"
+                    data-send-to-cloud="@Model.CoveoAnalyticsEnabled">
+                </div>
+            }
+            <div class="CoveoSearchbox"
+                data-auto-focus="@Model.AutoFocus"
+                data-enable-lowercase-operators="@Model.EnableLowercaseOperators"
+                data-enable-partial-match="@Model.EnablePartialMatch"
+                data-partial-match-keywords="@Model.PartialMatchKeywords"
+                data-partial-match-threshold="@Model.PartialMatchThreshold"
+                data-enable-question-marks="@Model.EnableQuestionMarks"
+                data-enable-wildcards="@Model.EnableWildcards"
+                data-enable-omnibox="true"
+                data-omnibox-timeout="@Model.OmniboxTimeout"
+                data-enable-field-addon="@Model.OmniboxEnableFieldAddon"
+                data-enable-simple-field-addon="@Model.OmniboxEnableSimpleFieldAddon"
+                data-enable-top-query-addon="@Model.OmniboxEnableTopQueryAddon"
+                data-enable-reveal-query-suggest-addon="@Model.OmniboxEnableRevealQuerySuggestAddon"
+                data-enable-query-extension-addon="@Model.OmniboxEnableQueryExtensionAddon"
+                @if (Model.IsSearchAsYouTypeEnabled) {
+                    @:data-enable-search-as-you-type="true"
+                    @:data-search-as-you-type-delay="@Model.SearchboxSuggestionsDelay"
+                }>
+                <span class="CoveoFieldSuggestions" data-header-title="title" data-field='@Model.ToCoveoFieldName("title")'></span>
+            </div>
+
+            @Html.Sitecore().Placeholder("coveo-omnibox-suggestions-providers-mvc")
+            
+        </div>
+    </div>
+    <script>
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays*24*60*60*1000));
+            var expires = "expires="+ d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        };   
+
+        function getCookie(cname) {
+            var name = cname + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+            for(var i = 0; i <ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        };
+
+        var coveoSearchBox = document.getElementById('@Model.SearchboxId');
+        var habitatSearchBox = document.getElementsByClassName("navbar-activity-search")[0];
+        var activateCoveoSwitch = document.getElementsByClassName("activate-coveo")[0];
+        var coveoSearchBoxCookie = getCookie("coveoSearchBox");
+
+        function checkCoveoSwitchCookie(){
+
+            if ((coveoSearchBoxCookie == "off" || coveoSearchBoxCookie == "")){                
+                switchCoveoOff();
+            }else{
+                switchCoveoOn();
+            };
+        };
+
+        function toggleCoveoSearchbox(){
+            coveoSearchBoxCookie = getCookie("coveoSearchBox");
+
+            if ((coveoSearchBoxCookie == "off" || coveoSearchBoxCookie == "")){                
+                switchCoveoOn();
+            }else{
+                 switchCoveoOff();
+            };
+        };
+
+        function switchCoveoOff(){
+            coveoSearchBox.style.display = "none";
+            habitatSearchBox.style.display = "";
+            activateCoveoSwitch.classList.remove('on');
+            activateCoveoSwitch.style.display = '';
+            activateCoveoSwitch.title = "Show Coveo Searchbox"
+            setCookie("coveoSearchBox", "off", 30);   
+        };
+
+        function switchCoveoOn(){
+            coveoSearchBox.style.display = "block";
+            habitatSearchBox.style.display = "none";
+            activateCoveoSwitch.style.display = '';
+            activateCoveoSwitch.classList.add('on');
+            activateCoveoSwitch.title = "Hide Coveo Searchbox";
+            setCookie("coveoSearchBox", "on", 30);
+        };          
+    </script>
+}

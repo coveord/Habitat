@@ -113,6 +113,10 @@ Languages:
       Hint: EnableClientSideLogging
       Type: Checkbox
       Value: 0
+    - ID: "c312a77d-7b97-46f8-b1d0-1cce160f27ac"
+      Hint: OmniboxEnableSimpleFieldAddon
+      Type: Checkbox
+      Value: 1
     - ID: "db2851f2-98da-4ba8-95da-6b2b23284854"
       Hint: EnableInfiniteScroll
       Type: Checkbox

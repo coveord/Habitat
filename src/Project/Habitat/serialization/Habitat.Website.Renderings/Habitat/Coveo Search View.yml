@@ -19,7 +19,7 @@ SharedFields:
   Value: /styles/Habitat/CoveoHabitat.css
 - ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
   Hint: Path
-  Value: /Views/Website/Sublayouts/SearchView.cshtml
+  Value: /Views/Habitat/SearchView.cshtml
 - ID: "7d24e54f-5c16-4314-90c9-6051aa1a7da1"
   Hint: Parameters Template
   Value: "{5E0C9885-2582-44D0-8296-A90845181835}"

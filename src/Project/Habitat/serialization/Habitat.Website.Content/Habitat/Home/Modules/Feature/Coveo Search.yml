@@ -9,6 +9,37 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{AB5BE71F-628B-4F09-9CEA-A48507D82ED1}"
+              p:after="r[@uid='{3D320AFE-F176-441F-A42A-09D8524B7F5D}']"
+              s:ds=""
+              s:id="{D463C537-F27B-415E-8D1F-EBABBF7BF28B}"
+              s:par="UsageAnalyticsPageViewContentType&amp;CoveoUsageAnalyticsCustomMetadata"
+              s:ph="/page-layout/section-narrow" />
+            <r
+              uid="{C5827794-71BC-4849-8FD7-4628CE65B74E}"
+              p:after="r[@uid='{AB5BE71F-628B-4F09-9CEA-A48507D82ED1}']"
+              s:ds=""
+              s:id="{B8E47377-DCE0-4939-98D4-6931D3350161}"
+              s:par="UseIsAnonymous=1&amp;UseCountry&amp;UseDevice=1&amp;UseProfileCards&amp;EnableContextPipeline=1&amp;CustomContext&amp;ItemId=_5BA85425-5357-472D-B8B3-B9DC904697DD"
+              s:ph="/page-layout/section-narrow" />
+            <r
+              uid="{5059745B-2FFD-4615-9BA5-4F78612BBC43}"
+              p:after="*[1=2]"
+              s:ds=""
+              s:id="{7A0960F7-331F-4571-A69D-F3A9CFFEF439}"
+              s:par="Title=Recommendations&amp;HideIfNoResults=1&amp;RecommendationsPipeline=recommendations&amp;NumberOfRecommendations=5&amp;FilterExpressionRules=%3Cruleset%3E%20%20%3Crule%20uid%3D%22%7B7AAF19D8-FB49-4451-8957-0FB2A63F7A3A%7D%22%3E%20%20%20%20%3Cconditions%3E%20%20%20%20%20%20%3Cand%20uid%3D%22CEE97839FD6A4B578261E6049FDF26DF%22%3E%20%20%20%20%20%20%20%20%3Ccondition%20id%3D%22%7B1E6C9830-45FA-4801-9D4D-E87B76C13F7D%7D%22%20uid%3D%225F983B2D129143768C7E8335D73C9544%22%20itemid%3D%22%7B0DE95AE4-41AB-4D01-9EB0-67441B7C2450%7D%22%20%2F%3E%20%20%20%20%20%20%20%20%3Ccondition%20id%3D%22%7BD99FA65C-3A44-4CF4-9FB8-4C32F0FA366A%7D%22%20uid%3D%22492C42FB07C948BBB7F2048AF6DDB700%22%20%2F%3E%20%20%20%20%20%20%3C%2Fand%3E%20%20%20%20%3C%2Fconditions%3E%20%20%3C%2Frule%3E%3C%2Fruleset%3E&amp;RecommendationsRestUri=%2Fcoveo%2Frest&amp;DefaultSortType&amp;DefaultSortDirection&amp;DefaultSortField&amp;ItemId=coveo-recommendations&amp;EnableCoveoUsageAnalytics=1&amp;CoveoUsageAnalyticsCustomMetadata&amp;EnableSitecoreAnalytics&amp;SitecoreAnalyticsRestUri=%2Fcoveo%2Frest%2Fv6%2Fanalytics"
+              s:ph="/page-layout/section-narrow" />
+          </d>
+        </r>
     - ID: "1b483e91-d8c4-4d19-ba03-462074b55936"
       Hint: NavigationTitle
       Value: Coveo Search

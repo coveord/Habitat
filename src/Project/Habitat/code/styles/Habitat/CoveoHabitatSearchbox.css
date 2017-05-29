@@ -1,3 +1,5 @@
+/* Searchbox */
+
 .CoveoSearchbox .magic-box,
 .CoveoSearchbox .CoveoSearchButton,
 .CoveoSearchbox .magic-box .magic-box-input {
@@ -5,7 +7,7 @@
     border: none;
 }
 
-.CoveoSearchbox{
+.CoveoSearchbox {
     border-bottom: 2px solid white;
 }
 
@@ -61,12 +63,12 @@
     color: #fff;
 }
 
-.CoveoSearchButton{
+.CoveoSearchButton {
     border-bottom: 5px white solid;
     background: none;
 }
 
-.CoveoOmnibox.magic-box > .magic-box-input > input{
+.CoveoOmnibox.magic-box > .magic-box-input > input {
     background-color: #2e384e;
 }
 
@@ -81,4 +83,41 @@
     right: 2px;
     font-size: 13pt;
     color: #c8244f;
+}
+
+/* Switch Coveo Lucene */
+
+.activate-coveo {
+    position: fixed;
+    width: 50px;
+    height: 42px;
+    right: 0;
+    padding: 8px;
+}
+
+.activate-coveo:hover {
+    cursor: pointer;
+}
+
+.activate-coveo.on {
+    background-color: rgb(160,160,160);
+}
+
+.activate-coveo.on:hover {
+    background-color: rgb(140,140,140);
+}
+
+.activate-coveo {
+    background-color: rgb(240,120,0);
+}
+
+.activate-coveo:hover {
+    background-color: rgb(220,90,0);
+}
+
+.activate-coveo::after {
+    font-family: 'Glyphicons Halflings';
+    content: "\e072";
+    font-size: 14pt;
+    color: #fff;
 }

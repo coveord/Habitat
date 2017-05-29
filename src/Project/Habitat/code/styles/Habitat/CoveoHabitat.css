@@ -1,23 +1,20 @@
-﻿/*Page in general*/
-
-.page-icon {
-    width: 100%;
-}
+﻿/* Page in general */
 
 .CoveoSearchInterface > .coveo-main-section {
     max-width: 1200px;
 }
 
-.CoveoSearchInterface{
+.CoveoSearchInterface {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-main > .section:first-child, main > section:first-child {
+main > .section:first-child,
+main > section:first-child {
     padding-top: 0px;
 }
 
 .coveo-dropdown-background {
-    z-index: 16;
+    z-index: 20;
 }
 
 /* Tabs */
@@ -37,16 +34,15 @@ main > .section:first-child, main > section:first-child {
     background-color: #2e384e;
     color: #fff;
     font-size: 10pt;
-    text-transform: uppercase;
 }
 
-.CoveoTab{
+.CoveoTab {
     display: none;
 }
 
 /*Results*/
 
-.coveo-result-frame{
+.coveo-result-frame {
     border-bottom: 2px rgb(240,240,240) solid;
     padding-bottom: 20px;
 }
@@ -55,22 +51,8 @@ main > .section:first-child, main > section:first-child {
     box-shadow: none;
 }
 
-.coveo-top-field-suggestion-header {
-    display: none;
-}
-
 .coveo-summary-section > span {
     color: #2e384e;
-}
-
-    .coveo-summary-section > span > span > .coveo-highlight {
-        font-weight: 700;
-        font-size: 11pt;
-    }
-
-.coveo-title > a.CoveoResultLink {
-color: #c8244f;
-font-weight: 600;
 }
 
 .coveo-title > a.CoveoResultLink:visited {
@@ -78,8 +60,7 @@ font-weight: 600;
     font-weight: 600;
 }
 
-.result-summary,
-.result-summary > p {
+.result-summary{
     font-size: 11pt;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -89,7 +70,9 @@ font-weight: 600;
     color: rgb(150,150,150);
 }
 
-.CoveoResultLink:hover, a.CoveoResultLink:hover, .CoveoResult a.CoveoResultLink:hover{
+.CoveoResultLink:hover, 
+a.CoveoResultLink:hover, 
+.CoveoResult a.CoveoResultLink:hover{
     color: #c8244f;
 }
 
@@ -97,7 +80,15 @@ font-weight: 600;
     vertical-align: baseline;
 }
 
- /*Glyphicons*/
+.recommended-result::before {
+    display: inline-flex;
+    font-family: 'Glyphicons Halflings';
+    content: "\e006";
+    font-size: 11pt;
+    color: rgb(250,200,0);
+}
+
+ /* Glyphicons */
 .coveo-facet-header-eraser,
 .coveo-facet-header-eraser:hover,
 .coveo-pager-list-item > a > span {
@@ -111,6 +102,7 @@ font-weight: 600;
     position: absolute;
     left: -13px;
     font-size: 10pt;
+    color: #fff;
 }
 
 .coveo-facet-header-eraser:hover::after{
@@ -141,7 +133,7 @@ font-weight: 600;
     text-decoration: none;
 }
 
-/*Quickview Modal*/
+/* Quickview Modal */
 
 .coveo-modalBox.coveo-quick-view > .coveo-wrapper {
     width: 80% !important;
@@ -187,7 +179,7 @@ font-weight: 600;
   padding: 10px;
 }
 
-/*Facets*/
+/* Facets */
 
 .coveo-facet-column {
     max-width: 300px;
@@ -240,7 +232,7 @@ font-weight: 600;
   background-color: #fff;
 }
 
-/*Pager*/
+/* Pager */
 
 .coveo-pager-list > li,
 .coveo-results-per-page-list > li {
@@ -264,7 +256,7 @@ font-weight: 600;
     text-decoration: underline;
 }
 
-/*Breadcrumbs*/
+/* Breadcrumbs */
 
 .CoveoBreadcrumb{
     border: none;
@@ -288,7 +280,7 @@ font-weight: 600;
 }
 
 
-/*Quickview icon*/
+/* Quickview icon */
 
 .page-icon-container {
     position: relative;
@@ -327,4 +319,19 @@ font-weight: 600;
 .page-icon-overlay-symbol:hover{
   color: #c8244f;
   font-weight: 600;
+}
+
+.page-icon {
+    width: 100%;
+}
+
+/* No Results */
+
+.coveo-query-summary-no-results-string{
+  font-size: 20pt; 
+}
+
+.coveo-query-summary-cancel-last{
+  color: #c8244f;
+  font-weight: 700;
 }
