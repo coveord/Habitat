@@ -34,6 +34,7 @@
          data-auto-trigger-query="@Model.AutoTriggerQuery"
          data-design="new"
          data-enable-collaborative-rating="true"
+		 data-first-loading-animation-selector="#loader-wrapper"
         @if (Model.IsMaximumAgeSet) {
             @:data-maximum-age="@Model.MaximumAge"
         }
@@ -49,6 +50,13 @@
                  data-send-to-cloud="@Model.CoveoAnalyticsEnabled">
             </div>
         }
+
+        <div id="loader-wrapper" class="loader-wrapper">
+            <span class="loader">
+                <span class="loader-inner"></span>
+            </span>
+            <h4>Loading Coveo Search</h4>
+        </div>
 
         <div class="coveo-main-section">
             @if (Model.DisplayTabs) {
