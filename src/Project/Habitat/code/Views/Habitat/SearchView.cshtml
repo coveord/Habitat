@@ -178,7 +178,7 @@
                                         <div class="coveo-result-row">
                                             <div class="coveo-result-cell" style="font-size:18px;">
                                                 <div class='coveo-title'>
-                                                    {{ if (raw.@(Model.ToCoveoFieldName("HasLayout", false)) === "1" || raw.syssource !== "@Model.IndexSourceName") { }}
+                                                    {{ if (raw.@(Model.ToCoveoFieldName("HasLayout", false)) === "1") { }}
                                                         <a class='CoveoResultLink'>{{=title?highlight(title, titleHighlights):clickUri}}</a>
                                                     {{ } else { }}
                                                         <span class='CoveoResultTitle'>{{=title?highlight(title, titleHighlights):''}}</span>
@@ -207,7 +207,7 @@
                                                 summary = ytdescription;
                                             };
 
-                                            if (summary) {
+                                            if (summary && !ytdescription) {
                                                 summary = summary.replace(/<(?:.|\n)*?>/gm, '');
                                             }
                                         }}
@@ -257,7 +257,9 @@
     </script>
     <script type="text/javascript">
         Coveo.$(function() {
-            Coveo.$('#@Model.Id').coveoForSitecore('init', CoveoForSitecore.componentsOptions);
+            Coveo.$('#@Model.Id').on("buildingQuery", function(e, args) {
+                args.queryBuilder.advancedExpression.add('@@filetype <> "YouTubePlaylist"');
+            }).coveoForSitecore('init', CoveoForSitecore.componentsOptions);
         });
     </script>
 }

@@ -117,6 +117,10 @@ Languages:
       Hint: OmniboxEnableSimpleFieldAddon
       Type: Checkbox
       Value: 1
+    - ID: "d1ffe621-c686-4bea-a441-1f44ab36c463"
+      Hint: DisplayResultsPerPage
+      Type: Checkbox
+      Value: 0
     - ID: "db2851f2-98da-4ba8-95da-6b2b23284854"
       Hint: EnableInfiniteScroll
       Type: Checkbox

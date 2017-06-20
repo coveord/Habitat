@@ -58,7 +58,7 @@
                     @:data-enable-search-as-you-type="true"
                     @:data-search-as-you-type-delay="@Model.SearchboxSuggestionsDelay"
                 }>
-                <span class="CoveoFieldSuggestions" data-header-title="title" data-field='@Model.ToCoveoFieldName("title")'></span>
+                <span class="CoveoFieldSuggestions" data-header-title="title" data-field='@Model.ToCoveoFieldName("displayname")'></span>
             </div>
 
             @Html.Sitecore().Placeholder("coveo-omnibox-suggestions-providers-mvc")
@@ -93,10 +93,10 @@
         var habitatSearchBox = document.getElementsByClassName("navbar-activity-search")[0];
         var activateCoveoSwitch = document.getElementsByClassName("activate-coveo")[0];
         var coveoSearchBoxCookie = getCookie("coveoSearchBox");
-
+         
         function checkCoveoSwitchCookie(){
 
-            if ((coveoSearchBoxCookie == "off" || coveoSearchBoxCookie == "")){                
+            if (coveoSearchBoxCookie == "off"){                
                 switchCoveoOff();
             }else{
                 switchCoveoOn();
@@ -104,12 +104,13 @@
         };
 
         function toggleCoveoSearchbox(){
+            
             coveoSearchBoxCookie = getCookie("coveoSearchBox");
 
             if ((coveoSearchBoxCookie == "off" || coveoSearchBoxCookie == "")){                
                 switchCoveoOn();
             }else{
-                 switchCoveoOff();
+                switchCoveoOff();
             };
         };
 

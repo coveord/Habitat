@@ -43,8 +43,8 @@
     background-color: rgb(240, 240, 240);
 }
 
-.CoveoSearchButton>.coveo-icon,
-.CoveoSearchButton:hover>.coveo-icon {
+.CoveoSearchButton > .coveo-icon,
+.CoveoSearchButton:hover > .coveo-icon {
     background: none;
 }
 
