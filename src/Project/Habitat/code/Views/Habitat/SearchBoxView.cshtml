@@ -66,70 +66,89 @@
         </div>
     </div>
     <script>
-        function setCookie(cname, cvalue, exdays) {
-            var d = new Date();
-            d.setTime(d.getTime() + (exdays*24*60*60*1000));
-            var expires = "expires="+ d.toUTCString();
-            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-        };   
 
-        function getCookie(cname) {
-            var name = cname + "=";
+    class CoveoSearchboxSwitcher{
+
+        constructor() {
+            this.coveoSearchbox = document.getElementById('@Model.SearchboxId');
+            this.habitatSearchbox = document.getElementsByClassName("navbar-activity-search")[0];
+            this.activateCoveoSwitch = document.getElementsByClassName("activate-coveo")[0];
+            this.coveoSwitchCookieName = "coveoSearchbox";
+            this.constants = {
+                "on": "on",
+                "off": "off",
+                "none": "none",
+                "empty": "",
+                "cookieName": "coveoSearchbox",
+                "showCoveoSearchbox": "Show Coveo Searchbox",
+                "hideCoveoSearchbox": "Hide Coveo Searchbox",
+            };
+        };
+
+        setCookie(cookieName, cookieValue, expirationDateInDays) {
+            var expirationDate = new Date();
+            expirationDate.setTime(expirationDate.getTime() + (expirationDateInDays*24*60*60*1000));
+            var expires = "expires="+ expirationDate.toUTCString();
+            document.cookie = cookieName + "=" + cookieValue + ";" + expires + ";path=/";
+        };
+
+        getCookie(cookieName) {
+            var name = cookieName + "=";
             var decodedCookie = decodeURIComponent(document.cookie);
             var ca = decodedCookie.split(';');
-            for(var i = 0; i <ca.length; i++) {
+            for (var i = 0; i < ca.length; i++) {
                 var c = ca[i];
                 while (c.charAt(0) == ' ') {
                     c = c.substring(1);
-                }
+                };
                 if (c.indexOf(name) == 0) {
                     return c.substring(name.length, c.length);
-                }
-            }
-            return "";
+                };
+            };
+            return this.constants.empty;
         };
 
-        var coveoSearchBox = document.getElementById('@Model.SearchboxId');
-        var habitatSearchBox = document.getElementsByClassName("navbar-activity-search")[0];
-        var activateCoveoSwitch = document.getElementsByClassName("activate-coveo")[0];
-        var coveoSearchBoxCookie = getCookie("coveoSearchBox");
-         
-        function checkCoveoSwitchCookie(){
+        switchCoveoOff(){
+            this.coveoSearchbox.style.display = this.constants.none;
+            this.habitatSearchbox.style.display = this.constants.empty;
+            this.activateCoveoSwitch.classList.remove(this.constants.on);
+            this.activateCoveoSwitch.style.display = this.constants.empty;
+            this.activateCoveoSwitch.title = this.constants.showCoveoSearchbox;
+            this.setCookie(this.constants.cookieName, this.constants.off, 30);
+        };
 
-            if (coveoSearchBoxCookie == "off"){                
-                switchCoveoOff();
-            }else{
-                switchCoveoOn();
+        switchCoveoOn(){
+            this.coveoSearchbox.style.display = "block";
+            this.habitatSearchbox.style.display = this.constants.none;
+            this.activateCoveoSwitch.style.display = this.constants.empty;
+            this.activateCoveoSwitch.classList.add(this.constants.on);
+            this.activateCoveoSwitch.title = this.constants.hideCoveoSearchbox;
+            this.setCookie(this.constants.cookieName, this.constants.on, 30);
+        };
+
+        checkCoveoSwitchCookie(){
+            this.coveoSearchboxCookie = this.getCookie(this.coveoSwitchCookieName);
+
+            if (this.coveoSearchboxCookie == this.constants.off){
+                this.switchCoveoOff();
+            } else {
+                this.switchCoveoOn();
             };
         };
 
-        function toggleCoveoSearchbox(){
-            
-            coveoSearchBoxCookie = getCookie("coveoSearchBox");
+        toggleCoveoSearchbox(){
+            this.coveoSearchboxCookie = this.getCookie(this.coveoSwitchCookieName);
 
-            if ((coveoSearchBoxCookie == "off" || coveoSearchBoxCookie == "")){                
-                switchCoveoOn();
-            }else{
-                switchCoveoOff();
+            if (this.coveoSearchboxCookie == this.constants.off || this.coveoSearchboxCookie == this.constants.empty){
+                this.switchCoveoOn();
+            } else {
+                this.switchCoveoOff();
             };
         };
 
-        function switchCoveoOff(){
-            coveoSearchBox.style.display = "none";
-            habitatSearchBox.style.display = "";
-            activateCoveoSwitch.classList.remove('on');
-            activateCoveoSwitch.style.display = '';
-            activateCoveoSwitch.title = "Show Coveo Searchbox"
-            setCookie("coveoSearchBox", "off", 30);   
-        };
+    };
 
-        function switchCoveoOn(){
-            coveoSearchBox.style.display = "block";
-            habitatSearchBox.style.display = "none";
-            activateCoveoSwitch.style.display = '';
-            activateCoveoSwitch.classList.add('on');
-            activateCoveoSwitch.title = "Hide Coveo Searchbox";
-            setCookie("coveoSearchBox", "on", 30);
-        };          
+    coveoSearchboxSwitcher = new CoveoSearchboxSwitcher();
+    coveoSearchboxSwitcher.checkCoveoSwitchCookie();
     </script>
 }

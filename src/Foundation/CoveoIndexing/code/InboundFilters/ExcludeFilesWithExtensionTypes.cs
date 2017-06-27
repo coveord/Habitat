@@ -1,33 +1,34 @@
-﻿using Coveo.SearchProvider.InboundFilters;
+﻿using System;
+using System.Linq;
+using Coveo.SearchProvider.InboundFilters;
 using Coveo.SearchProvider.Pipelines;
 
 namespace Sitecore.Foundation.CoveoIndexing
 {
-    public class ExcludeFilesWithExtensionTypes : AbstractCoveoInboundFilterProcessor
+  public class ExcludeFilesWithExtensionTypes : AbstractCoveoInboundFilterProcessor
+  {
+    /// <summary>
+    /// ID of the field where activation checkbox is specified.
+    /// </summary>
+    public string ExtensionTypesToExclude { get; set; }
+
+    public override void Process(CoveoInboundFilterPipelineArgs args)
     {
-        /// <summary>
-        /// ID of the field where activation checkbox is specified.
-        /// </summary>
-        public string ExtensionTypesToExclude { get; set; }
+      string[] extensionTypesToExclude = ExtensionTypesToExclude.Split(Constants.ExcludeFilesWithExtension.FileExtensionSeparator);
 
-        public override void Process(CoveoInboundFilterPipelineArgs args)
+      if (args.IndexableToIndex != null && !args.IsExcluded && ShouldExecute(args))
+      {
+        string itemExtension = args.IndexableToIndex.Item.GetFieldValue(Constants.ExcludeFilesWithExtension.ExtensionFieldValue);
+
+        foreach (string extensionType in extensionTypesToExclude)
         {
-            string[] extensionTypesToExclude = ExtensionTypesToExclude.Split(';');
-
-            if (args.IndexableToIndex != null && !args.IsExcluded && ShouldExecute(args))
-            {
-                string itemExtension = args.IndexableToIndex.Item.GetFieldValue("Extension");
-
-                foreach (string extensionType in extensionTypesToExclude) {
-
-                    if (extensionType == itemExtension)
-                    {
-                        args.IsExcluded = true;
-                    }
-
-                }
-
-            }
+          if (extensionTypesToExclude.Any(toExclude => StringComparer.OrdinalIgnoreCase.Equals(toExclude, itemExtension)))
+          {
+            args.IsExcluded = true;
+            break;
+          }
         }
+      }
     }
+  }
 }

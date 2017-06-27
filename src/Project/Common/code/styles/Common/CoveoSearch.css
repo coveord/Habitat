@@ -4,12 +4,12 @@
 }
 
 .navbar-coveo {
-    float: right
+    float: right;
 }
 
 .coveo-facet-value-checkbox > span,
 .coveo-facet-header-settings > span,
 div.coveo-facet-settings-section.coveo-facet-settings-section-sort > div.coveo-icon-container > div,
-div.coveo-facet-settings-popup > div.coveo-facet-settings-section.coveo-facet-settings-section-hide > div.coveo-icon-container > div{
+div.coveo-facet-settings-popup > div.coveo-facet-settings-section.coveo-facet-settings-section-hide > div.coveo-icon-container > div {
     transition: none;
 }
