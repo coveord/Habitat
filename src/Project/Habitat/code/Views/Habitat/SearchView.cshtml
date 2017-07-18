@@ -10,14 +10,15 @@
 @if (Model.IsConfigured) {
     <script type="text/javascript" src="/Coveo/js/cultures/@(Model.CultureName).js"></script>
     <script type="text/javascript">
-        function isOnSearchPage(){
+        function isOnSearchPage() {
             return true;
-        };    
-        Coveo.$(function() {            
+        };
+
+        Coveo.$(function() {
             CoveoForSitecore.componentsOptions = @(Html.Raw(Model.GetJavaScriptInitializationOptions()));
-                if (CoveoForSitecore.externalComponents) {
-                    CoveoForSitecore.componentsOptions.externalComponents = CoveoForSitecore.externalComponents;
-                }
+            if (CoveoForSitecore.externalComponents) {
+                CoveoForSitecore.componentsOptions.externalComponents = CoveoForSitecore.externalComponents;
+            }
         });
     </script>
 
@@ -142,36 +143,29 @@
                         <script class="result-template" type="text/underscore">
                             <div class="coveo-result-frame">
                                 <div class="coveo-result-row">
-                                    <div class="coveo-result-cell" style="width:120px;text-align:center;padding-top:7px;">                                          
-
+                                    <div class="coveo-result-cell" style="width:120px;text-align:center;padding-top:7px;">
                                         {{ if (raw.syssource === "Sitecore Habitat Videos") { }}
                                             <span class="CoveoYouTubeThumbnail" data-width='100%' data-height='auto'></span>
-                                        {{ } else { }}   
-                                            <div class="page-icon-container  CoveoQuickview"
+                                        {{ } else { }}
+                                            <div class="page-icon-container CoveoQuickview"
                                                      data-fixed='true'
                                                      data-width='70%'
                                                      data-heigth='70%'
                                                      data-template-id='CoveoQuickviewTemplate_@Model.Id'>
-                                                {{ if ( raw.@Model.ToCoveoFieldName("imageUrl", false)){ }}
-
-                                                <img class="page-icon" src="{{= raw.@Model.ToCoveoFieldName("imageUrl", false) }}">
-
+                                                {{ if (raw.@Model.ToCoveoFieldName("imageUrl", false)) { }}
+                                                    <img class="page-icon" src="{{= raw.@Model.ToCoveoFieldName("imageUrl", false) }}">
                                                 {{ } else { }}
-                                                <img class="page-icon" src="/-/media/Feature/CoveoSearch/NoImage.png">
+                                                    <img class="page-icon" src="/-/media/Feature/CoveoSearch/NoImage.png">
                                                 {{ } }}
                                                 {{ if (hasHtmlVersion) { }}
-
-                                                <div class="page-icon-overlay">
-                                                    <div class="page-icon-overlay-symbol">
-                                                        Quickview
-                                                    </div>                                                
-                                                </div>
+                                                    <div class="page-icon-overlay">
+                                                        <div class="page-icon-overlay-symbol">
+                                                            Quickview
+                                                        </div>
+                                                    </div>
                                                 {{ } }}
-
-
                                             </div>
                                         {{ } }}
-                                        
                                     </div>
 
                                     <div class="coveo-result-cell" style="padding-left:15px;">
@@ -211,13 +205,13 @@
                                                 summary = summary.replace(/<(?:.|\n)*?>/gm, '');
                                             }
                                         }}
-                                        <div class="coveo-result-row  result-summary">
+                                        <div class="coveo-result-row result-summary">
                                             <div class="coveo-result-cell">
                                                 {{= highlightStreamText(summary) }}
                                             </div>
                                         </div>
                                         <div class="coveo-result-row">
-                                            <div class="coveo-result-cell">                                               
+                                            <div class="coveo-result-cell">
                                                 <span class="CoveoExcerpt"></span>
                                             </div>
                                         </div>
@@ -258,7 +252,7 @@
     <script type="text/javascript">
         Coveo.$(function() {
             Coveo.$('#@Model.Id').on("buildingQuery", function(e, args) {
-                args.queryBuilder.advancedExpression.add('@@filetype <> "YouTubePlaylist"');
+                args.queryBuilder.advancedExpression.add('@@sysfiletype <> "YouTubePlaylist"');
             }).coveoForSitecore('init', CoveoForSitecore.componentsOptions);
         });
     </script>

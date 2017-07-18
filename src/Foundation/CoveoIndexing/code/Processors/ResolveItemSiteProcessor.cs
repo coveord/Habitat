@@ -1,17 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using Coveo.Framework.CNL;
-using Coveo.Framework.Items;
-using Coveo.Framework.Log;
-using Coveo.Framework.Processor;
-using Coveo.Framework.Sites;
-using Coveo.Framework.Utils;
-using Coveo.SearchProvider.Pipelines;
-
-namespace Sitecore.Foundation.CoveoIndexing.Processors
+﻿namespace Sitecore.Foundation.CoveoIndexing.Processors
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Reflection;
+    using Coveo.Framework.CNL;
+    using Coveo.Framework.Items;
+    using Coveo.Framework.Log;
+    using Coveo.Framework.Processor;
+    using Coveo.Framework.Sites;
+    using Coveo.Framework.Utils;
+    using Coveo.SearchProvider.Pipelines;
+
     /// <summary>
     /// Processor that resolves the site which an item belongs to.
     /// </summary>

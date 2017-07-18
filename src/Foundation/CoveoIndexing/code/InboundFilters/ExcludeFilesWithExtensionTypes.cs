@@ -1,34 +1,29 @@
-﻿using System;
-using System.Linq;
-using Coveo.SearchProvider.InboundFilters;
-using Coveo.SearchProvider.Pipelines;
-
-namespace Sitecore.Foundation.CoveoIndexing
+﻿namespace Sitecore.Foundation.CoveoIndexing.InboundFilters
 {
-  public class ExcludeFilesWithExtensionTypes : AbstractCoveoInboundFilterProcessor
-  {
-    /// <summary>
-    /// ID of the field where activation checkbox is specified.
-    /// </summary>
-    public string ExtensionTypesToExclude { get; set; }
+    using System;
+    using System.Linq;
+    using Coveo.SearchProvider.InboundFilters;
+    using Coveo.SearchProvider.Pipelines;
 
-    public override void Process(CoveoInboundFilterPipelineArgs args)
+    public class ExcludeFilesWithExtensionTypes : AbstractCoveoInboundFilterProcessor
     {
-      string[] extensionTypesToExclude = ExtensionTypesToExclude.Split(Constants.ExcludeFilesWithExtension.FileExtensionSeparator);
+        private const char FILE_EXTENSION_SEPARATOR = ';';
 
-      if (args.IndexableToIndex != null && !args.IsExcluded && ShouldExecute(args))
-      {
-        string itemExtension = args.IndexableToIndex.Item.GetFieldValue(Constants.ExcludeFilesWithExtension.ExtensionFieldValue);
+        /// <summary>
+        /// Semicolon separated list of file extensions to exclude. Ex.: png;jpg;gif
+        /// </summary>
+        public string ExtensionTypesToExclude { get; set; }
 
-        foreach (string extensionType in extensionTypesToExclude)
+        public override void Process(CoveoInboundFilterPipelineArgs args)
         {
-          if (extensionTypesToExclude.Any(toExclude => StringComparer.OrdinalIgnoreCase.Equals(toExclude, itemExtension)))
-          {
-            args.IsExcluded = true;
-            break;
-          }
+            if (args.IndexableToIndex != null && !args.IsExcluded && this.ShouldExecute(args)) {
+                string[] extensionTypesToExclude = this.ExtensionTypesToExclude.Split(FILE_EXTENSION_SEPARATOR);
+                string itemExtension = args.IndexableToIndex.Item.GetFieldValue(Constants.ItemExtensionFieldName);
+
+                if (extensionTypesToExclude.Any(toExclude => StringComparer.OrdinalIgnoreCase.Equals(toExclude, itemExtension))) {
+                    args.IsExcluded = true;
+                }
+            }
         }
-      }
     }
-  }
 }

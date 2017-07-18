@@ -9,25 +9,33 @@
 @if (Model.IsConfigured) {
     <script type="text/javascript" src="/Coveo/js/cultures/@(Model.CultureName).js"></script>
     <script type="text/javascript">
-        function isOnSearchPage(){
+        function isOnSearchPage() {
             return false;
-        };      
+        };
 
         Coveo.$(function () {
+            var searchbox = Coveo.$('#@Model.SearchboxId');
             if (!isOnSearchPage()) {
-                if (typeof(CoveoForSitecore) !== 'undefined') {
+                if (typeof (CoveoForSitecore) !== 'undefined') {
                     var searchOptionsForSearchbox =  @(Html.Raw(Model.GetJavaScriptInitializationOptions()));
                     CoveoForSitecore.componentsOptions = Coveo.$.extend({}, CoveoForSitecore.componentsOptions, searchOptionsForSearchbox);
-                    Coveo.$('#@Model.SearchboxId').coveoForSitecore('initSearchbox', CoveoForSitecore.componentsOptions);
+                    searchbox.coveoForSitecore('initSearchbox',
+                                               CoveoForSitecore.componentsOptions);
                 } else {
-                    Coveo.$('#@Model.SearchboxId').coveo('initSearchbox', '@Model.GetSearchPageUrl()');
+                    Coveo.SearchEndpoint.endpoints["default"] = new Coveo.SearchEndpoint(@Html.Raw(Model.GetJavaScriptSearchEndpointInitializationOptions()));
+                    searchbox.coveo('initSearchbox',
+                                    '@Model.GetSearchPageUrl()');
                 }
+                searchbox.find(".CoveoSearchbox input").attr("placeholder", '@Model.SearchboxPlaceholderText');
             } else {
-                var searchboxElement = document.getElementById('@Model.SearchboxId');
-                CoveoForSitecore.externalComponents = [searchboxElement];
+                if (!CoveoForSitecore.externalComponents) {
+                    CoveoForSitecore.externalComponents = [];
+                }
+                CoveoForSitecore.externalComponents.push(searchbox[0]);
             }
         });
     </script>
+
     <div class="activate-coveo" title="Activate Coveo Searchbox" onclick="toggleCoveoSearchbox()" style="display:none"></div>
     <div class="navbar-coveo">
         <div id="@Model.SearchboxId"  style="display:none">
@@ -62,13 +70,11 @@
             </div>
 
             @Html.Sitecore().Placeholder("coveo-omnibox-suggestions-providers-mvc")
-            
         </div>
     </div>
+
     <script>
-
     class CoveoSearchboxSwitcher{
-
         constructor() {
             this.coveoSearchbox = document.getElementById('@Model.SearchboxId');
             this.habitatSearchbox = document.getElementsByClassName("navbar-activity-search")[0];
@@ -108,7 +114,7 @@
             return this.constants.empty;
         };
 
-        switchCoveoOff(){
+        switchCoveoOff() {
             this.coveoSearchbox.style.display = this.constants.none;
             this.habitatSearchbox.style.display = this.constants.empty;
             this.activateCoveoSwitch.classList.remove(this.constants.on);
@@ -117,7 +123,7 @@
             this.setCookie(this.constants.cookieName, this.constants.off, 30);
         };
 
-        switchCoveoOn(){
+        switchCoveoOn() {
             this.coveoSearchbox.style.display = "block";
             this.habitatSearchbox.style.display = this.constants.none;
             this.activateCoveoSwitch.style.display = this.constants.empty;
@@ -126,7 +132,7 @@
             this.setCookie(this.constants.cookieName, this.constants.on, 30);
         };
 
-        checkCoveoSwitchCookie(){
+        checkCoveoSwitchCookie() {
             this.coveoSearchboxCookie = this.getCookie(this.coveoSwitchCookieName);
 
             if (this.coveoSearchboxCookie == this.constants.off){
@@ -136,7 +142,7 @@
             };
         };
 
-        toggleCoveoSearchbox(){
+        toggleCoveoSearchbox() {
             this.coveoSearchboxCookie = this.getCookie(this.coveoSwitchCookieName);
 
             if (this.coveoSearchboxCookie == this.constants.off || this.coveoSearchboxCookie == this.constants.empty){
@@ -145,7 +151,6 @@
                 this.switchCoveoOff();
             };
         };
-
     };
 
     coveoSearchboxSwitcher = new CoveoSearchboxSwitcher();

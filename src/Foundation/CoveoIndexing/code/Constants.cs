@@ -1,11 +1,7 @@
 ﻿namespace Sitecore.Foundation.CoveoIndexing
 {
-  internal struct Constants
-  {
-    internal struct ExcludeFilesWithExtension
+    internal struct Constants
     {
-      public const char FileExtensionSeparator = ';';
-      public const string ExtensionFieldValue = "Extension";
+        public const string ItemExtensionFieldName = "Extension";
     }
-  }
 }

@@ -60,7 +60,7 @@ main > section:first-child {
     font-weight: 600;
 }
 
-.result-summary{
+.result-summary {
     font-size: 11pt;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -70,9 +70,9 @@ main > section:first-child {
     color: rgb(150,150,150);
 }
 
-.CoveoResultLink:hover, 
-a.CoveoResultLink:hover, 
-.CoveoResult a.CoveoResultLink:hover{
+.CoveoResultLink:hover,
+a.CoveoResultLink:hover,
+.CoveoResult a.CoveoResultLink:hover {
     color: #c8244f;
 }
 
@@ -88,7 +88,8 @@ a.CoveoResultLink:hover,
     color: rgb(250,200,0);
 }
 
- /* Glyphicons */
+/* Glyphicons */
+
 .coveo-facet-header-eraser,
 .coveo-facet-header-eraser:hover,
 .coveo-pager-list-item > a > span {
@@ -105,7 +106,7 @@ a.CoveoResultLink:hover,
     color: #fff;
 }
 
-.coveo-facet-header-eraser:hover::after{
+.coveo-facet-header-eraser:hover::after {
     color: #c8244f;
 }
 
@@ -175,8 +176,8 @@ a.CoveoResultLink:hover,
     color: #c8244f;
 }
 
-.coveo-quick-view-header{
-  padding: 10px;
+.coveo-quick-view-header {
+    padding: 10px;
 }
 
 /* Facets */
@@ -228,8 +229,8 @@ a.CoveoResultLink:hover,
     font-weight: 700;
 }
 
-.CoveoSearchInterface.coveo-small-facets .coveo-facet-column.coveo-facet-dropdown-content{
-  background-color: #fff;
+.CoveoSearchInterface.coveo-small-facets .coveo-facet-column.coveo-facet-dropdown-content {
+    background-color: #fff;
 }
 
 /* Pager */
@@ -258,11 +259,11 @@ a.CoveoResultLink:hover,
 
 /* Breadcrumbs */
 
-.CoveoBreadcrumb{
+.CoveoBreadcrumb {
     border: none;
 }
 
-.coveo-breadcrumb-clear-all{
+.coveo-breadcrumb-clear-all {
     border: none;
     color: #2e384e;
     font-weight: 700;
@@ -270,15 +271,14 @@ a.CoveoResultLink:hover,
 
 .coveo-breadcrumb-clear-all:hover,
 .coveo-breadcrumb-clear-all > div:hover,
-.coveo-facet-breadcrumb-value.coveo-selected *, .coveo-facet-slider-breadcrumb-value.coveo-selected *{
+.coveo-facet-breadcrumb-value.coveo-selected *, .coveo-facet-slider-breadcrumb-value.coveo-selected * {
     color: #c8244f;
 }
 
 .coveo-facet-breadcrumb-value:hover, .coveo-facet-slider-breadcrumb-value:hover {
     color: #c8244f;
-    text-decoration:underline;
+    text-decoration: underline;
 }
-
 
 /* Quickview icon */
 
@@ -287,38 +287,38 @@ a.CoveoResultLink:hover,
 }
 
 .page-icon {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .2s ease;
-  backface-visibility: hidden;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .2s ease;
+    backface-visibility: hidden;
 }
 
 .page-icon-overlay {
-  transition: .2s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
+    transition: .2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
 .page-icon-container:hover .page-icon {
-  opacity: 0.3;
-  cursor: pointer;
+    opacity: 0.3;
+    cursor: pointer;
 }
 
 .page-icon-container:hover .page-icon-overlay {
-  opacity: 1;
-  cursor: pointer;
+    opacity: 1;
+    cursor: pointer;
 }
 
 .page-icon-overlay-symbol,
-.page-icon-overlay-symbol:hover{
-  color: #c8244f;
-  font-weight: 600;
+.page-icon-overlay-symbol:hover {
+    color: #c8244f;
+    font-weight: 600;
 }
 
 .page-icon {
@@ -327,11 +327,11 @@ a.CoveoResultLink:hover,
 
 /* No Results */
 
-.coveo-query-summary-no-results-string{
-  font-size: 20pt; 
+.coveo-query-summary-no-results-string {
+    font-size: 20pt;
 }
 
-.coveo-query-summary-cancel-last{
-  color: #c8244f;
-  font-weight: 700;
+.coveo-query-summary-cancel-last {
+    color: #c8244f;
+    font-weight: 700;
 }
