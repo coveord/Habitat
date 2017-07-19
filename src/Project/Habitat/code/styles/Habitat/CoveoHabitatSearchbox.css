@@ -12,10 +12,8 @@
 }
 
 .CoveoSearchbox .magic-box .magic-box-input>input {
-    text-transform: uppercase;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 10pt;
-    font-weight: 700;
     color: #fff;
 }
 

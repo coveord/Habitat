@@ -22,7 +22,6 @@
                     searchbox.coveoForSitecore('initSearchbox',
                                                CoveoForSitecore.componentsOptions);
                 } else {
-                    Coveo.SearchEndpoint.endpoints["default"] = new Coveo.SearchEndpoint(@Html.Raw(Model.GetJavaScriptSearchEndpointInitializationOptions()));
                     searchbox.coveo('initSearchbox',
                                     '@Model.GetSearchPageUrl()');
                 }
@@ -36,7 +35,7 @@
         });
     </script>
 
-    <div class="activate-coveo" title="Activate Coveo Searchbox" onclick="toggleCoveoSearchbox()" style="display:none"></div>
+    <div class="activate-coveo" title="Activate Coveo Searchbox" onclick="coveoSearchboxSwitcher.toggleCoveoSearchbox()" style="display:none"></div>
     <div class="navbar-coveo">
         <div id="@Model.SearchboxId"  style="display:none">
             @if (Model.AnalyticsEnabled) {
