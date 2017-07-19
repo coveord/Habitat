@@ -153,9 +153,9 @@
                                                      data-heigth='70%'
                                                      data-template-id='CoveoQuickviewTemplate_@Model.Id'>
                                                 {{ if (raw.@Model.ToCoveoFieldName("imageUrl", false)) { }}
-                                                    <img class="page-icon" src="{{= raw.@Model.ToCoveoFieldName("imageUrl", false) }}">
+                                                    <img class="page-icon" src="{{= raw.@Model.ToCoveoFieldName("imageUrl", false) }}" alt="{{= raw.@Model.ToCoveoFieldName("imageAlt", false) || '' }}" />
                                                 {{ } else { }}
-                                                    <img class="page-icon" src="/-/media/Feature/CoveoSearch/NoImage.png">
+                                                    <img class="page-icon" src="/-/media/Feature/CoveoSearch/NoImage.png" />
                                                 {{ } }}
                                                 {{ if (hasHtmlVersion) { }}
                                                     <div class="page-icon-overlay">
@@ -194,15 +194,15 @@
                                             </div>
                                         </div>
                                         {{
-                                            var summary = raw.@(Model.ToCoveoFieldName("Summary", false));
-                                            var ytdescription = raw.ytdescription;
-
-                                            if (ytdescription) {
-                                                summary = ytdescription;
-                                            };
-
-                                            if (summary && !ytdescription) {
-                                                summary = summary.replace(/<(?:.|\n)*?>/gm, '');
+                                            var HTML_ELEMENTS_REGEX = /<(?:.|\n)*?>/gm;
+                                            var summary;
+                                            if (raw.ytdescription) {
+                                                summary = raw.ytdescription;
+                                            } else {
+                                                summary = raw.@(Model.ToCoveoFieldName("Summary", false));
+                                                if (summary) {
+                                                    summary = summary.replace(HTML_ELEMENTS_REGEX, '');
+                                                }
                                             }
                                         }}
                                         <div class="coveo-result-row result-summary">
