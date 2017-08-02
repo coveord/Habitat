@@ -9,26 +9,33 @@
 @if (Model.IsConfigured) {
     <script type="text/javascript" src="/Coveo/js/cultures/@(Model.CultureName).js"></script>
     <script type="text/javascript">
-        function isOnSearchPage(){
+        function isOnSearchPage() {
             return false;
-        };      
+        };
 
         Coveo.$(function () {
+            var searchbox = Coveo.$('#@Model.SearchboxId');
             if (!isOnSearchPage()) {
-                if (typeof(CoveoForSitecore) !== 'undefined') {
+                if (typeof (CoveoForSitecore) !== 'undefined') {
                     var searchOptionsForSearchbox =  @(Html.Raw(Model.GetJavaScriptInitializationOptions()));
                     CoveoForSitecore.componentsOptions = Coveo.$.extend({}, CoveoForSitecore.componentsOptions, searchOptionsForSearchbox);
-                    Coveo.$('#@Model.SearchboxId').coveoForSitecore('initSearchbox', CoveoForSitecore.componentsOptions);
+                    searchbox.coveoForSitecore('initSearchbox',
+                                               CoveoForSitecore.componentsOptions);
                 } else {
-                    Coveo.$('#@Model.SearchboxId').coveo('initSearchbox', '@Model.GetSearchPageUrl()');
+                    searchbox.coveo('initSearchbox',
+                                    '@Model.GetSearchPageUrl()');
                 }
+                searchbox.find(".CoveoSearchbox input").attr("placeholder", '@Model.SearchboxPlaceholderText');
             } else {
-                var searchboxElement = document.getElementById('@Model.SearchboxId');
-                CoveoForSitecore.externalComponents = [searchboxElement];
+                if (!CoveoForSitecore.externalComponents) {
+                    CoveoForSitecore.externalComponents = [];
+                }
+                CoveoForSitecore.externalComponents.push(searchbox[0]);
             }
         });
     </script>
-    <div class="activate-coveo" title="Activate Coveo Searchbox" onclick="toggleCoveoSearchbox()" style="display:none"></div>
+
+    <div class="activate-coveo" title="Activate Coveo Searchbox" onclick="coveoSearchboxSwitcher.toggleCoveoSearchbox()" style="display:none"></div>
     <div class="navbar-coveo">
         <div id="@Model.SearchboxId"  style="display:none">
             @if (Model.AnalyticsEnabled) {
@@ -62,26 +69,42 @@
             </div>
 
             @Html.Sitecore().Placeholder("coveo-omnibox-suggestions-providers-mvc")
-            
         </div>
     </div>
+<<<<<<< HEAD
     <script>
 
         class CoveoSearchboxSwitcher{
 
+=======
+
+    <script>
+        class CoveoSearchboxSwitcher{
+>>>>>>> 5623eec17d2f64185d0f4df8042eb67b644a988d
             constructor() {
                 this.coveoSearchbox = document.getElementById('@Model.SearchboxId');
                 this.habitatSearchbox = document.getElementsByClassName("navbar-activity-search")[0];
                 this.activateCoveoSwitch = document.getElementsByClassName("activate-coveo")[0];
+<<<<<<< HEAD
                 this.coveoSwitchCookieName = "coveoSearchbox";
+=======
+>>>>>>> 5623eec17d2f64185d0f4df8042eb67b644a988d
                 this.constants = {
                     "on": "on",
                     "off": "off",
                     "none": "none",
+<<<<<<< HEAD
                     "empty": "",
                     "cookieName": "coveoSearchbox",
                     "showCoveoSearchbox": "Show Coveo Searchbox",
                     "hideCoveoSearchbox": "Hide Coveo Searchbox",
+=======
+                    "block": "block",
+                    "empty": "",
+                    "cookieName": "coveoSearchbox",
+                    "showCoveoSearchbox": "Show Coveo Searchbox",
+                    "hideCoveoSearchbox": "Hide Coveo Searchbox"
+>>>>>>> 5623eec17d2f64185d0f4df8042eb67b644a988d
                 };
             };
 
@@ -98,17 +121,28 @@
                 var ca = decodedCookie.split(';');
                 for (var i = 0; i < ca.length; i++) {
                     var c = ca[i];
+<<<<<<< HEAD
                     while (c.charAt(0) == ' ') {
                         c = c.substring(1);
                     };
                     if (c.indexOf(name) == 0) {
+=======
+                    while (c.charAt(0) === ' ') {
+                        c = c.substring(1);
+                    };
+                    if (c.indexOf(name) === 0) {
+>>>>>>> 5623eec17d2f64185d0f4df8042eb67b644a988d
                         return c.substring(name.length, c.length);
                     };
                 };
                 return this.constants.empty;
             };
 
+<<<<<<< HEAD
             switchCoveoOff(){
+=======
+            switchCoveoOff() {
+>>>>>>> 5623eec17d2f64185d0f4df8042eb67b644a988d
                 this.coveoSearchbox.style.display = this.constants.none;
                 this.habitatSearchbox.style.display = this.constants.empty;
                 this.activateCoveoSwitch.classList.remove(this.constants.on);
@@ -117,8 +151,13 @@
                 this.setCookie(this.constants.cookieName, this.constants.off, 30);
             };
 
+<<<<<<< HEAD
             switchCoveoOn(){
                 this.coveoSearchbox.style.display = "block";
+=======
+            switchCoveoOn() {
+                this.coveoSearchbox.style.display = this.constants.block;
+>>>>>>> 5623eec17d2f64185d0f4df8042eb67b644a988d
                 this.habitatSearchbox.style.display = this.constants.none;
                 this.activateCoveoSwitch.style.display = this.constants.empty;
                 this.activateCoveoSwitch.classList.add(this.constants.on);
@@ -126,28 +165,45 @@
                 this.setCookie(this.constants.cookieName, this.constants.on, 30);
             };
 
+<<<<<<< HEAD
             checkCoveoSwitchCookie(){
                 this.coveoSearchboxCookie = this.getCookie(this.coveoSwitchCookieName);
 
                 if (this.coveoSearchboxCookie == this.constants.off){
+=======
+            checkCoveoSwitchCookie() {
+                this.coveoSearchboxCookie = this.getCookie(this.constants.cookieName);
+
+                if (this.coveoSearchboxCookie === this.constants.off) {
+>>>>>>> 5623eec17d2f64185d0f4df8042eb67b644a988d
                     this.switchCoveoOff();
                 } else {
                     this.switchCoveoOn();
                 };
             };
 
+<<<<<<< HEAD
             toggleCoveoSearchbox(){
                 this.coveoSearchboxCookie = this.getCookie(this.coveoSwitchCookieName);
 
                 if (this.coveoSearchboxCookie == this.constants.off || this.coveoSearchboxCookie == this.constants.empty){
+=======
+            toggleCoveoSearchbox() {
+                this.coveoSearchboxCookie = this.getCookie(this.constants.cookieName);
+
+                if (this.coveoSearchboxCookie === this.constants.off || this.coveoSearchboxCookie === this.constants.empty) {
+>>>>>>> 5623eec17d2f64185d0f4df8042eb67b644a988d
                     this.switchCoveoOn();
                 } else {
                     this.switchCoveoOff();
                 };
             };
 
+<<<<<<< HEAD
         };
 
+=======
+>>>>>>> 5623eec17d2f64185d0f4df8042eb67b644a988d
         coveoSearchboxSwitcher = new CoveoSearchboxSwitcher();
         coveoSearchboxSwitcher.checkCoveoSwitchCookie();
     </script>
