@@ -20,24 +20,8 @@ main > section:first-child {
 /* Tabs */
 
 .coveo-tab-section {
-    border: none;
-    background-color: #fff;
-}
-
-.CoveoSearchInterface.coveo-small-interface .coveo-tab-section {
-    background-color: #fff;
-}
-
-.CoveoTab:active,
-.CoveoTab:active:focus,
-.CoveoTab.coveo-selected {
-    background-color: #2e384e;
-    color: #fff;
-    font-size: 10pt;
-}
-
-.CoveoTab {
     display: none;
+    background-color: #fff;
 }
 
 /*Results*/
