@@ -93,7 +93,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Scripts\CoveoSearch\SearchboxSwitcher.js" />
+    <Content Include="Styles\CoveoSearch\SearchboxSwitcher.css" />
     <Content Include="Views\CoveoSearch\SearchViewResources.cshtml" />
+    <Content Include="Views\CoveoSearch\SearchboxSwitcherView.cshtml" />
     <None Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>

@@ -154,6 +154,10 @@ SharedFields:
           par="SearchBoxUniqueId&amp;SearchPageItemId&amp;KeepOmniboxSuggestionsProvidersDefaultOrdering&amp;FilterExpressionRules&amp;BoostExpressionRules&amp;EnableAutomaticBoosting&amp;FilterCulture=1&amp;SearchBoxBehavior&amp;EnablePartialMatch&amp;PartialMatchKeywords=5&amp;PartialMatchThreshold=50%25&amp;EnableWildcards&amp;EnableQuestionMarks&amp;EnableLowercaseOperators&amp;ResultsPerPage=10&amp;DefaultSortType&amp;DefaultSortDirection&amp;DefaultSortField&amp;SearchBoxPlaceholderText&amp;AutoFocus=1&amp;ExternalContentSources&amp;ExternalContentCollections&amp;EnableCoveoUsageAnalytics=1&amp;CoveoUsageAnalyticsCustomMetadata&amp;EnableSitecoreAnalytics&amp;SitecoreAnalyticsRestUri=%2Fcoveo%2Frest%2Fv6%2Fanalytics&amp;ThrowExceptionOnValidationError&amp;EnableClientSideLogging&amp;IncludeBucketFoldersInResults&amp;IncludeMediaFoldersInResults&amp;QueryPipelineName&amp;RestUri=%2Fcoveo%2Frest&amp;OmniboxEnableFieldAddon&amp;OmniboxEnableSimpleFieldAddon&amp;OmniboxEnableQueryExtensionAddon&amp;ItemId=_B834E827-1CA4-424A-9976-661E9B7C962B"
           ph="navbar-activity"
           uid="{E08E05B3-F97B-4187-9F12-E96581FC9049}" />
+        <r
+          id="{B40FE143-3A03-4AFB-B9B6-9E23D560EBD9}"
+          ph="navbar-activity"
+          uid="{E481F8BB-826D-425B-846B-05C261231E4D}" />
       </d>
     </r>
 Languages:

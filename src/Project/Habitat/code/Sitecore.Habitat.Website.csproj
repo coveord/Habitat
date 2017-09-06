@@ -175,7 +175,6 @@
     <Content Include="Views\Website\Layouts\Default.cshtml" />
     <Content Include="Views\Habitat\SearchboxView.cshtml" />
     <Content Include="Views\Habitat\SearchView.cshtml" />
-    <Content Include="Views\Habitat\SearchboxSwitcherView.cshtml" />
     <None Include="web.config" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>

@@ -170,6 +170,10 @@ SharedFields:
           par="Title=Relevance&amp;ItemId=SortByRelevance"
           ph="coveo-sorts-mvc"
           uid="{8BCB0B7C-3E32-4738-93CC-9CE02A3214D3}" />
+        <r
+          id="{B40FE143-3A03-4AFB-B9B6-9E23D560EBD9}"
+          ph="navbar-activity"
+          uid="{12985817-9EF2-4D86-A78D-B4D3F758FB68}" />
       </d>
     </r>
 Languages:

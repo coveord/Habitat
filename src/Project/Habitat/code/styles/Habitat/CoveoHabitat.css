@@ -120,10 +120,6 @@ a.CoveoResultLink:hover,
 
 /* Quickview Modal */
 
-.coveo-modalBox.coveo-quick-view > .coveo-wrapper {
-    width: 80% !important;
-}
-
 .coveo-quickview-icon.coveo-small.coveo-icon.filetype {
     display: none;
 }
