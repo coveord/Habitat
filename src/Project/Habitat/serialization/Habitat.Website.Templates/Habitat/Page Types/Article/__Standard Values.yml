@@ -142,7 +142,7 @@ SharedFields:
           ph="navbar-activity"
           uid="{FB32AAEA-76FA-4DEE-90AA-E76A465F70A7}" />
         <r
-          ds=""
+          ds="{D93961E6-59A5-4532-98B2-1D98AB0D34E4}"
           id="{E9ECDF34-1EB8-4466-9615-CBAD9E0E7CD9}"
           par="SearchBoxUniqueId&amp;SearchPageItemId&amp;KeepOmniboxSuggestionsProvidersDefaultOrdering&amp;FilterExpressionRules&amp;BoostExpressionRules&amp;EnableAutomaticBoosting&amp;FilterCulture=1&amp;SearchBoxBehavior&amp;EnablePartialMatch&amp;PartialMatchKeywords=5&amp;PartialMatchThreshold=50%25&amp;EnableWildcards&amp;EnableQuestionMarks&amp;EnableLowercaseOperators&amp;ResultsPerPage=10&amp;DefaultSortType&amp;DefaultSortDirection&amp;DefaultSortField&amp;SearchBoxPlaceholderText&amp;AutoFocus=1&amp;ExternalContentSources&amp;ExternalContentCollections&amp;EnableCoveoUsageAnalytics=1&amp;CoveoUsageAnalyticsCustomMetadata&amp;EnableSitecoreAnalytics&amp;SitecoreAnalyticsRestUri=%2Fcoveo%2Frest%2Fv6%2Fanalytics&amp;ThrowExceptionOnValidationError&amp;EnableClientSideLogging&amp;IncludeBucketFoldersInResults&amp;IncludeMediaFoldersInResults&amp;QueryPipelineName&amp;RestUri=%2Fcoveo%2Frest&amp;OmniboxEnableFieldAddon&amp;OmniboxEnableSimpleFieldAddon&amp;OmniboxEnableQueryExtensionAddon&amp;ItemId=_EA15FEF1-2176-4904-AF55-9B95494C2606"
           ph="navbar-activity"
