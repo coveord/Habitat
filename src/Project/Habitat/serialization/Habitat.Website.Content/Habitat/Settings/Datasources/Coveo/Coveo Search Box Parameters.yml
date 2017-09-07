@@ -37,13 +37,17 @@ Languages:
     - ID: "2f5ef5f2-5b9a-4ce3-9596-3d7654203648"
       Hint: EnableSitecoreAnalytics
       Type: Checkbox
-      Value: 0
+      Value: 1
     - ID: "326c845b-049c-4983-93dd-eb9f0526b314"
       Hint: ExternalContentSources
       Value: Sitecore Habitat Videos
     - ID: "52b1caf9-478e-4076-81d1-840cf14c3c70"
       Hint: SearchBoxPlaceholderText
       Value: Search
+    - ID: "5841e228-88e3-4089-8dd7-34e6aa5184b3"
+      Hint: AutoFocus
+      Type: Checkbox
+      Value: 0
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
