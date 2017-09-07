@@ -1,0 +1,317 @@
+﻿/* Page in general */
+
+.CoveoSearchInterface > .coveo-main-section {
+    max-width: 1200px;
+}
+
+.CoveoSearchInterface {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+main > .section:first-child,
+main > section:first-child {
+    padding-top: 0px;
+}
+
+.coveo-dropdown-background {
+    z-index: 20;
+}
+
+/* Tabs */
+
+.coveo-tab-section {
+    display: none;
+    background-color: #fff;
+}
+
+/*Results*/
+
+.coveo-result-frame {
+    border-bottom: 2px rgb(240,240,240) solid;
+    padding-bottom: 20px;
+}
+
+.coveo-results-header {
+    box-shadow: none;
+}
+
+.coveo-summary-section > span {
+    color: #2e384e;
+}
+
+.coveo-title > a.CoveoResultLink:visited {
+    color: #2e384e;
+    font-weight: 600;
+}
+
+.result-summary {
+    font-size: 11pt;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.CoveoExcerpt {
+    font-size: 10pt;
+    color: rgb(150,150,150);
+}
+
+.CoveoResultLink:hover,
+a.CoveoResultLink:hover,
+.CoveoResult a.CoveoResultLink:hover {
+    color: #c8244f;
+}
+
+.CoveoResult.coveo-result-frame .coveo-highlight {
+    vertical-align: baseline;
+}
+
+.recommended-result::before {
+    display: inline-flex;
+    font-family: 'Glyphicons Halflings';
+    content: "\e006";
+    font-size: 11pt;
+    color: rgb(250,200,0);
+}
+
+/* Glyphicons */
+
+.coveo-facet-header-eraser,
+.coveo-facet-header-eraser:hover,
+.coveo-pager-list-item > a > span {
+    background: none;
+}
+
+.coveo-facet-header-eraser::after,
+.coveo-facet-header-eraser:hover::after {
+    font-family: 'Glyphicons Halflings';
+    content: "\e014";
+    position: absolute;
+    left: -13px;
+    font-size: 10pt;
+    color: #fff;
+}
+
+.coveo-facet-header-eraser:hover::after {
+    color: #c8244f;
+}
+
+.coveo-pager-list-item.coveo-pager-next > a::after,
+.coveo-pager-list-item.coveo-pager-previous > a::after {
+    font-family: 'Glyphicons Halflings';
+    color: #2e384e;
+}
+
+.coveo-pager-list-item.coveo-pager-next > a::after {
+    content: "\e080";
+}
+
+.coveo-pager-list-item.coveo-pager-previous > a::after {
+    content: "\e079";
+}
+
+.coveo-pager-list-item.coveo-pager-next:hover,
+.coveo-pager-list-item.coveo-pager-previous:hover,
+.coveo-pager-list-item > a > span:hover,
+.coveo-pager-list-item.coveo-pager-next:hover > a::after,
+.coveo-pager-list-item.coveo-pager-previous:hover > a::after {
+    color: #c8244f;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+/* Quickview Modal */
+
+.coveo-quickview-icon.coveo-small.coveo-icon.filetype {
+    display: none;
+}
+
+.coveo-modalBox.coveo-quick-view > div.coveo-wrapper > div.coveo-title > div > .coveo-quickview-right-header > .coveo-quickview-time {
+    color: #fff;
+    font-weight: 600;
+}
+
+.coveo-quick-view > .coveo-wrapper > .coveo-title,
+.coveo-quick-view > .coveo-wrapper > .coveo-title > .coveo-quickview-right-header {
+    background-color: #2e384e;
+    color: #fff;
+    line-height: 20pt;
+    font-size: 20px;
+}
+
+.coveo-modalBox.coveo-quick-view > .coveo-wrapper > .coveo-title .coveo-quickview-pop-up-reminder {
+    color: #fff;
+}
+
+.coveo-modalBox.coveo-quick-view > .coveo-wrapper > .coveo-title .coveo-quickview-close-button > span.coveo-icon.coveo-sprites-common-clear {
+    background: none;
+}
+
+.coveo-modalBox.coveo-quick-view > .coveo-wrapper > .coveo-title .coveo-quickview-close-button::after {
+    font-family: 'Glyphicons Halflings';
+    color: #fff;
+    content: "\e014";
+    font-size: 10pt;
+}
+
+.coveo-modalBox.coveo-quick-view > .coveo-wrapper > .coveo-title .coveo-quickview-close-button:hover::after {
+    color: #c8244f;
+}
+
+.coveo-quick-view-header {
+    padding: 10px;
+}
+
+/* Facets */
+
+.coveo-facet-column {
+    max-width: 300px;
+}
+
+.CoveoFacetRange,
+.CoveoFacet,
+.coveo-facet-header,
+.coveo-facet-footer {
+    border-radius: 0px;
+    border: none;
+}
+
+.coveo-facet-header {
+    background-color: #2e384e;
+}
+
+.coveo-facet-header-title {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 10pt;
+}
+
+.coveo-facet-footer {
+    background-color: #fff;
+}
+
+.coveo-facet-header-wait-animation {
+    background-color: #fff;
+    background-image: none;
+    width: 3px;
+    margin-left: 20px;
+}
+
+.coveo-facet-value .coveo-facet-value-checkbox {
+    border-radius: 0px;
+    border-color: #2e384e;
+}
+
+.coveo-facet-value:hover, .coveo-facet-value.coveo-focused {
+    background-color: #fff;
+    color: #c8244f;
+}
+
+.coveo-facet-value.coveo-facet-selectable.coveo-selected > label > div {
+    font-weight: 700;
+}
+
+.CoveoSearchInterface.coveo-small-facets .coveo-facet-column.coveo-facet-dropdown-content {
+    background-color: #fff;
+}
+
+/* Pager */
+
+.coveo-pager-list > li,
+.coveo-results-per-page-list > li {
+    border-radius: 0px;
+    border: none;
+    font-weight: 600;
+    font-size: 10pt;
+    padding: 10px;
+}
+
+.coveo-pager-list-item.coveo-active,
+.coveo-results-per-page-list-item.coveo-active,
+.coveo-pager-list-item:hover,
+.coveo-results-per-page-list-item:hover {
+    background-color: #2e384e;
+    color: #fff;
+}
+
+.coveo-pager-list-item:hover,
+.coveo-results-per-page-list-item:hover {
+    text-decoration: underline;
+}
+
+/* Breadcrumbs */
+
+.CoveoBreadcrumb {
+    border: none;
+}
+
+.coveo-breadcrumb-clear-all {
+    border: none;
+    color: #2e384e;
+    font-weight: 700;
+}
+
+.coveo-breadcrumb-clear-all:hover,
+.coveo-breadcrumb-clear-all > div:hover,
+.coveo-facet-breadcrumb-value.coveo-selected *, .coveo-facet-slider-breadcrumb-value.coveo-selected * {
+    color: #c8244f;
+}
+
+.coveo-facet-breadcrumb-value:hover, .coveo-facet-slider-breadcrumb-value:hover {
+    color: #c8244f;
+    text-decoration: underline;
+}
+
+/* Quickview icon */
+
+.page-icon-container {
+    position: relative;
+}
+
+.page-icon {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .2s ease;
+    backface-visibility: hidden;
+}
+
+.page-icon-overlay {
+    transition: .2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.page-icon-container:hover .page-icon {
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.page-icon-container:hover .page-icon-overlay {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.page-icon-overlay-symbol,
+.page-icon-overlay-symbol:hover {
+    color: #c8244f;
+    font-weight: 600;
+}
+
+.page-icon {
+    width: 100%;
+}
+
+/* No Results */
+
+.coveo-query-summary-no-results-string {
+    font-size: 20pt;
+}
+
+.coveo-query-summary-cancel-last {
+    color: #c8244f;
+    font-weight: 700;
+}

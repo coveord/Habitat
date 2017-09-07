@@ -1,7 +1,7 @@
 ﻿@using Sitecore.Feature.PageContent
 @using Sitecore.Foundation.SitecoreExtensions.Extensions
 @model Sitecore.Mvc.Presentation.RenderingModel
-
+<!--BEGIN NOINDEX-->
 @if (Html.Sitecore().HasValue(Templates.HasPageContent.Fields.Image.ToString()))
 {
   var image = Model.Item.ImageUrl(Templates.HasPageContent.Fields.Image);
@@ -15,3 +15,4 @@ else
     @Html.Sitecore().Placeholder("page-header")
   </header>
 }
+<!--END NOINDEX-->

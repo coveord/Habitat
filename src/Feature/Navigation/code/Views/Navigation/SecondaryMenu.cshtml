@@ -10,7 +10,7 @@
     return;
   }
 }
-
+<!--BEGIN NOINDEX-->
 <h4>
   <a href="@Model.Url" target="@Model.Target">@Html.Sitecore().Field(Templates.Navigable.Fields.NavigationTitle, Model.Item)</a>
 </h4>
@@ -20,3 +20,4 @@
     @Html.Partial("_SecondaryMenuItems", Model.Children)
   }
 </div>
+<!--END NOINDEX-->

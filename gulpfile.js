@@ -21,6 +21,7 @@ module.exports.config = config;
 gulp.task("default", function (callback) {
   config.runCleanBuilds = true;
   return runSequence(
+    "00-Copy-Webroot-Lib",
     "01-Copy-Sitecore-License",
     "02-Nuget-Restore",
     "03-Publish-All-Projects",
@@ -33,6 +34,17 @@ gulp.task("default", function (callback) {
 /*****************************
   Initial setup
 *****************************/
+gulp.task("00-Copy-Webroot-Lib", function () {
+  console.log("Copying Assemblies from webroot");
+  fs.statSync(config.sitecoreLibraries);
+  var files = [
+    config.sitecoreLibraries + "/Coveo.Framework.dll",
+    config.sitecoreLibraries + "/Coveo.SearchProvider.dll",
+    config.sitecoreLibraries + "/Coveo.SearchProviderBase.dll",
+  ];
+  return gulp.src(files).pipe(gulp.dest("./lib/Coveo"));
+});
+
 gulp.task("01-Copy-Sitecore-License", function () {
   console.log("Copying Sitecore License file");
 

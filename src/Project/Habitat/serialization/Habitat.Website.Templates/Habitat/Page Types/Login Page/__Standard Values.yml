@@ -132,6 +132,20 @@ SharedFields:
           id="{CED18F24-62C2-445E-B0D9-045E3325297B}"
           ph="page-sidebar"
           uid="{20AB9BAA-C112-4567-A701-564423E650D2}" />
+        <r
+          id="{BD6E5198-0FFF-4F0D-B38C-D3921B8FCB7A}"
+          ph="navbar-activity"
+          uid="{AD900D79-AE9A-4A61-B85B-C510D4D7E7E7}" />
+        <r
+          ds="{D93961E6-59A5-4532-98B2-1D98AB0D34E4}"
+          id="{E9ECDF34-1EB8-4466-9615-CBAD9E0E7CD9}"
+          par="SearchBoxUniqueId&amp;SearchPageItemId&amp;KeepOmniboxSuggestionsProvidersDefaultOrdering&amp;FilterExpressionRules&amp;BoostExpressionRules&amp;EnableAutomaticBoosting&amp;FilterCulture=1&amp;SearchBoxBehavior&amp;EnablePartialMatch&amp;PartialMatchKeywords=5&amp;PartialMatchThreshold=50%25&amp;EnableWildcards&amp;EnableQuestionMarks&amp;EnableLowercaseOperators&amp;ResultsPerPage=10&amp;DefaultSortType&amp;DefaultSortDirection&amp;DefaultSortField&amp;SearchBoxPlaceholderText&amp;AutoFocus=1&amp;ExternalContentSources&amp;ExternalContentCollections&amp;EnableCoveoUsageAnalytics=1&amp;CoveoUsageAnalyticsCustomMetadata&amp;EnableSitecoreAnalytics&amp;SitecoreAnalyticsRestUri=%2Fcoveo%2Frest%2Fv6%2Fanalytics&amp;ThrowExceptionOnValidationError&amp;EnableClientSideLogging&amp;IncludeBucketFoldersInResults&amp;IncludeMediaFoldersInResults&amp;QueryPipelineName&amp;RestUri=%2Fcoveo%2Frest&amp;OmniboxEnableFieldAddon&amp;OmniboxEnableSimpleFieldAddon&amp;OmniboxEnableQueryExtensionAddon&amp;ItemId=_300D0C88-AEEE-4A16-8EDD-AE204CBD9CE5"
+          ph="navbar-activity"
+          uid="{31E41A06-292D-4E0A-8100-9936EF63538B}" />
+        <r
+          id="{B40FE143-3A03-4AFB-B9B6-9E23D560EBD9}"
+          ph="navbar-activity"
+          uid="{5C5B9F60-3AEE-471A-8DA2-6CF13C0BE565}" />
       </d>
     </r>
 Languages:

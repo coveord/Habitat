@@ -28,19 +28,23 @@
 </head>
 <body class="header-static @(Sitecore.Context.PageMode.IsNormal ? "" : (Sitecore.Context.PageMode.IsExperienceEditor ? "pagemode-edit" : "pagemode-preview"))">
   <div id="main-container">
+    <!--BEGIN NOINDEX-->
     <header class="header-static">
       @Html.Sitecore().Placeholder("header-top")
 
       @Html.Sitecore().Placeholder("navbar")
     </header>
+    <!--END NOINDEX-->
     <main role="main">
       @Html.Sitecore().Placeholder("page-layout")
     </main>
+    <!--BEGIN NOINDEX-->
     <footer class="bg-dark">
       @Html.Sitecore().Placeholder("footer")
     </footer>
 
     @Html.Sitecore().Placeholder("page-sidebar")
+    <!--END NOINDEX-->
   </div>
   @RenderAssetsService.Current.RenderScript(ScriptLocation.Body)
 </body>

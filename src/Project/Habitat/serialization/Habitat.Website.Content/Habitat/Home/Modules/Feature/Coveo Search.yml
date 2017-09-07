@@ -1,0 +1,40 @@
+﻿---
+ID: "ab380985-558b-4136-8e12-5f1a3fd2ecde"
+Parent: "f7434df7-e32e-4f8c-a50e-27c476f4dc32"
+Template: "94a8c8e9-690b-4e65-98e7-f95800222767"
+Path: /sitecore/content/Habitat/Home/Modules/Feature/Coveo Search
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1b483e91-d8c4-4d19-ba03-462074b55936"
+      Hint: NavigationTitle
+      Value: Coveo Search
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151116T023644Z
+    - ID: "9492e0bb-9df9-46e7-8188-ec795c4ade44"
+      Hint: Image
+      Value: |
+        <image mediaid="{AD35654E-0F2E-4538-BEC7-33F9DC7A0372}" />
+    - ID: "ac3fd4db-8266-476d-9635-67814d91e901"
+      Hint: Summary
+      Value: "Deliver high impact search throughout your site across all devices, with full-featured and customizable search interfaces, responsive design support and mobile templates. Use advanced features such as search facets and query suggestions to create an intuitive experience."
+    - ID: "c30a013f-3cc8-4961-9837-1c483277084a"
+      Hint: Title
+      Value: Coveo Search
+    - ID: "ca0479ce-0bfe-4522-83de-ba688b380a78"
+      Hint: BrowserTitle
+      Value: Coveo Search
+    - ID: "d74f396d-5c5e-4916-bd0a-bfd58b6b1967"
+      Hint: Body
+      Value: |
+        <p><span style="line-height: 24.2857px;">This new feature includes customized version of Coveo items:</span></p>
+        <ul>
+            <li><span style="line-height: 24.2857px;">Sitecore Renderings: duplicated version of Coveo components linked to pre-configured datasources</span></li>
+            <li><span style="line-height: 24.2857px;">Sitecore Datasource: preconfigured settings for Coveo components</span></li>
+            <li>Search View Ressources: a modified coveo View without CSS.&nbsp;</li>
+        </ul>
+        <p><span style="line-height: 24.2857px;">The search module uses the <a href="~/link.aspx?_id=F313739414884E72BDAF23C1EAAE0A83&amp;_z=z">Foundation.CoveoIndexing</a>&nbsp;module.</span></p>

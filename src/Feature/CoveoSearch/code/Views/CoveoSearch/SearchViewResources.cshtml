@@ -1,0 +1,19 @@
+﻿@using Coveo.UI.Extensions
+
+<!-- When customizing this component, ensure to use "Coveo.$" instead of the regular jQuery "$" to
+     avoid any conflicts with Sitecore's Page Editor/Experience Editor.  -->
+
+<script type="text/javascript" src="/Coveo/js/CoveoJsSearch.WithDependencies.min.js"></script>
+@if (Html.Coveo().IsInSitecore80ExperienceEditor()) {
+    <script>
+        jQuery.noConflict();
+    </script>
+}
+<script type="text/javascript" src="/Coveo/js/CoveoForSitecorePolyfills.js"></script>
+<script type="text/javascript" src="/Coveo/js/d3.min.js"></script>
+<script type="text/javascript" src="/Coveo/js/CoveoForSitecore.min.js"></script>
+
+@if (Html.Coveo().IsEditingInPageEditor()) {
+    <script type="text/javascript" src="/Coveo/js/PageEditorDeferRefresh.js"></script>
+    <div>Coveo Search Resources</div>
+}

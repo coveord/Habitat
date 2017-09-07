@@ -79,6 +79,20 @@ SharedFields:
           ph="navbar-activity"
           uid="{9C8A45F2-7008-42C1-8B8A-80A88825C1D8}" />
         <r
+          id="{BD6E5198-0FFF-4F0D-B38C-D3921B8FCB7A}"
+          ph="navbar-activity"
+          uid="{8AC0C8B0-1616-4633-A697-1EEE7DA3C3B9}" />
+        <r
+          ds="{D93961E6-59A5-4532-98B2-1D98AB0D34E4}"
+          id="{E9ECDF34-1EB8-4466-9615-CBAD9E0E7CD9}"
+          par="SearchBoxUniqueId&amp;SearchPageItemId&amp;KeepOmniboxSuggestionsProvidersDefaultOrdering&amp;FilterExpressionRules&amp;BoostExpressionRules&amp;EnableAutomaticBoosting&amp;FilterCulture=1&amp;SearchBoxBehavior&amp;EnablePartialMatch&amp;PartialMatchKeywords=5&amp;PartialMatchThreshold=50%25&amp;EnableWildcards&amp;EnableQuestionMarks&amp;EnableLowercaseOperators&amp;ResultsPerPage=10&amp;DefaultSortType&amp;DefaultSortDirection&amp;DefaultSortField&amp;SearchBoxPlaceholderText&amp;AutoFocus=1&amp;ExternalContentSources&amp;ExternalContentCollections&amp;EnableCoveoUsageAnalytics=1&amp;CoveoUsageAnalyticsCustomMetadata&amp;EnableSitecoreAnalytics&amp;SitecoreAnalyticsRestUri=%2Fcoveo%2Frest%2Fv6%2Fanalytics&amp;ThrowExceptionOnValidationError&amp;EnableClientSideLogging&amp;IncludeBucketFoldersInResults&amp;IncludeMediaFoldersInResults&amp;QueryPipelineName&amp;RestUri=%2Fcoveo%2Frest&amp;OmniboxEnableFieldAddon&amp;OmniboxEnableSimpleFieldAddon&amp;OmniboxEnableQueryExtensionAddon&amp;ItemId=_295304F0-C550-4340-8B08-A3354FD878E3"
+          ph="navbar-activity"
+          uid="{E343B3FC-7846-42C2-9CEB-5BAC6D6787CA}" />
+        <r
+          id="{B40FE143-3A03-4AFB-B9B6-9E23D560EBD9}"
+          ph="navbar-activity"
+          uid="{B6C7F977-EAF9-4F02-9060-EFB36E72FDE9}" />
+        <r
           id="{A2216CA7-B205-4042-A345-72117D0086C3}"
           par="UseStaticPlaceholderNames=0"
           ph="page-layout"

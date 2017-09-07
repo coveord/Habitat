@@ -1,0 +1,25 @@
+﻿---
+ID: "cfc22532-26e1-4dcf-883a-cab68b604c48"
+Parent: "ccdd3fe2-da58-49de-acf3-6b68a49fa4e4"
+Template: "e7725e1d-fc56-416c-b04c-13d5de61ff6e"
+Path: /sitecore/system/Settings/Feature/CoveoSearch/Sorts/Date Sort Parameters
+DB: master
+Languages:
+- Language: en
+  Fields:
+  - ID: "a636eec6-ce21-4b8c-a861-40e38e928cea"
+    Hint: ItemId
+    Value: CoveoDateSort
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170411T172559Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "ea6a8d27-61ee-4efa-b9b6-6cbc3e0ede5f"
+      Hint: SortDirection
+      Value: Descending

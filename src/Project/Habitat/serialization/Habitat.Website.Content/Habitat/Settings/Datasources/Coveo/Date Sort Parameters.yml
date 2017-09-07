@@ -1,0 +1,25 @@
+﻿---
+ID: "d64c95f7-6b1d-42fc-8f78-289f964c0d7a"
+Parent: "24e745e1-181e-457b-aad0-1caf5ddce16c"
+Template: "e7725e1d-fc56-416c-b04c-13d5de61ff6e"
+Path: /sitecore/content/Habitat/Settings/Datasources/Coveo/Date Sort Parameters
+DB: master
+SharedFields:
+- ID: "3094d236-5985-4c4f-ae6a-e30740885532"
+  Hint: Caching
+  Value: 0|0|0|0|0|0|0|0
+Languages:
+- Language: en
+  Fields:
+  - ID: "a636eec6-ce21-4b8c-a861-40e38e928cea"
+    Hint: ItemId
+    Value: SortByDate
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170907T210003Z
+    - ID: "ea6a8d27-61ee-4efa-b9b6-6cbc3e0ede5f"
+      Hint: SortDirection
+      Value: "{B2648814-D384-40D0-A7CE-D225429EF844}"

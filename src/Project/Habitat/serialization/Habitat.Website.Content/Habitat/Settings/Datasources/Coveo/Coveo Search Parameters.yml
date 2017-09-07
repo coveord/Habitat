@@ -1,0 +1,131 @@
+﻿---
+ID: "4e48d10a-1717-4d1e-9d78-c665cc4f290f"
+Parent: "24e745e1-181e-457b-aad0-1caf5ddce16c"
+Template: "5e0c9885-2582-44d0-8296-a90845181835"
+Path: /sitecore/content/Habitat/Settings/Datasources/Coveo/Coveo Search Parameters
+DB: master
+SharedFields:
+- ID: "3094d236-5985-4c4f-ae6a-e30740885532"
+  Hint: Caching
+  Value: 0|0|0|0|0|0|0|0
+Languages:
+- Language: en
+  Fields:
+  - ID: "a636eec6-ce21-4b8c-a861-40e38e928cea"
+    Hint: ItemId
+    Value: CoveoSearchResults
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "140dd23c-6337-4723-a87e-be5a1cfc8f53"
+      Hint: BoostExpressionRules
+      Type: Rules
+      Value: |
+        <ruleset>
+          <rule
+            uid="{CD7F8A08-2DBC-4F3C-BDD2-277E64923DA6}">
+            <conditions>
+              <condition
+                id="{EDF34D6E-37E7-41F7-A72F-25EC3D8F3931}"
+                uid="289F2DC3CD974FE1BCA8CCC5B1142A83"
+                itemid="{D0EF5661-6755-4B75-9F6B-0E2F2C1FACEC}" />
+            </conditions>
+            <actions>
+              <action
+                id="{3C1F547E-DC65-4223-BAAE-B4F0E1ED028A}"
+                uid="71B3981689684DB4AB226C080209E670"
+                weight="150" />
+            </actions>
+          </rule>
+          <rule
+            uid="{288A4AF2-8843-4407-883D-42BFDD6373A4}">
+            <conditions>
+              <condition
+                id="{EDF34D6E-37E7-41F7-A72F-25EC3D8F3931}"
+                uid="83CCD344D4F4400CB0371DD6F45EF8FB"
+                itemid="{9AA07D42-E9B5-4B52-A0E2-4FDF08C203EE}" />
+            </conditions>
+            <actions>
+              <action
+                id="{3C1F547E-DC65-4223-BAAE-B4F0E1ED028A}"
+                uid="4013591759A34E44851B04C5A54DF017"
+                weight="150" />
+            </actions>
+          </rule>
+          <rule
+            uid="{BAF980B6-7E90-4129-83AE-53C57B345B5B}">
+            <conditions>
+              <condition
+                id="{EDF34D6E-37E7-41F7-A72F-25EC3D8F3931}"
+                uid="5B9694D5691349CDBE59BB942ABF9159"
+                itemid="{DAC24EDD-44FB-42EF-9ECD-1E8DAF706386}" />
+            </conditions>
+            <actions>
+              <action
+                id="{3C1F547E-DC65-4223-BAAE-B4F0E1ED028A}"
+                uid="EE79CDA4EE2941BBBFA6E84FC1ADC445"
+                weight="100" />
+            </actions>
+          </rule>
+          <rule
+            uid="{EC576ECB-7013-4C53-9E96-7E88FF71867C}">
+            <conditions>
+              <condition
+                id="{1E6C9830-45FA-4801-9D4D-E87B76C13F7D}"
+                uid="53F9008B45384C26A25B017E94BB5E8D"
+                itemid="{F7434DF7-E32E-4F8C-A50E-27C476F4DC32}" />
+            </conditions>
+            <actions>
+              <action
+                id="{FB2A22A4-9E43-47EC-874F-7E15F7CF6526}"
+                uid="3FA00BBE5AEA432A9D61B0A8EAB749D5"
+                weight="100" />
+            </actions>
+          </rule>
+        </ruleset>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170411T175822Z
+    - ID: "2f5ef5f2-5b9a-4ce3-9596-3d7654203648"
+      Hint: EnableSitecoreAnalytics
+      Type: Checkbox
+      Value: 1
+    - ID: "326c845b-049c-4983-93dd-eb9f0526b314"
+      Hint: ExternalContentSources
+      Value: Sitecore Habitat Videos
+    - ID: "43967717-4e55-4b84-91a0-6e789bc493d1"
+      Hint: DisplayRecommendations
+      Type: Checkbox
+      Value: 0
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "77ed36d6-fde4-48d7-be8d-39393c19e2ea"
+      Hint: DisplayLogo
+      Type: Checkbox
+      Value: 0
+    - ID: "8f207288-038d-412b-b9f9-8beb756e54c1"
+      Hint: QuerySummaryOnlyDisplaySearchTips
+      Type: Checkbox
+      Value: 0
+    - ID: "b9a15b3c-2cb5-4df3-81f2-c63595c7cda1"
+      Hint: EnableClientSideLogging
+      Type: Checkbox
+      Value: 0
+    - ID: "c312a77d-7b97-46f8-b1d0-1cce160f27ac"
+      Hint: OmniboxEnableSimpleFieldAddon
+      Type: Checkbox
+      Value: 1
+    - ID: "d1ffe621-c686-4bea-a441-1f44ab36c463"
+      Hint: DisplayResultsPerPage
+      Type: Checkbox
+      Value: 0
+    - ID: "db2851f2-98da-4ba8-95da-6b2b23284854"
+      Hint: EnableInfiniteScroll
+      Type: Checkbox
+      Value: 0
+    - ID: "e805db48-0801-4d27-8737-b9a1f0643c05"
+      Hint: DisplaySearchBox
+      Type: Checkbox
+      Value: 0

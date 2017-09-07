@@ -1,0 +1,14 @@
+﻿---
+ID: "4b6ecac3-fbc0-4841-82c8-6ace9ff0ed19"
+Parent: "7735606a-0de6-407d-ae83-3e96754fee59"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/system/Settings/Buckets/Facets/Project/Common
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170411T145711Z

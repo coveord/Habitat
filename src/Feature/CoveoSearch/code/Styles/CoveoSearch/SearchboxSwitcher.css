@@ -1,0 +1,42 @@
+﻿.searchbox-switcher {
+    position: fixed;
+    width: 50px;
+    height: 42px;
+    right: 0;
+    padding: 8px;
+    display: block;
+}
+
+.searchbox-switcher:hover {
+    cursor: pointer;
+}
+
+.searchbox-switcher.coveo {
+    background-color: rgb(240,120,0);
+}
+
+.searchbox-switcher.coveo:hover {
+    cursor: pointer;
+    background-color: rgb(220,90,0);
+}
+
+.searchbox-switcher.lucene {
+    background-color: rgb(160,160,160);
+}
+
+.searchbox-switcher.lucene:hover {
+    background-color: rgb(140,140,140);
+}
+
+.searchbox-switcher.disabled,
+.navbar-activity-search.disabled,
+.navbar-coveo.disabled {
+    display: none;
+}
+
+.searchbox-switcher::after {
+    font-family: 'Glyphicons Halflings';
+    content: "\e072";
+    font-size: 14pt;
+    color: #fff;
+}

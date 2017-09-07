@@ -1,0 +1,46 @@
+﻿---
+ID: "909b287e-4ec7-481b-96b1-9f2d72645b3f"
+Parent: "24e745e1-181e-457b-aad0-1caf5ddce16c"
+Template: "21caa282-563f-4666-ad5b-bda0978b9d36"
+Path: /sitecore/content/Habitat/Settings/Datasources/Coveo/Language Facet Parameters
+DB: master
+SharedFields:
+- ID: "3094d236-5985-4c4f-ae6a-e30740885532"
+  Hint: Caching
+  Value: 0|0|0|0|0|0|0|0
+Languages:
+- Language: en
+  Fields:
+  - ID: "a636eec6-ce21-4b8c-a861-40e38e928cea"
+    Hint: ItemId
+    Value: LanguageFacet
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170907T205851Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "70babcc4-35db-4d62-9e3d-9f23648b8591"
+      Hint: FacetIncludeInOmniBox
+      Type: Checkbox
+      Value: 0
+    - ID: "7dfa15e5-db66-4239-8f9c-922003cf3288"
+      Hint: FacetValueCaption
+      Value: en=English
+    - ID: "88237729-604f-483e-ace6-3192b172a010"
+      Hint: FacetAllowedValues
+      Value: English, French
+    - ID: "905c87be-2177-4acf-b50c-cdd913616004"
+      Hint: FacetField
+      Value: "{C357AFE9-AE51-42C6-A5F8-E73A53EA8245}"
+    - ID: "f61fda29-3993-4716-8c3a-c77b3ba9dd1d"
+      Hint: FacetTitle
+      Value: Language
+    - ID: "f6d5912f-da5f-431d-bcdb-922dcfdc17d8"
+      Hint: FacetIsMultiValueField
+      Type: Checkbox
+      Value: 0

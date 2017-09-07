@@ -1,0 +1,18 @@
+﻿---
+ID: "ccdd3fe2-da58-49de-acf3-6b68a49fa4e4"
+Parent: "5844e130-7052-4572-a781-58ad9bd63e19"
+Template: "fe13e0a5-b777-4489-8968-2ed7a0cebfee"
+Path: /sitecore/system/Settings/Feature/CoveoSearch/Sorts
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170413T141841Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
