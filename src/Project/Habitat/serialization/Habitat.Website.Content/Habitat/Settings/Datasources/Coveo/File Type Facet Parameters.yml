@@ -1,0 +1,46 @@
+﻿---
+ID: "b68959fc-5345-4e72-9d6d-6d4ad796f5d4"
+Parent: "24e745e1-181e-457b-aad0-1caf5ddce16c"
+Template: "21caa282-563f-4666-ad5b-bda0978b9d36"
+Path: /sitecore/content/Habitat/Settings/Datasources/Coveo/File Type Facet Parameters
+DB: master
+SharedFields:
+- ID: "3094d236-5985-4c4f-ae6a-e30740885532"
+  Hint: Caching
+  Value: 0|0|0|0|0|0|0|0
+- ID: "e42027f4-766d-45a7-8cf4-29e5c94326f7"
+  Hint: Placeholder
+  Value: 
+Languages:
+- Language: en
+  Fields:
+  - ID: "a636eec6-ce21-4b8c-a861-40e38e928cea"
+    Hint: ItemId
+    Value: FileTypeFacet
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170907T205851Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "70babcc4-35db-4d62-9e3d-9f23648b8591"
+      Hint: FacetIncludeInOmniBox
+      Type: Checkbox
+      Value: 0
+    - ID: "88237729-604f-483e-ace6-3192b172a010"
+      Hint: FacetAllowedValues
+      Value: HTML, YouTubeVideo
+    - ID: "905c87be-2177-4acf-b50c-cdd913616004"
+      Hint: FacetField
+      Value: "{02B6834C-2900-4E7E-B076-50D3F9E7D0C7}"
+    - ID: "f61fda29-3993-4716-8c3a-c77b3ba9dd1d"
+      Hint: FacetTitle
+      Value: File type
+    - ID: "f6d5912f-da5f-431d-bcdb-922dcfdc17d8"
+      Hint: FacetIsMultiValueField
+      Type: Checkbox
+      Value: 0

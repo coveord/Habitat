@@ -1,0 +1,25 @@
+﻿---
+ID: "44ccda74-2969-412d-b3a9-79e42e5bb5fe"
+Parent: "24e745e1-181e-457b-aad0-1caf5ddce16c"
+Template: "2ab40180-5f88-44e2-9052-e910bda4cc58"
+Path: /sitecore/content/Habitat/Settings/Datasources/Coveo/Tab Parameters
+DB: master
+SharedFields:
+- ID: "3094d236-5985-4c4f-ae6a-e30740885532"
+  Hint: Caching
+  Value: 0|0|0|0|0|0|0|0
+Languages:
+- Language: en
+  Fields:
+  - ID: "a636eec6-ce21-4b8c-a861-40e38e928cea"
+    Hint: ItemId
+    Value: AllContentTab
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170907T210102Z
+    - ID: "77178479-1640-46de-be23-a23680fc9a3d"
+      Hint: TabCaption
+      Value: All Content
